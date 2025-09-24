@@ -788,7 +788,7 @@ function App() {
             <img
               src={imagePreview.url}
               alt={imagePreview.alt}
-              className="max-w-full max-h-[70vh] object-contain rounded-lg shadow-2xl"
+              className="max-w-full max-h-[70vh] object-contain rounded-lg shadow-2xl mx-auto"
               onClick={(e) => e.stopPropagation()}
             />
           </div>
