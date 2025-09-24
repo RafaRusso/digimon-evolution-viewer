@@ -1,0 +1,47 @@
+{
+  "Botamon": {
+    "other": [
+      {
+        "name": "Patente",
+        "value": "Agente 1",
+        "description": "Patente de Agente 1 ou superior"
+      }
+    ]
+  },
+  "Bubbmon": {
+    "other": [
+      {
+        "name": "Patente",
+        "value": "Agente 1",
+        "description": "Patente de Agente 1 ou superior"
+      }
+    ]
+  },
+  "Choromon": {
+    "other": [
+      {
+        "name": "Patente",
+        "value": "Agente 1",
+        "description": "Patente de Agente 1 ou superior"
+      }
+    ]
+  },
+  "Dodomon": {
+    "other": [
+      {
+        "name": "Patente",
+        "value": "Agente 1",
+        "description": "Patente de Agente 1 ou superior"
+      }
+    ]
+  },
+  "Kuramon": {
+    "other": [
+      {
+        "name": "Patente",
+        "value": "Agente 1",
+        "description": "Patente de Agente 1 ou superior"
+      }
+    ]
+  }
+}
