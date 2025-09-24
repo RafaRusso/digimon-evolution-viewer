@@ -1,0 +1,6845 @@
+{
+  "digimons": {
+    "Kuramon": {
+      "number": 1,
+      "name": "Kuramon",
+      "stage": "I",
+      "attribute": "N/A",
+      "image": "Kuramon.jpg"
+    },
+    "Choromon": {
+      "number": 2,
+      "name": "Choromon",
+      "stage": "I",
+      "attribute": "N/A",
+      "image": "Choromon.jpg"
+    },
+    "Dodomon": {
+      "number": 3,
+      "name": "Dodomon",
+      "stage": "I",
+      "attribute": "N/A",
+      "image": "Dodomon.jpg"
+    },
+    "Bubbmon": {
+      "number": 4,
+      "name": "Bubbmon",
+      "stage": "I",
+      "attribute": "N/A",
+      "image": "Bubbmon.jpg"
+    },
+    "Punimon": {
+      "number": 5,
+      "name": "Punimon",
+      "stage": "I",
+      "attribute": "N/A",
+      "image": "Punimon.jpg"
+    },
+    "Botamon": {
+      "number": 6,
+      "name": "Botamon",
+      "stage": "I",
+      "attribute": "N/A",
+      "image": "Botamon.jpg"
+    },
+    "Poyomon": {
+      "number": 7,
+      "name": "Poyomon",
+      "stage": "I",
+      "attribute": "N/A",
+      "image": "Poyomon.jpg"
+    },
+    "Caprimon": {
+      "number": 8,
+      "name": "Caprimon",
+      "stage": "II",
+      "attribute": "N/A",
+      "image": "Caprimon.jpg"
+    },
+    "Koromon": {
+      "number": 9,
+      "name": "Koromon",
+      "stage": "II",
+      "attribute": "N/A",
+      "image": "Koromon.jpg"
+    },
+    "Tanemon": {
+      "number": 10,
+      "name": "Tanemon",
+      "stage": "II",
+      "attribute": "N/A",
+      "image": "Tanemon.jpg"
+    },
+    "Tunomon": {
+      "number": 11,
+      "name": "Tunomon",
+      "stage": "II",
+      "attribute": "N/A",
+      "image": "Tunomon.jpg"
+    },
+    "Tsumemon": {
+      "number": 12,
+      "name": "Tsumemon",
+      "stage": "II",
+      "attribute": "N/A",
+      "image": "Tsumemon.jpg"
+    },
+    "Tokomon": {
+      "number": 13,
+      "name": "Tokomon",
+      "stage": "II",
+      "attribute": "N/A",
+      "image": "Tokomon.jpg"
+    },
+    "Dorimon": {
+      "number": 14,
+      "name": "Dorimon",
+      "stage": "II",
+      "attribute": "N/A",
+      "image": "Dorimon.jpg"
+    },
+    "Nyaromon": {
+      "number": 15,
+      "name": "Nyaromon",
+      "stage": "II",
+      "attribute": "N/A",
+      "image": "Nyaromon.jpg"
+    },
+    "Pagumon": {
+      "number": 16,
+      "name": "Pagumon",
+      "stage": "II",
+      "attribute": "N/A",
+      "image": "Pagumon.jpg"
+    },
+    "Pyocomon": {
+      "number": 17,
+      "name": "Pyocomon",
+      "stage": "II",
+      "attribute": "N/A",
+      "image": "Pyocomon.jpg"
+    },
+    "Pukamon": {
+      "number": 18,
+      "name": "Pukamon",
+      "stage": "II",
+      "attribute": "N/A",
+      "image": "Pukamon.jpg"
+    },
+    "Mochimon": {
+      "number": 19,
+      "name": "Mochimon",
+      "stage": "II",
+      "attribute": "N/A",
+      "image": "Mochimon.jpg"
+    },
+    "Wanyamon": {
+      "number": 20,
+      "name": "Wanyamon",
+      "stage": "II",
+      "attribute": "N/A",
+      "image": "Wanyamon.jpg"
+    },
+    "Agumon": {
+      "number": 21,
+      "name": "Agumon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Agumon.jpg"
+    },
+    "Kudamon": {
+      "number": 22,
+      "name": "Kudamon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Kudamon.jpg"
+    },
+    "Gomamon": {
+      "number": 23,
+      "name": "Gomamon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Gomamon.jpg"
+    },
+    "Coronamon": {
+      "number": 24,
+      "name": "Coronamon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Coronamon.jpg"
+    },
+    "Zubamon": {
+      "number": 25,
+      "name": "Zubamon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Zubamon.jpg"
+    },
+    "Solarmon": {
+      "number": 26,
+      "name": "Solarmon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Solarmon.jpg"
+    },
+    "Terriermon": {
+      "number": 27,
+      "name": "Terriermon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Terriermon.jpg"
+    },
+    "Tentomon": {
+      "number": 28,
+      "name": "Tentomon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Tentomon.jpg"
+    },
+    "Toy Agumon": {
+      "number": 29,
+      "name": "Toy Agumon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Toy_Agumon.jpg"
+    },
+    "Bakumon": {
+      "number": 30,
+      "name": "Bakumon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Bakumon.jpg"
+    },
+    "Hyokomon": {
+      "number": 31,
+      "name": "Hyokomon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Hyokomon.jpg"
+    },
+    "Piyomon": {
+      "number": 32,
+      "name": "Piyomon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Piyomon.jpg"
+    },
+    "Falcomon": {
+      "number": 33,
+      "name": "Falcomon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Falcomon.jpg"
+    },
+    "Plotmon": {
+      "number": 34,
+      "name": "Plotmon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Plotmon.jpg"
+    },
+    "Bearmon": {
+      "number": 35,
+      "name": "Bearmon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Bearmon.jpg"
+    },
+    "Penmon": {
+      "number": 36,
+      "name": "Penmon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Penmon.jpg"
+    },
+    "Monodramon": {
+      "number": 37,
+      "name": "Monodramon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Monodramon.jpg"
+    },
+    "Ryudamon": {
+      "number": 38,
+      "name": "Ryudamon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Ryudamon.jpg"
+    },
+    "Lucemon": {
+      "number": 39,
+      "name": "Lucemon",
+      "stage": "III",
+      "attribute": "Vaccine",
+      "image": "Lucemon.jpg"
+    },
+    "Elecmon": {
+      "number": 40,
+      "name": "Elecmon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Elecmon.jpg"
+    },
+    "Gaomon": {
+      "number": 41,
+      "name": "Gaomon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Gaomon.jpg"
+    },
+    "Ganimon": {
+      "number": 42,
+      "name": "Ganimon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Ganimon.jpg"
+    },
+    "Gabumon": {
+      "number": 43,
+      "name": "Gabumon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Gabumon.jpg"
+    },
+    "Kamemon": {
+      "number": 44,
+      "name": "Kamemon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Kamemon.jpg"
+    },
+    "Kokuwamon": {
+      "number": 45,
+      "name": "Kokuwamon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Kokuwamon.jpg"
+    },
+    "Gottsumon": {
+      "number": 46,
+      "name": "Gottsumon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Gottsumon.jpg"
+    },
+    "Kotemon": {
+      "number": 47,
+      "name": "Kotemon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Kotemon.jpg"
+    },
+    "Shoutmon": {
+      "number": 48,
+      "name": "Shoutmon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Shoutmon.jpg"
+    },
+    "Dracomon": {
+      "number": 49,
+      "name": "Dracomon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Dracomon.jpg"
+    },
+    "Dorumon": {
+      "number": 50,
+      "name": "Dorumon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Dorumon.jpg"
+    },
+    "Patamon": {
+      "number": 51,
+      "name": "Patamon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Patamon.jpg"
+    },
+    "Hackmon": {
+      "number": 52,
+      "name": "Hackmon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Hackmon.jpg"
+    },
+    "Palmon": {
+      "number": 53,
+      "name": "Palmon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Palmon.jpg"
+    },
+    "Floramon": {
+      "number": 54,
+      "name": "Floramon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Floramon.jpg"
+    },
+    "Muchomon": {
+      "number": 55,
+      "name": "Muchomon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Muchomon.jpg"
+    },
+    "Lalamon": {
+      "number": 56,
+      "name": "Lalamon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Lalamon.jpg"
+    },
+    "Lunamon": {
+      "number": 57,
+      "name": "Lunamon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Lunamon.jpg"
+    },
+    "Renamon": {
+      "number": 58,
+      "name": "Renamon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Renamon.jpg"
+    },
+    "Lopmon": {
+      "number": 59,
+      "name": "Lopmon",
+      "stage": "III",
+      "attribute": "Data",
+      "image": "Lopmon.jpg"
+    },
+    "Impmon": {
+      "number": 60,
+      "name": "Impmon",
+      "stage": "III",
+      "attribute": "Virus",
+      "image": "Impmon.jpg"
+    },
+    "Otamamon": {
+      "number": 61,
+      "name": "Otamamon",
+      "stage": "III",
+      "attribute": "Virus",
+      "image": "Otamamon.jpg"
+    },
+    "Gazimon": {
+      "number": 62,
+      "name": "Gazimon",
+      "stage": "III",
+      "attribute": "Virus",
+      "image": "Gazimon.jpg"
+    },
+    "Gizamon": {
+      "number": 63,
+      "name": "Gizamon",
+      "stage": "III",
+      "attribute": "Virus",
+      "image": "Gizamon.jpg"
+    },
+    "Guilmon": {
+      "number": 64,
+      "name": "Guilmon",
+      "stage": "III",
+      "attribute": "Virus",
+      "image": "Guilmon.jpg"
+    },
+    "Goburimon": {
+      "number": 65,
+      "name": "Goburimon",
+      "stage": "III",
+      "attribute": "Virus",
+      "image": "Goburimon.jpg"
+    },
+    "Shamamon": {
+      "number": 66,
+      "name": "Shamamon",
+      "stage": "III",
+      "attribute": "Virus",
+      "image": "Shamamon.jpg"
+    },
+    "Shakomon": {
+      "number": 67,
+      "name": "Shakomon",
+      "stage": "III",
+      "attribute": "Virus",
+      "image": "Shakomon.jpg"
+    },
+    "Snow Goburimon": {
+      "number": 68,
+      "name": "Snow Goburimon",
+      "stage": "III",
+      "attribute": "Virus",
+      "image": "Snow_Goburimon.jpg"
+    },
+    "Tyumon": {
+      "number": 69,
+      "name": "Tyumon",
+      "stage": "III",
+      "attribute": "Virus",
+      "image": "Tyumon.jpg"
+    },
+    "Dracumon": {
+      "number": 70,
+      "name": "Dracumon",
+      "stage": "III",
+      "attribute": "Virus",
+      "image": "Dracumon.jpg"
+    },
+    "Hagurumon": {
+      "number": 71,
+      "name": "Hagurumon",
+      "stage": "III",
+      "attribute": "Virus",
+      "image": "Hagurumon.jpg"
+    },
+    "Pico Devimon": {
+      "number": 72,
+      "name": "Pico Devimon",
+      "stage": "III",
+      "attribute": "Virus",
+      "image": "Pico_Devimon.jpg"
+    },
+    "Funbeemon": {
+      "number": 73,
+      "name": "Funbeemon",
+      "stage": "III",
+      "attribute": "Virus",
+      "image": "Funbeemon.jpg"
+    },
+    "Betamon": {
+      "number": 74,
+      "name": "Betamon",
+      "stage": "III",
+      "attribute": "Virus",
+      "image": "Betamon.jpg"
+    },
+    "Mushmon": {
+      "number": 75,
+      "name": "Mushmon",
+      "stage": "III",
+      "attribute": "Virus",
+      "image": "Mushmon.jpg"
+    },
+    "Armadimon": {
+      "number": 76,
+      "name": "Armadimon",
+      "stage": "III",
+      "attribute": "Free",
+      "image": "Armadimon.jpg"
+    },
+    "V-Mon": {
+      "number": 77,
+      "name": "V-Mon",
+      "stage": "III",
+      "attribute": "Free",
+      "image": "V-Mon.jpg"
+    },
+    "Hawkmon": {
+      "number": 78,
+      "name": "Hawkmon",
+      "stage": "III",
+      "attribute": "Free",
+      "image": "Hawkmon.jpg"
+    },
+    "Wormmon": {
+      "number": 79,
+      "name": "Wormmon",
+      "stage": "III",
+      "attribute": "Free",
+      "image": "Wormmon.jpg"
+    },
+    "Keramon": {
+      "number": 80,
+      "name": "Keramon",
+      "stage": "III",
+      "attribute": "Unknown",
+      "image": "Keramon.jpg"
+    },
+    "Aegiomon": {
+      "number": 81,
+      "name": "Aegiomon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Aegiomon.jpg"
+    },
+    "Ikkakumon": {
+      "number": 82,
+      "name": "Ikkakumon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Ikkakumon.jpg"
+    },
+    "Airdramon": {
+      "number": 83,
+      "name": "Airdramon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Airdramon.jpg"
+    },
+    "Angemon": {
+      "number": 84,
+      "name": "Angemon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Angemon.jpg"
+    },
+    "Kabuterimon": {
+      "number": 85,
+      "name": "Kabuterimon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Kabuterimon.jpg"
+    },
+    "Gargomon": {
+      "number": 86,
+      "name": "Gargomon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Gargomon.jpg"
+    },
+    "Garurumon": {
+      "number": 87,
+      "name": "Garurumon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Garurumon.jpg"
+    },
+    "Ginryumon": {
+      "number": 88,
+      "name": "Ginryumon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Ginryumon.jpg"
+    },
+    "Gryzmon": {
+      "number": 89,
+      "name": "Gryzmon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Gryzmon.jpg"
+    },
+    "Greymon": {
+      "number": 90,
+      "name": "Greymon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Greymon.jpg"
+    },
+    "Coredramon (Blue)": {
+      "number": 91,
+      "name": "Coredramon (Blue)",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Coredramon__Blue_.jpg"
+    },
+    "Geo Greymon": {
+      "number": 92,
+      "name": "Geo Greymon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Geo_Greymon.jpg"
+    },
+    "Strikedramon": {
+      "number": 93,
+      "name": "Strikedramon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Strikedramon.jpg"
+    },
+    "Snimon": {
+      "number": 94,
+      "name": "Snimon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Snimon.jpg"
+    },
+    "Zubaeagermon": {
+      "number": 95,
+      "name": "Zubaeagermon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Zubaeagermon.jpg"
+    },
+    "Sorcerimon": {
+      "number": 96,
+      "name": "Sorcerimon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Sorcerimon.jpg"
+    },
+    "Tailmon": {
+      "number": 97,
+      "name": "Tailmon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Tailmon.jpg"
+    },
+    "Dobermon": {
+      "number": 98,
+      "name": "Dobermon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Dobermon.jpg"
+    },
+    "Birdramon": {
+      "number": 99,
+      "name": "Birdramon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Birdramon.jpg"
+    },
+    "Firamon": {
+      "number": 100,
+      "name": "Firamon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Firamon.jpg"
+    },
+    "V-Dramon": {
+      "number": 101,
+      "name": "V-Dramon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "V-Dramon.jpg"
+    },
+    "Buraimon": {
+      "number": 102,
+      "name": "Buraimon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Buraimon.jpg"
+    },
+    "Peckmon": {
+      "number": 103,
+      "name": "Peckmon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Peckmon.jpg"
+    },
+    "Mojyamon": {
+      "number": 104,
+      "name": "Mojyamon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Mojyamon.jpg"
+    },
+    "Yukidarumon": {
+      "number": 105,
+      "name": "Yukidarumon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Yukidarumon.jpg"
+    },
+    "Unimon": {
+      "number": 106,
+      "name": "Unimon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Unimon.jpg"
+    },
+    "Raptordramon": {
+      "number": 107,
+      "name": "Raptordramon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Raptordramon.jpg"
+    },
+    "Revolmon": {
+      "number": 108,
+      "name": "Revolmon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Revolmon.jpg"
+    },
+    "Leomon": {
+      "number": 109,
+      "name": "Leomon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Leomon.jpg"
+    },
+    "Reppamon": {
+      "number": 110,
+      "name": "Reppamon",
+      "stage": "IV",
+      "attribute": "Vaccine",
+      "image": "Reppamon.jpg"
+    },
+    "Icemon": {
+      "number": 111,
+      "name": "Icemon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Icemon.jpg"
+    },
+    "Wizarmon": {
+      "number": 112,
+      "name": "Wizarmon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Wizarmon.jpg"
+    },
+    "Witchmon": {
+      "number": 113,
+      "name": "Witchmon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Witchmon.jpg"
+    },
+    "Gaogamon": {
+      "number": 114,
+      "name": "Gaogamon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Gaogamon.jpg"
+    },
+    "Gawappamon": {
+      "number": 115,
+      "name": "Gawappamon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Gawappamon.jpg"
+    },
+    "Kiwimon": {
+      "number": 116,
+      "name": "Kiwimon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Kiwimon.jpg"
+    },
+    "Kyubimon": {
+      "number": 117,
+      "name": "Kyubimon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Kyubimon.jpg"
+    },
+    "Clockmon": {
+      "number": 118,
+      "name": "Clockmon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Clockmon.jpg"
+    },
+    "Centalmon": {
+      "number": 119,
+      "name": "Centalmon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Centalmon.jpg"
+    },
+    "Sunflowmon": {
+      "number": 120,
+      "name": "Sunflowmon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Sunflowmon.jpg"
+    },
+    "Seadramon": {
+      "number": 121,
+      "name": "Seadramon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Seadramon.jpg"
+    },
+    "Coelamon": {
+      "number": 122,
+      "name": "Coelamon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Coelamon.jpg"
+    },
+    "Shellmon": {
+      "number": 123,
+      "name": "Shellmon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Shellmon.jpg"
+    },
+    "Starmon": {
+      "number": 124,
+      "name": "Starmon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Starmon.jpg"
+    },
+    "Tankmon": {
+      "number": 125,
+      "name": "Tankmon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Tankmon.jpg"
+    },
+    "Tuchidarumon": {
+      "number": 126,
+      "name": "Tuchidarumon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Tuchidarumon.jpg"
+    },
+    "Dinohumon": {
+      "number": 127,
+      "name": "Dinohumon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Dinohumon.jpg"
+    },
+    "Tyranomon": {
+      "number": 128,
+      "name": "Tyranomon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Tyranomon.jpg"
+    },
+    "Turuiemon": {
+      "number": 129,
+      "name": "Turuiemon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Turuiemon.jpg"
+    },
+    "Togemon": {
+      "number": 130,
+      "name": "Togemon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Togemon.jpg"
+    },
+    "Drimogemon": {
+      "number": 131,
+      "name": "Drimogemon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Drimogemon.jpg"
+    },
+    "Dorugamon": {
+      "number": 132,
+      "name": "Dorugamon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Dorugamon.jpg"
+    },
+    "Bao Hackmon": {
+      "number": 133,
+      "name": "Bao Hackmon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Bao_Hackmon.jpg"
+    },
+    "Blimpmon": {
+      "number": 134,
+      "name": "Blimpmon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Blimpmon.jpg"
+    },
+    "Meramon": {
+      "number": 135,
+      "name": "Meramon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Meramon.jpg"
+    },
+    "Monochromon": {
+      "number": 136,
+      "name": "Monochromon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Monochromon.jpg"
+    },
+    "Lekismon": {
+      "number": 137,
+      "name": "Lekismon",
+      "stage": "IV",
+      "attribute": "Data",
+      "image": "Lekismon.jpg"
+    },
+    "Ice Devimon": {
+      "number": 138,
+      "name": "Ice Devimon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Ice_Devimon.jpg"
+    },
+    "Wendimon": {
+      "number": 139,
+      "name": "Wendimon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Wendimon.jpg"
+    },
+    "Woodmon": {
+      "number": 140,
+      "name": "Woodmon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Woodmon.jpg"
+    },
+    "Orgemon": {
+      "number": 141,
+      "name": "Orgemon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Orgemon.jpg"
+    },
+    "Octmon": {
+      "number": 142,
+      "name": "Octmon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Octmon.jpg"
+    },
+    "Guardromon": {
+      "number": 143,
+      "name": "Guardromon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Guardromon.jpg"
+    },
+    "Karatuki Numemon": {
+      "number": 144,
+      "name": "Karatuki Numemon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Karatuki_Numemon.jpg"
+    },
+    "Growmon": {
+      "number": 145,
+      "name": "Growmon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Growmon.jpg"
+    },
+    "Kuwagamon": {
+      "number": 146,
+      "name": "Kuwagamon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Kuwagamon.jpg"
+    },
+    "Gekomon": {
+      "number": 147,
+      "name": "Gekomon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Gekomon.jpg"
+    },
+    "Geremon": {
+      "number": 148,
+      "name": "Geremon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Geremon.jpg"
+    },
+    "Coredramon (Green)": {
+      "number": 149,
+      "name": "Coredramon (Green)",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Coredramon__Green_.jpg"
+    },
+    "Gold Numemon": {
+      "number": 150,
+      "name": "Gold Numemon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Gold_Numemon.jpg"
+    },
+    "Golemon": {
+      "number": 151,
+      "name": "Golemon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Golemon.jpg"
+    },
+    "Cyclomon": {
+      "number": 152,
+      "name": "Cyclomon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Cyclomon.jpg"
+    },
+    "Sangloupmon": {
+      "number": 153,
+      "name": "Sangloupmon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Sangloupmon.jpg"
+    },
+    "Scumon": {
+      "number": 154,
+      "name": "Scumon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Scumon.jpg"
+    },
+    "Tuskmon": {
+      "number": 155,
+      "name": "Tuskmon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Tuskmon.jpg"
+    },
+    "Devimon": {
+      "number": 156,
+      "name": "Devimon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Devimon.jpg"
+    },
+    "Deltamon": {
+      "number": 157,
+      "name": "Deltamon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Deltamon.jpg"
+    },
+    "Dokugumon": {
+      "number": 158,
+      "name": "Dokugumon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Dokugumon.jpg"
+    },
+    "Nanimon": {
+      "number": 159,
+      "name": "Nanimon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Nanimon.jpg"
+    },
+    "Numemon": {
+      "number": 160,
+      "name": "Numemon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Numemon.jpg"
+    },
+    "Bakemon": {
+      "number": 161,
+      "name": "Bakemon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Bakemon.jpg"
+    },
+    "Hyougamon": {
+      "number": 162,
+      "name": "Hyougamon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Hyougamon.jpg"
+    },
+    "Fugamon": {
+      "number": 163,
+      "name": "Fugamon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Fugamon.jpg"
+    },
+    "Flymon": {
+      "number": 164,
+      "name": "Flymon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Flymon.jpg"
+    },
+    "Platinum Scumon": {
+      "number": 165,
+      "name": "Platinum Scumon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Platinum_Scumon.jpg"
+    },
+    "Black Tailmon": {
+      "number": 166,
+      "name": "Black Tailmon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Black_Tailmon.jpg"
+    },
+    "Vegimon": {
+      "number": 167,
+      "name": "Vegimon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Vegimon.jpg"
+    },
+    "Minotaurmon": {
+      "number": 168,
+      "name": "Minotaurmon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Minotaurmon.jpg"
+    },
+    "Musyamon": {
+      "number": 169,
+      "name": "Musyamon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Musyamon.jpg"
+    },
+    "Mechanorimon": {
+      "number": 170,
+      "name": "Mechanorimon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Mechanorimon.jpg"
+    },
+    "Raremon": {
+      "number": 171,
+      "name": "Raremon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Raremon.jpg"
+    },
+    "Waspmon": {
+      "number": 172,
+      "name": "Waspmon",
+      "stage": "IV",
+      "attribute": "Virus",
+      "image": "Waspmon.jpg"
+    },
+    "Aquilamon": {
+      "number": 173,
+      "name": "Aquilamon",
+      "stage": "IV",
+      "attribute": "Free",
+      "image": "Aquilamon.jpg"
+    },
+    "Ankylomon": {
+      "number": 174,
+      "name": "Ankylomon",
+      "stage": "IV",
+      "attribute": "Free",
+      "image": "Ankylomon.jpg"
+    },
+    "Xv-Mon": {
+      "number": 175,
+      "name": "Xv-Mon",
+      "stage": "IV",
+      "attribute": "Free",
+      "image": "Xv-Mon.jpg"
+    },
+    "Guardromon (Gold)": {
+      "number": 176,
+      "name": "Guardromon (Gold)",
+      "stage": "IV",
+      "attribute": "Free",
+      "image": "Guardromon__Gold_.jpg"
+    },
+    "Stingmon": {
+      "number": 177,
+      "name": "Stingmon",
+      "stage": "IV",
+      "attribute": "Free",
+      "image": "Stingmon.jpg"
+    },
+    "Chrysalimon": {
+      "number": 178,
+      "name": "Chrysalimon",
+      "stage": "IV",
+      "attribute": "Unknown",
+      "image": "Chrysalimon.jpg"
+    },
+    "Submarimon": {
+      "number": 179,
+      "name": "Submarimon",
+      "stage": "Armor",
+      "attribute": "Free",
+      "image": "Submarimon.jpg"
+    },
+    "Shurimon": {
+      "number": 180,
+      "name": "Shurimon",
+      "stage": "Armor",
+      "attribute": "Free",
+      "image": "Shurimon.jpg"
+    },
+    "Digmon": {
+      "number": 181,
+      "name": "Digmon",
+      "stage": "Armor",
+      "attribute": "Free",
+      "image": "Digmon.jpg"
+    },
+    "Nefertimon": {
+      "number": 182,
+      "name": "Nefertimon",
+      "stage": "Armor",
+      "attribute": "Free",
+      "image": "Nefertimon.jpg"
+    },
+    "Fladramon": {
+      "number": 183,
+      "name": "Fladramon",
+      "stage": "Armor",
+      "attribute": "Free",
+      "image": "Fladramon.jpg"
+    },
+    "Pegasmon": {
+      "number": 184,
+      "name": "Pegasmon",
+      "stage": "Armor",
+      "attribute": "Free",
+      "image": "Pegasmon.jpg"
+    },
+    "Holsmon": {
+      "number": 185,
+      "name": "Holsmon",
+      "stage": "Armor",
+      "attribute": "Free",
+      "image": "Holsmon.jpg"
+    },
+    "Lighdramon": {
+      "number": 186,
+      "name": "Lighdramon",
+      "stage": "Armor",
+      "attribute": "Free",
+      "image": "Lighdramon.jpg"
+    },
+    "Agnimon": {
+      "number": 187,
+      "name": "Agnimon",
+      "stage": "Human Hybrid",
+      "attribute": "Variable",
+      "image": "Agnimon.jpg"
+    },
+    "Wolfmon": {
+      "number": 188,
+      "name": "Wolfmon",
+      "stage": "Human Hybrid",
+      "attribute": "Variable",
+      "image": "Wolfmon.jpg"
+    },
+    "Ranamon": {
+      "number": 189,
+      "name": "Ranamon",
+      "stage": "Human Hybrid",
+      "attribute": "Variable",
+      "image": "Ranamon.jpg"
+    },
+    "Vritramon": {
+      "number": 190,
+      "name": "Vritramon",
+      "stage": "Beast Hybrid",
+      "attribute": "Variable",
+      "image": "Vritramon.jpg"
+    },
+    "Calamaramon": {
+      "number": 191,
+      "name": "Calamaramon",
+      "stage": "Beast Hybrid",
+      "attribute": "Variable",
+      "image": "Calamaramon.jpg"
+    },
+    "Garummon": {
+      "number": 192,
+      "name": "Garummon",
+      "stage": "Beast Hybrid",
+      "attribute": "Variable",
+      "image": "Garummon.jpg"
+    },
+    "Aegiochusmon": {
+      "number": 193,
+      "name": "Aegiochusmon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Aegiochusmon: Green": {
+      "number": 194,
+      "name": "Aegiochusmon: Green",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Aegiochusmon: Dark": {
+      "number": 195,
+      "name": "Aegiochusmon: Dark",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Aegiochusmon: Blue": {
+      "number": 196,
+      "name": "Aegiochusmon: Blue",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Aegiochusmon: Holy": {
+      "number": 197,
+      "name": "Aegiochusmon: Holy",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Atlur Kabuterimon": {
+      "number": 198,
+      "name": "Atlur Kabuterimon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Atlur_Kabuterimon.jpg"
+    },
+    "Andromon": {
+      "number": 199,
+      "name": "Andromon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Andromon.jpg"
+    },
+    "Wingdramon": {
+      "number": 200,
+      "name": "Wingdramon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Wingdramon.jpg"
+    },
+    "Aero V-Dramon": {
+      "number": 201,
+      "name": "Aero V-Dramon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Aero_V-Dramon.jpg"
+    },
+    "Ex-Tyranomon": {
+      "number": 202,
+      "name": "Ex-Tyranomon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Ex-Tyranomon.jpg"
+    },
+    "Angewomon": {
+      "number": 203,
+      "name": "Angewomon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Angewomon.jpg"
+    },
+    "Garudamon": {
+      "number": 204,
+      "name": "Garudamon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Garudamon.jpg"
+    },
+    "Grappu Leomon": {
+      "number": 205,
+      "name": "Grappu Leomon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Grappu_Leomon.jpg"
+    },
+    "Grademon": {
+      "number": 206,
+      "name": "Grademon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Grademon.jpg"
+    },
+    "Great Gryzmon": {
+      "number": 207,
+      "name": "Great Gryzmon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Great_Gryzmon.jpg"
+    },
+    "Cerberumon": {
+      "number": 208,
+      "name": "Cerberumon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Cerberumon.jpg"
+    },
+    "Cerberumon: Werewolf Mode": {
+      "number": 209,
+      "name": "Cerberumon: Werewolf Mode",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Cerberumon__Werewolf_Mode.jpg"
+    },
+    "Cyberdramon": {
+      "number": 210,
+      "name": "Cyberdramon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Cyberdramon.jpg"
+    },
+    "Jewelbeemon": {
+      "number": 211,
+      "name": "Jewelbeemon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Jewelbeemon.jpg"
+    },
+    "Zudomon": {
+      "number": 212,
+      "name": "Zudomon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Zudomon.jpg"
+    },
+    "Tyilinmon": {
+      "number": 213,
+      "name": "Tyilinmon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Tyilinmon.jpg"
+    },
+    "Duramon": {
+      "number": 214,
+      "name": "Duramon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Duramon.jpg"
+    },
+    "Parrotmon": {
+      "number": 215,
+      "name": "Parrotmon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Parrotmon.jpg"
+    },
+    "Panjyamon": {
+      "number": 216,
+      "name": "Panjyamon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Panjyamon.jpg"
+    },
+    "Hisyaryumon": {
+      "number": 217,
+      "name": "Hisyaryumon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Hisyaryumon.jpg"
+    },
+    "Butenmon": {
+      "number": 218,
+      "name": "Butenmon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Butenmon.jpg"
+    },
+    "Flaremon": {
+      "number": 219,
+      "name": "Flaremon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Flaremon.jpg"
+    },
+    "Whamon": {
+      "number": 220,
+      "name": "Whamon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Whamon.jpg"
+    },
+    "Holy Angemon": {
+      "number": 221,
+      "name": "Holy Angemon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Holy_Angemon.jpg"
+    },
+    "Mammon": {
+      "number": 222,
+      "name": "Mammon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Mammon.jpg"
+    },
+    "Metal Greymon": {
+      "number": 223,
+      "name": "Metal Greymon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Metal_Greymon.jpg"
+    },
+    "Monzaemon": {
+      "number": 224,
+      "name": "Monzaemon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Monzaemon.jpg"
+    },
+    "Yatagaramon": {
+      "number": 225,
+      "name": "Yatagaramon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Yatagaramon.jpg"
+    },
+    "Rize Greymon": {
+      "number": 226,
+      "name": "Rize Greymon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Rize_Greymon.jpg"
+    },
+    "Rapidmon Perfect": {
+      "number": 227,
+      "name": "Rapidmon Perfect",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Rapidmon_Perfect.jpg"
+    },
+    "Loader Leomon": {
+      "number": 228,
+      "name": "Loader Leomon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Loader_Leomon.jpg"
+    },
+    "Were Garurumon": {
+      "number": 229,
+      "name": "Were Garurumon",
+      "stage": "V",
+      "attribute": "Vaccine",
+      "image": "Were_Garurumon.jpg"
+    },
+    "Anomalocarimon": {
+      "number": 230,
+      "name": "Anomalocarimon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Anomalocarimon.jpg"
+    },
+    "Enbarrmon": {
+      "number": 231,
+      "name": "Enbarrmon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Enbarrmon.jpg"
+    },
+    "Andiramon": {
+      "number": 232,
+      "name": "Andiramon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Andiramon.jpg"
+    },
+    "Insekimon": {
+      "number": 233,
+      "name": "Insekimon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Insekimon.jpg"
+    },
+    "Omega Shoutmon": {
+      "number": 234,
+      "name": "Omega Shoutmon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Omega_Shoutmon.jpg"
+    },
+    "Chimairamon": {
+      "number": 235,
+      "name": "Chimairamon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Chimairamon.jpg"
+    },
+    "Catch Mamemon": {
+      "number": 236,
+      "name": "Catch Mamemon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Catch_Mamemon.jpg"
+    },
+    "Crescemon": {
+      "number": 237,
+      "name": "Crescemon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Crescemon.jpg"
+    },
+    "Super Starmon": {
+      "number": 238,
+      "name": "Super Starmon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Super_Starmon.jpg"
+    },
+    "Skull Baluchimon": {
+      "number": 239,
+      "name": "Skull Baluchimon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Skull_Baluchimon.jpg"
+    },
+    "Savior Hackmon": {
+      "number": 240,
+      "name": "Savior Hackmon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Savior_Hackmon.jpg"
+    },
+    "Sirenmon": {
+      "number": 241,
+      "name": "Sirenmon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Sirenmon.jpg"
+    },
+    "Taomon": {
+      "number": 242,
+      "name": "Taomon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Taomon.jpg"
+    },
+    "Digitamamon": {
+      "number": 243,
+      "name": "Digitamamon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Digitamamon.jpg"
+    },
+    "Death Meramon": {
+      "number": 244,
+      "name": "Death Meramon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Death_Meramon.jpg"
+    },
+    "Delumon": {
+      "number": 245,
+      "name": "Delumon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Delumon.jpg"
+    },
+    "Triceramon": {
+      "number": 246,
+      "name": "Triceramon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Triceramon.jpg"
+    },
+    "Doruguremon": {
+      "number": 247,
+      "name": "Doruguremon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Doruguremon.jpg"
+    },
+    "Knightmon": {
+      "number": 248,
+      "name": "Knightmon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Knightmon.jpg"
+    },
+    "Hangyomon": {
+      "number": 249,
+      "name": "Hangyomon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Hangyomon.jpg"
+    },
+    "Pandamon": {
+      "number": 250,
+      "name": "Pandamon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Pandamon.jpg"
+    },
+    "Pumpmon": {
+      "number": 251,
+      "name": "Pumpmon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Pumpmon.jpg"
+    },
+    "Big Mamemon": {
+      "number": 252,
+      "name": "Big Mamemon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Big_Mamemon.jpg"
+    },
+    "Piccolomon": {
+      "number": 253,
+      "name": "Piccolomon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Piccolomon.jpg"
+    },
+    "Hippogriffomon": {
+      "number": 254,
+      "name": "Hippogriffomon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Hippogriffomon.jpg"
+    },
+    "Brachiomon": {
+      "number": 255,
+      "name": "Brachiomon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Brachiomon.jpg"
+    },
+    "Volcamon": {
+      "number": 256,
+      "name": "Volcamon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Volcamon.jpg"
+    },
+    "Master Blimpmon": {
+      "number": 257,
+      "name": "Master Blimpmon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Master_Blimpmon.jpg"
+    },
+    "Mach Gaogamon": {
+      "number": 258,
+      "name": "Mach Gaogamon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Mach_Gaogamon.jpg"
+    },
+    "Mamemon": {
+      "number": 259,
+      "name": "Mamemon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Mamemon.jpg"
+    },
+    "Mega Seadramon": {
+      "number": 260,
+      "name": "Mega Seadramon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Mega_Seadramon.jpg"
+    },
+    "Metal Mamemon": {
+      "number": 261,
+      "name": "Metal Mamemon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Metal_Mamemon.jpg"
+    },
+    "Lilamon": {
+      "number": 262,
+      "name": "Lilamon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Lilamon.jpg"
+    },
+    "Lilimon": {
+      "number": 263,
+      "name": "Lilimon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Lilimon.jpg"
+    },
+    "Locomon": {
+      "number": 264,
+      "name": "Locomon",
+      "stage": "V",
+      "attribute": "Data",
+      "image": "Locomon.jpg"
+    },
+    "Astamon": {
+      "number": 265,
+      "name": "Astamon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Astamon.jpg"
+    },
+    "Archnemon": {
+      "number": 266,
+      "name": "Archnemon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Archnemon.jpg"
+    },
+    "Vamdemon": {
+      "number": 267,
+      "name": "Vamdemon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Vamdemon.jpg"
+    },
+    "Etemon": {
+      "number": 268,
+      "name": "Etemon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Etemon.jpg"
+    },
+    "Okuwamon": {
+      "number": 269,
+      "name": "Okuwamon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Okuwamon.jpg"
+    },
+    "Orochimon": {
+      "number": 270,
+      "name": "Orochimon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Orochimon.jpg"
+    },
+    "Gerbemon": {
+      "number": 271,
+      "name": "Gerbemon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Gerbemon.jpg"
+    },
+    "Gigadramon": {
+      "number": 272,
+      "name": "Gigadramon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Gigadramon.jpg"
+    },
+    "Cannonbeemon": {
+      "number": 273,
+      "name": "Cannonbeemon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Cannonbeemon.jpg"
+    },
+    "Groundramon": {
+      "number": 274,
+      "name": "Groundramon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Groundramon.jpg"
+    },
+    "Sharkmon": {
+      "number": 275,
+      "name": "Sharkmon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Sharkmon.jpg"
+    },
+    "Shawujinmon": {
+      "number": 276,
+      "name": "Shawujinmon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Shawujinmon.jpg"
+    },
+    "Jyureimon": {
+      "number": 277,
+      "name": "Jyureimon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Jyureimon.jpg"
+    },
+    "Skull Greymon": {
+      "number": 278,
+      "name": "Skull Greymon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Skull_Greymon.jpg"
+    },
+    "Skull Satamon": {
+      "number": 279,
+      "name": "Skull Satamon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Skull_Satamon.jpg"
+    },
+    "Skullseadramon": {
+      "number": 280,
+      "name": "Skullseadramon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Skullseadramon.jpg"
+    },
+    "Dark Super Starmon": {
+      "number": 281,
+      "name": "Dark Super Starmon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Dark_Super_Starmon.jpg"
+    },
+    "Dagomon": {
+      "number": 282,
+      "name": "Dagomon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Dagomon.jpg"
+    },
+    "Tankdramon": {
+      "number": 283,
+      "name": "Tankdramon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Tankdramon.jpg"
+    },
+    "Tonosama Gekomon": {
+      "number": 284,
+      "name": "Tonosama Gekomon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Tonosama_Gekomon.jpg"
+    },
+    "Nanomon": {
+      "number": 285,
+      "name": "Nanomon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Nanomon.jpg"
+    },
+    "Fantomon": {
+      "number": 286,
+      "name": "Fantomon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Fantomon.jpg"
+    },
+    "Black King Numemon": {
+      "number": 287,
+      "name": "Black King Numemon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Black_King_Numemon.jpg"
+    },
+    "Blue Meramon": {
+      "number": 288,
+      "name": "Blue Meramon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Blue_Meramon.jpg"
+    },
+    "Vademon": {
+      "number": 289,
+      "name": "Vademon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Vademon.jpg"
+    },
+    "Matadrmon": {
+      "number": 290,
+      "name": "Matadrmon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Matadrmon.jpg"
+    },
+    "Mummymon": {
+      "number": 291,
+      "name": "Mummymon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Mummymon.jpg"
+    },
+    "Mistymon": {
+      "number": 292,
+      "name": "Mistymon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Mistymon.jpg"
+    },
+    "Megadramon": {
+      "number": 293,
+      "name": "Megadramon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Megadramon.jpg"
+    },
+    "Megalo Growmon": {
+      "number": 294,
+      "name": "Megalo Growmon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Megalo_Growmon.jpg"
+    },
+    "Metal Tyranomon": {
+      "number": 295,
+      "name": "Metal Tyranomon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Metal_Tyranomon.jpg"
+    },
+    "Lucemon: Falldown Mode": {
+      "number": 296,
+      "name": "Lucemon: Falldown Mode",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Lucemon__Falldown_Mode.jpg"
+    },
+    "Lady Devimon": {
+      "number": 297,
+      "name": "Lady Devimon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Lady_Devimon.jpg"
+    },
+    "Wisemon": {
+      "number": 298,
+      "name": "Wisemon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Wisemon.jpg"
+    },
+    "Waru Seadramon": {
+      "number": 299,
+      "name": "Waru Seadramon",
+      "stage": "V",
+      "attribute": "Virus",
+      "image": "Waru_Seadramon.jpg"
+    },
+    "Shakkoumon": {
+      "number": 300,
+      "name": "Shakkoumon",
+      "stage": "V",
+      "attribute": "Free",
+      "image": "Shakkoumon.jpg"
+    },
+    "Silphymon": {
+      "number": 301,
+      "name": "Silphymon",
+      "stage": "V",
+      "attribute": "Free",
+      "image": "Silphymon.jpg"
+    },
+    "Dinobeemon": {
+      "number": 302,
+      "name": "Dinobeemon",
+      "stage": "V",
+      "attribute": "Free",
+      "image": "Dinobeemon.jpg"
+    },
+    "Paildramon": {
+      "number": 303,
+      "name": "Paildramon",
+      "stage": "V",
+      "attribute": "Free",
+      "image": "Paildramon.jpg"
+    },
+    "Infermon": {
+      "number": 304,
+      "name": "Infermon",
+      "stage": "V",
+      "attribute": "Unknown",
+      "image": "Infermon.jpg"
+    },
+    "Aldamon": {
+      "number": 305,
+      "name": "Aldamon",
+      "stage": "Fusion Hybrid",
+      "attribute": "Variable",
+      "image": "Aldamon.jpg"
+    },
+    "Beowolfmon": {
+      "number": 306,
+      "name": "Beowolfmon",
+      "stage": "Fusion Hybrid",
+      "attribute": "Variable",
+      "image": "Beowolfmon.jpg"
+    },
+    "Apollomon": {
+      "number": 307,
+      "name": "Apollomon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Alphamon": {
+      "number": 308,
+      "name": "Alphamon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Ulforce V-Dramon": {
+      "number": 309,
+      "name": "Ulforce V-Dramon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Valdurmon": {
+      "number": 310,
+      "name": "Valdurmon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Venusmon": {
+      "number": 311,
+      "name": "Venusmon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "War Greymon": {
+      "number": 312,
+      "name": "War Greymon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Ouryumon": {
+      "number": 313,
+      "name": "Ouryumon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Ofanimon": {
+      "number": 314,
+      "name": "Ofanimon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Clavis Angemon": {
+      "number": 315,
+      "name": "Clavis Angemon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Craniummon": {
+      "number": 316,
+      "name": "Craniummon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Crossmon": {
+      "number": 317,
+      "name": "Crossmon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Chronomon": {
+      "number": 318,
+      "name": "Chronomon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Cherubimon (Vice)": {
+      "number": 319,
+      "name": "Cherubimon (Vice)",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Cherubimon (Virtue)": {
+      "number": 320,
+      "name": "Cherubimon (Virtue)",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Goddramon": {
+      "number": 321,
+      "name": "Goddramon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Shine Greymon": {
+      "number": 322,
+      "name": "Shine Greymon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Justimon": {
+      "number": 323,
+      "name": "Justimon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Skull Mammon": {
+      "number": 324,
+      "name": "Skull Mammon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Slash Angemon": {
+      "number": 325,
+      "name": "Slash Angemon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Sleipmon": {
+      "number": 326,
+      "name": "Sleipmon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Slayerdramon": {
+      "number": 327,
+      "name": "Slayerdramon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Seraphimon": {
+      "number": 328,
+      "name": "Seraphimon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Saint Galgomon": {
+      "number": 329,
+      "name": "Saint Galgomon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Durandamon": {
+      "number": 330,
+      "name": "Durandamon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Neptunemon": {
+      "number": 331,
+      "name": "Neptunemon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Hi Andromon": {
+      "number": 332,
+      "name": "Hi Andromon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Bancho Leomon": {
+      "number": 333,
+      "name": "Bancho Leomon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Herakle Kabuterimon": {
+      "number": 334,
+      "name": "Herakle Kabuterimon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Hououmon": {
+      "number": 335,
+      "name": "Hououmon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Holydramon": {
+      "number": 336,
+      "name": "Holydramon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Mastemon": {
+      "number": 337,
+      "name": "Mastemon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Marin Angemon": {
+      "number": 338,
+      "name": "Marin Angemon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Marsmon": {
+      "number": 339,
+      "name": "Marsmon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Jupitermon": {
+      "number": 340,
+      "name": "Jupitermon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Ravmon": {
+      "number": 341,
+      "name": "Ravmon",
+      "stage": "VI",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Ultimate Brachiomon": {
+      "number": 342,
+      "name": "Ultimate Brachiomon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Vulcanusmon": {
+      "number": 343,
+      "name": "Vulcanusmon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Gankoomon": {
+      "number": 344,
+      "name": "Gankoomon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Kuzuhamon": {
+      "number": 345,
+      "name": "Kuzuhamon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Grand Locomon": {
+      "number": 346,
+      "name": "Grand Locomon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Griffomon": {
+      "number": 347,
+      "name": "Griffomon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Ceresmon": {
+      "number": 348,
+      "name": "Ceresmon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Ceresmon Medium": {
+      "number": 349,
+      "name": "Ceresmon Medium",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Saber Leomon": {
+      "number": 350,
+      "name": "Saber Leomon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Sakuyamon": {
+      "number": 351,
+      "name": "Sakuyamon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Jesmon": {
+      "number": 352,
+      "name": "Jesmon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Jumbo Gamemon": {
+      "number": 353,
+      "name": "Jumbo Gamemon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Dianamon": {
+      "number": 354,
+      "name": "Dianamon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Dynasmon": {
+      "number": 355,
+      "name": "Dynasmon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Duftmon": {
+      "number": 356,
+      "name": "Duftmon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Duftmon: Leopard Mode": {
+      "number": 357,
+      "name": "Duftmon: Leopard Mode",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Dorugoramon": {
+      "number": 358,
+      "name": "Dorugoramon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Pile Volcamon": {
+      "number": 359,
+      "name": "Pile Volcamon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Prince Mamemon": {
+      "number": 360,
+      "name": "Prince Mamemon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": "Prince_Mamemon.jpg"
+    },
+    "Plesiomon": {
+      "number": 361,
+      "name": "Plesiomon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Boltmon": {
+      "number": 362,
+      "name": "Boltmon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Mirage Gaogamon": {
+      "number": 363,
+      "name": "Mirage Gaogamon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Metal Garurumon": {
+      "number": 364,
+      "name": "Metal Garurumon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Metal Seadramon": {
+      "number": 365,
+      "name": "Metal Seadramon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Medieval Dukemon": {
+      "number": 366,
+      "name": "Medieval Dukemon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Rosemon": {
+      "number": 367,
+      "name": "Rosemon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Lotusmon": {
+      "number": 368,
+      "name": "Lotusmon",
+      "stage": "VI",
+      "attribute": "Data",
+      "image": null
+    },
+    "Avenge Kidmon": {
+      "number": 369,
+      "name": "Avenge Kidmon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Ebemon": {
+      "number": 370,
+      "name": "Ebemon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Venom Vamdemon": {
+      "number": 371,
+      "name": "Venom Vamdemon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Ancient Wisemon": {
+      "number": 372,
+      "name": "Ancient Wisemon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Gaioumon": {
+      "number": 373,
+      "name": "Gaioumon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Chaos Dukemon": {
+      "number": 374,
+      "name": "Chaos Dukemon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Chaosdramon": {
+      "number": 375,
+      "name": "Chaosdramon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": "Chaosdramon.jpg"
+    },
+    "Callismon": {
+      "number": 376,
+      "name": "Callismon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Gundramon": {
+      "number": 377,
+      "name": "Gundramon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "King Etemon": {
+      "number": 378,
+      "name": "King Etemon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Grand Dracumon": {
+      "number": 379,
+      "name": "Grand Dracumon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Chronomon Destroy": {
+      "number": 380,
+      "name": "Chronomon Destroy",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Zanbamon": {
+      "number": 381,
+      "name": "Zanbamon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Undead Plutomon": {
+      "number": 382,
+      "name": "Undead Plutomon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Darkdramon": {
+      "number": 383,
+      "name": "Darkdramon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Tiger Vespamon": {
+      "number": 384,
+      "name": "Tiger Vespamon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Titamon": {
+      "number": 385,
+      "name": "Titamon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Tyrant Kabuterimon": {
+      "number": 386,
+      "name": "Tyrant Kabuterimon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Demon": {
+      "number": 387,
+      "name": "Demon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Dukemon": {
+      "number": 388,
+      "name": "Dukemon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Bacchusmon": {
+      "number": 389,
+      "name": "Bacchusmon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Bacchusmon Drunk": {
+      "number": 390,
+      "name": "Bacchusmon Drunk",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Barbamon": {
+      "number": 391,
+      "name": "Barbamon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Piemon": {
+      "number": 392,
+      "name": "Piemon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Pinochimon": {
+      "number": 393,
+      "name": "Pinochimon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Pharaohmon": {
+      "number": 394,
+      "name": "Pharaohmon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Pukumon": {
+      "number": 395,
+      "name": "Pukumon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Platinum Numemon": {
+      "number": 396,
+      "name": "Platinum Numemon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Plutomon": {
+      "number": 397,
+      "name": "Plutomon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Breakdramon": {
+      "number": 398,
+      "name": "Breakdramon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Belial Vamdemon": {
+      "number": 399,
+      "name": "Belial Vamdemon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Beel Starmon": {
+      "number": 400,
+      "name": "Beel Starmon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Beelzebumon": {
+      "number": 401,
+      "name": "Beelzebumon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Belphemon: Sleep Mode": {
+      "number": 402,
+      "name": "Belphemon: Sleep Mode",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Magna Kidmon": {
+      "number": 403,
+      "name": "Magna Kidmon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Minervamon": {
+      "number": 404,
+      "name": "Minervamon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": "Minervamon.jpg"
+    },
+    "Millenniumon": {
+      "number": 405,
+      "name": "Millenniumon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Mugendramon": {
+      "number": 406,
+      "name": "Mugendramon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Megidramon": {
+      "number": 407,
+      "name": "Megidramon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Metal Etemon": {
+      "number": 408,
+      "name": "Metal Etemon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Mercurymon": {
+      "number": 409,
+      "name": "Mercurymon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Junomon": {
+      "number": 410,
+      "name": "Junomon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Junomon: Hysteric Mode": {
+      "number": 411,
+      "name": "Junomon: Hysteric Mode",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Rust Tyranomon": {
+      "number": 412,
+      "name": "Rust Tyranomon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Leviamon": {
+      "number": 413,
+      "name": "Leviamon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Lilithmon": {
+      "number": 414,
+      "name": "Lilithmon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Lord Knightmon": {
+      "number": 415,
+      "name": "Lord Knightmon",
+      "stage": "VI",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Imperialdramon: Dragon Mode": {
+      "number": 416,
+      "name": "Imperialdramon: Dragon Mode",
+      "stage": "VI",
+      "attribute": "Free",
+      "image": null
+    },
+    "Imperialdramon: Fighter Mode": {
+      "number": 417,
+      "name": "Imperialdramon: Fighter Mode",
+      "stage": "VI",
+      "attribute": "Free",
+      "image": null
+    },
+    "Vikemon": {
+      "number": 418,
+      "name": "Vikemon",
+      "stage": "VI",
+      "attribute": "Free",
+      "image": null
+    },
+    "Valkyrimon": {
+      "number": 419,
+      "name": "Valkyrimon",
+      "stage": "VI",
+      "attribute": "Free",
+      "image": null
+    },
+    "Gran Kuwagamon": {
+      "number": 420,
+      "name": "Gran Kuwagamon",
+      "stage": "VI",
+      "attribute": "Free",
+      "image": null
+    },
+    "Diablomon": {
+      "number": 421,
+      "name": "Diablomon",
+      "stage": "VI",
+      "attribute": "Unknown",
+      "image": null
+    },
+    "Rapidmon Armor": {
+      "number": 422,
+      "name": "Rapidmon Armor",
+      "stage": "Golden Armor",
+      "attribute": "Vaccine",
+      "image": "Rapidmon_Armor.jpg"
+    },
+    "Magnamon": {
+      "number": 423,
+      "name": "Magnamon",
+      "stage": "Golden Armor",
+      "attribute": "Free",
+      "image": "Magnamon.jpg"
+    },
+    "Kaiser Greymon": {
+      "number": 424,
+      "name": "Kaiser Greymon",
+      "stage": "Transcendent Hybrid",
+      "attribute": "Variable",
+      "image": null
+    },
+    "Magna Garurumon": {
+      "number": 425,
+      "name": "Magna Garurumon",
+      "stage": "Transcendent Hybrid",
+      "attribute": "Variable",
+      "image": null
+    },
+    "Magna Garurumon: Separation": {
+      "number": 426,
+      "name": "Magna Garurumon: Separation",
+      "stage": "Transcendent Hybrid",
+      "attribute": "Variable",
+      "image": null
+    },
+    "Alphamon: Ouryuken": {
+      "number": 427,
+      "name": "Alphamon: Ouryuken",
+      "stage": "VI+",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Enbarrmon Craniummon": {
+      "number": 428,
+      "name": "Enbarrmon Craniummon",
+      "stage": "VI+",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Imperialdramon: Paladin Mode": {
+      "number": 429,
+      "name": "Imperialdramon: Paladin Mode",
+      "stage": "VI+",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Omegamon": {
+      "number": 430,
+      "name": "Omegamon",
+      "stage": "VI+",
+      "attribute": "Vaccine",
+      "image": "Omegamon.jpg"
+    },
+    "Omegamon Zwart": {
+      "number": 431,
+      "name": "Omegamon Zwart",
+      "stage": "VI+",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Chaosmon": {
+      "number": 432,
+      "name": "Chaosmon",
+      "stage": "VI+",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Chaosmon: Valdur Arm": {
+      "number": 433,
+      "name": "Chaosmon: Valdur Arm",
+      "stage": "VI+",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Grace Novamon": {
+      "number": 434,
+      "name": "Grace Novamon",
+      "stage": "VI+",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Shine Greymon: Burst Mode": {
+      "number": 435,
+      "name": "Shine Greymon: Burst Mode",
+      "stage": "VI+",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Susanoomon": {
+      "number": 436,
+      "name": "Susanoomon",
+      "stage": "VI+",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Jupitermon: Wrath Mode": {
+      "number": 437,
+      "name": "Jupitermon: Wrath Mode",
+      "stage": "VI+",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Ravmon: Burst Mode": {
+      "number": 438,
+      "name": "Ravmon: Burst Mode",
+      "stage": "VI+",
+      "attribute": "Vaccine",
+      "image": null
+    },
+    "Examon": {
+      "number": 439,
+      "name": "Examon",
+      "stage": "VI+",
+      "attribute": "Data",
+      "image": null
+    },
+    "Mirage Gaogamon: Burst Mode": {
+      "number": 440,
+      "name": "Mirage Gaogamon: Burst Mode",
+      "stage": "VI+",
+      "attribute": "Data",
+      "image": null
+    },
+    "Rosemon: Burst Mode": {
+      "number": 441,
+      "name": "Rosemon: Burst Mode",
+      "stage": "VI+",
+      "attribute": "Data",
+      "image": null
+    },
+    "Skull Baluchimon Titamon": {
+      "number": 442,
+      "name": "Skull Baluchimon Titamon",
+      "stage": "VI+",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Dukemon: Crimson Mode": {
+      "number": 443,
+      "name": "Dukemon: Crimson Mode",
+      "stage": "VI+",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Beelzebumon: Blast Mode": {
+      "number": 444,
+      "name": "Beelzebumon: Blast Mode",
+      "stage": "VI+",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Belphemon: Rage Mode": {
+      "number": 445,
+      "name": "Belphemon: Rage Mode",
+      "stage": "VI+",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Mervamon": {
+      "number": 446,
+      "name": "Mervamon",
+      "stage": "VI+",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Lucemon: Satan Mode": {
+      "number": 447,
+      "name": "Lucemon: Satan Mode",
+      "stage": "VI+",
+      "attribute": "Virus",
+      "image": null
+    },
+    "Armagemon": {
+      "number": 448,
+      "name": "Armagemon",
+      "stage": "VI+",
+      "attribute": "Unknown",
+      "image": null
+    },
+    "Agumon -Yuki No Kizuna-": {
+      "number": 449,
+      "name": "Agumon -Yuki No Kizuna-",
+      "stage": "VI+",
+      "attribute": "Unknown",
+      "image": "Agumon_-Yuki_No_Kizuna-.jpg"
+    },
+    "Apocalymon": {
+      "number": 450,
+      "name": "Apocalymon",
+      "stage": "VI+",
+      "attribute": "Unknown",
+      "image": null
+    },
+    "Gabumon -Yujo No Kizuna-": {
+      "number": 451,
+      "name": "Gabumon -Yujo No Kizuna-",
+      "stage": "VI+",
+      "attribute": "Unknown",
+      "image": null
+    }
+  },
+  "evolutions": {
+    "Kuramon": [
+      "Pagumon",
+      "Tsumemon"
+    ],
+    "Choromon": [
+      "Caprimon"
+    ],
+    "Dodomon": [
+      "Wanyamon",
+      "Dorimon"
+    ],
+    "Bubbmon": [
+      "Mochimon",
+      "Pyocomon",
+      "Tanemon"
+    ],
+    "Punimon": [
+      "Tunomon",
+      "Nyaromon"
+    ],
+    "Botamon": [
+      "Koromon"
+    ],
+    "Poyomon": [
+      "Pukamon",
+      "Tokomon"
+    ],
+    "Caprimon": [
+      "Hagurumon",
+      "Kokuwamon",
+      "Toy Agumon",
+      "Solarmon"
+    ],
+    "Koromon": [
+      "Agumon",
+      "Guilmon",
+      "Dracomon",
+      "Kotemon",
+      "Betamon",
+      "Shoutmon"
+    ],
+    "Tanemon": [
+      "Funbeemon",
+      "Lalamon",
+      "Palmon",
+      "Mushmon",
+      "Floramon"
+    ],
+    "Tunomon": [
+      "Goburimon",
+      "V-Mon",
+      "Gabumon",
+      "Ryudamon",
+      "Elecmon",
+      "Zubamon"
+    ],
+    "Tsumemon": [
+      "Dracumon",
+      "Shamamon",
+      "Keramon"
+    ],
+    "Tokomon": [
+      "Patamon",
+      "Coronamon",
+      "Terriermon",
+      "Armadimon",
+      "Lucemon"
+    ],
+    "Dorimon": [
+      "Dorumon",
+      "Monodramon",
+      "Snow Goburimon",
+      "Lopmon"
+    ],
+    "Nyaromon": [
+      "Lunamon",
+      "Kudamon",
+      "Plotmon",
+      "Hackmon"
+    ],
+    "Pagumon": [
+      "Impmon",
+      "Pico Devimon",
+      "Gazimon",
+      "Otamamon"
+    ],
+    "Pyocomon": [
+      "Piyomon",
+      "Penmon",
+      "Falcomon",
+      "Hawkmon",
+      "Hyokomon",
+      "Muchomon"
+    ],
+    "Pukamon": [
+      "Kamemon",
+      "Ganimon",
+      "Gomamon",
+      "Gizamon",
+      "Shakomon"
+    ],
+    "Mochimon": [
+      "Tyumon",
+      "Tentomon",
+      "Wormmon",
+      "Gottsumon"
+    ],
+    "Wanyamon": [
+      "Gaomon",
+      "Bakumon",
+      "Bearmon",
+      "Renamon"
+    ],
+    "Agumon": [
+      "Raptordramon",
+      "Geo Greymon",
+      "Numemon",
+      "Greymon",
+      "Coredramon (Green)",
+      "Agumon -Yuki No Kizuna-"
+    ],
+    "Kudamon": [
+      "Airdramon",
+      "Reppamon",
+      "Angemon",
+      "Ginryumon",
+      "Wolfmon",
+      "Sorcerimon"
+    ],
+    "Gomamon": [
+      "Mojyamon",
+      "Ikkakumon",
+      "Yukidarumon",
+      "Hyougamon",
+      "Ice Devimon"
+    ],
+    "Coronamon": [
+      "Firamon",
+      "Meramon",
+      "Growmon",
+      "Bao Hackmon",
+      "Birdramon",
+      "Agnimon"
+    ],
+    "Zubamon": [
+      "Musyamon",
+      "Buraimon",
+      "Tankmon",
+      "Zubaeagermon",
+      "Ankylomon",
+      "Guardromon (Gold)"
+    ],
+    "Solarmon": [
+      "Starmon",
+      "Gold Numemon",
+      "Meramon",
+      "Guardromon (Gold)"
+    ],
+    "Terriermon": [
+      "Mojyamon",
+      "Lekismon",
+      "Gawappamon",
+      "Gargomon",
+      "Rapidmon Armor"
+    ],
+    "Tentomon": [
+      "Kabuterimon",
+      "Sunflowmon",
+      "Kuwagamon",
+      "Waspmon",
+      "Snimon"
+    ],
+    "Toy Agumon": [
+      "Blimpmon",
+      "Revolmon",
+      "Raremon",
+      "Tankmon",
+      "Gargomon"
+    ],
+    "Bakumon": [
+      "Meramon",
+      "Garurumon",
+      "Bakemon",
+      "Unimon",
+      "Kyubimon"
+    ],
+    "Hyokomon": [
+      "Peckmon",
+      "Birdramon",
+      "Dinohumon",
+      "Buraimon"
+    ],
+    "Piyomon": [
+      "Aquilamon",
+      "Birdramon",
+      "Unimon",
+      "Wizarmon"
+    ],
+    "Falcomon": [
+      "Peckmon",
+      "Ginryumon",
+      "Kiwimon"
+    ],
+    "Plotmon": [
+      "Tailmon",
+      "Sangloupmon",
+      "Dobermon",
+      "Ikkakumon",
+      "V-Dramon",
+      "Drimogemon"
+    ],
+    "Bearmon": [
+      "Gryzmon",
+      "Gaogamon",
+      "Mojyamon",
+      "Leomon"
+    ],
+    "Penmon": [
+      "Peckmon",
+      "Buraimon",
+      "Kiwimon",
+      "Aquilamon"
+    ],
+    "Monodramon": [
+      "Strikedramon",
+      "Raptordramon",
+      "Deltamon",
+      "Chrysalimon",
+      "Cyclomon"
+    ],
+    "Ryudamon": [
+      "Reppamon",
+      "Coelamon",
+      "Ginryumon",
+      "Greymon",
+      "Monochromon"
+    ],
+    "Lucemon": [
+      "Lucemon: Falldown Mode"
+    ],
+    "Elecmon": [
+      "Aegiomon",
+      "Seadramon",
+      "Unimon",
+      "Kuwagamon",
+      "Gekomon"
+    ],
+    "Gaomon": [
+      "Strikedramon",
+      "Gaogamon",
+      "Leomon",
+      "Nanimon",
+      "Turuiemon"
+    ],
+    "Ganimon": [
+      "Gawappamon",
+      "Octmon",
+      "Shellmon",
+      "Raremon",
+      "Snimon",
+      "Coelamon"
+    ],
+    "Gabumon": [
+      "Garurumon",
+      "Ikkakumon",
+      "Drimogemon",
+      "Kyubimon",
+      "Geremon",
+      "Gabumon -Yujo No Kizuna-"
+    ],
+    "Kamemon": [
+      "Gawappamon",
+      "Octmon",
+      "Shellmon",
+      "Karatuki Numemon",
+      "Dinohumon",
+      "Sorcerimon"
+    ],
+    "Kokuwamon": [
+      "Centalmon",
+      "Kuwagamon",
+      "Clockmon",
+      "Waspmon",
+      "Mechanorimon"
+    ],
+    "Gottsumon": [
+      "Starmon",
+      "Guardromon",
+      "Golemon",
+      "Monochromon",
+      "Icemon",
+      "Tuchidarumon"
+    ],
+    "Kotemon": [
+      "Turuiemon",
+      "Musyamon",
+      "Revolmon",
+      "Dinohumon",
+      "Coredramon (Blue)"
+    ],
+    "Shoutmon": [
+      "Omega Shoutmon",
+      "Zubaeagermon",
+      "Gargomon",
+      "Guardromon (Gold)"
+    ],
+    "Dracomon": [
+      "Coredramon (Green)",
+      "Coredramon (Blue)",
+      "Deltamon",
+      "V-Dramon",
+      "Seadramon",
+      "Tyranomon"
+    ],
+    "Dorumon": [
+      "Raptordramon",
+      "Airdramon",
+      "Sangloupmon",
+      "Xv-Mon",
+      "Drimogemon",
+      "Dorugamon"
+    ],
+    "Patamon": [
+      "Angemon",
+      "Pegasmon",
+      "Unimon",
+      "Centalmon"
+    ],
+    "Hackmon": [
+      "Tailmon",
+      "Geo Greymon",
+      "Growmon",
+      "Bao Hackmon",
+      "Greymon"
+    ],
+    "Palmon": [
+      "Mojyamon",
+      "Vegimon",
+      "Togemon",
+      "Woodmon",
+      "Chrysalimon",
+      "Platinum Scumon"
+    ],
+    "Floramon": [
+      "Vegimon",
+      "Togemon",
+      "Woodmon",
+      "Sunflowmon",
+      "Kiwimon"
+    ],
+    "Muchomon": [
+      "Airdramon",
+      "Peckmon",
+      "Birdramon",
+      "Fugamon"
+    ],
+    "Lalamon": [
+      "Sunflowmon",
+      "Togemon",
+      "Revolmon",
+      "Tuchidarumon",
+      "Turuiemon"
+    ],
+    "Lunamon": [
+      "Lekismon",
+      "Garurumon",
+      "Yukidarumon",
+      "Hyougamon",
+      "Sorcerimon",
+      "Icemon"
+    ],
+    "Renamon": [
+      "Lekismon",
+      "Sunflowmon",
+      "Reppamon",
+      "Kyubimon"
+    ],
+    "Lopmon": [
+      "Gryzmon",
+      "Minotaurmon",
+      "Leomon",
+      "Turuiemon",
+      "Wendimon",
+      "Tuchidarumon"
+    ],
+    "Impmon": [
+      "Bakemon",
+      "Wizarmon",
+      "Clockmon",
+      "Sangloupmon",
+      "Devimon",
+      "Witchmon"
+    ],
+    "Otamamon": [
+      "Seadramon",
+      "Numemon",
+      "Gekomon",
+      "Karatuki Numemon",
+      "Platinum Scumon"
+    ],
+    "Gazimon": [
+      "Sangloupmon",
+      "Black Tailmon",
+      "Gaogamon",
+      "Bao Hackmon",
+      "Dobermon",
+      "Dorugamon"
+    ],
+    "Gizamon": [
+      "Cyclomon",
+      "Flymon",
+      "Zubaeagermon",
+      "Ankylomon",
+      "Geremon",
+      "Ranamon"
+    ],
+    "Guilmon": [
+      "Geo Greymon",
+      "Growmon",
+      "Xv-Mon",
+      "Tyranomon"
+    ],
+    "Goburimon": [
+      "Golemon",
+      "Wendimon",
+      "Deltamon",
+      "Tuskmon",
+      "Orgemon"
+    ],
+    "Shamamon": [
+      "Minotaurmon",
+      "Musyamon",
+      "Fugamon",
+      "Witchmon"
+    ],
+    "Shakomon": [
+      "Coelamon",
+      "Shellmon",
+      "Karatuki Numemon",
+      "Octmon",
+      "Raremon"
+    ],
+    "Snow Goburimon": [
+      "Tailmon",
+      "Monochromon",
+      "Yukidarumon",
+      "Hyougamon",
+      "Ice Devimon",
+      "Icemon"
+    ],
+    "Tyumon": [
+      "Black Tailmon",
+      "Scumon",
+      "Tailmon",
+      "Gekomon",
+      "Geremon",
+      "Platinum Scumon"
+    ],
+    "Dracumon": [
+      "Sangloupmon",
+      "Scumon",
+      "Wizarmon",
+      "Starmon"
+    ],
+    "Hagurumon": [
+      "Clockmon",
+      "Mechanorimon",
+      "Tankmon",
+      "Guardromon",
+      "Blimpmon"
+    ],
+    "Pico Devimon": [
+      "Bakemon",
+      "Ice Devimon",
+      "Devimon",
+      "Orgemon"
+    ],
+    "Funbeemon": [
+      "Waspmon",
+      "Flymon",
+      "Dokugumon",
+      "Stingmon",
+      "Gold Numemon",
+      "Kabuterimon"
+    ],
+    "Betamon": [
+      "Seadramon",
+      "Coelamon",
+      "Devimon",
+      "Numemon",
+      "Vegimon",
+      "Tuskmon"
+    ],
+    "Mushmon": [
+      "Scumon",
+      "Nanimon",
+      "Woodmon",
+      "Flymon"
+    ],
+    "Armadimon": [
+      "Digmon",
+      "Submarimon",
+      "Golemon",
+      "Ankylomon"
+    ],
+    "V-Mon": [
+      "Xv-Mon",
+      "V-Dramon",
+      "Lighdramon",
+      "Magnamon",
+      "Fladramon"
+    ],
+    "Hawkmon": [
+      "Firamon",
+      "Holsmon",
+      "Shurimon",
+      "Aquilamon"
+    ],
+    "Wormmon": [
+      "Stingmon",
+      "Dokugumon",
+      "Snimon"
+    ],
+    "Keramon": [
+      "Dokugumon",
+      "Wendimon",
+      "Octmon",
+      "Mechanorimon",
+      "Chrysalimon"
+    ],
+    "Aegiomon": [
+      "Aegiochusmon",
+      "Aegiochusmon: Dark",
+      "Aegiochusmon: Holy",
+      "Aegiochusmon: Blue",
+      "Aegiochusmon: Green"
+    ],
+    "Ikkakumon": [
+      "Whamon",
+      "Mega Seadramon",
+      "Zudomon",
+      "Skullseadramon"
+    ],
+    "Airdramon": [
+      "Hisyaryumon",
+      "Megadramon",
+      "Aero V-Dramon",
+      "Gigadramon"
+    ],
+    "Angemon": [
+      "Hippogriffomon",
+      "Holy Angemon",
+      "Sirenmon",
+      "Shakkoumon"
+    ],
+    "Kabuterimon": [
+      "Lilamon",
+      "Atlur Kabuterimon",
+      "Cannonbeemon",
+      "Chimairamon"
+    ],
+    "Gargomon": [
+      "Catch Mamemon",
+      "Mach Gaogamon",
+      "Rapidmon Perfect"
+    ],
+    "Garurumon": [
+      "Were Garurumon",
+      "Blue Meramon",
+      "Taomon",
+      "Chimairamon"
+    ],
+    "Ginryumon": [
+      "Hisyaryumon",
+      "Skull Greymon",
+      "Butenmon"
+    ],
+    "Gryzmon": [
+      "Were Garurumon",
+      "Grappu Leomon",
+      "Great Gryzmon"
+    ],
+    "Greymon": [
+      "Metal Greymon",
+      "Megadramon",
+      "Skull Greymon",
+      "Chimairamon"
+    ],
+    "Coredramon (Blue)": [
+      "Wingdramon",
+      "Aero V-Dramon",
+      "Gigadramon"
+    ],
+    "Geo Greymon": [
+      "Rize Greymon",
+      "Metal Tyranomon",
+      "Cyberdramon"
+    ],
+    "Strikedramon": [
+      "Cyberdramon",
+      "Savior Hackmon",
+      "Locomon"
+    ],
+    "Snimon": [
+      "Okuwamon",
+      "Fantomon",
+      "Archnemon",
+      "Jewelbeemon"
+    ],
+    "Zubaeagermon": [
+      "Grademon",
+      "Megalo Growmon",
+      "Duramon",
+      "Knightmon"
+    ],
+    "Sorcerimon": [
+      "Holy Angemon",
+      "Piccolomon",
+      "Wisemon"
+    ],
+    "Tailmon": [
+      "Nefertimon",
+      "Angewomon",
+      "Silphymon"
+    ],
+    "Dobermon": [
+      "Matadrmon",
+      "Dark Super Starmon",
+      "Cerberumon",
+      "Mummymon"
+    ],
+    "Birdramon": [
+      "Flaremon",
+      "Garudamon",
+      "Death Meramon",
+      "Parrotmon"
+    ],
+    "Firamon": [
+      "Flaremon",
+      "Savior Hackmon",
+      "Mistymon"
+    ],
+    "V-Dramon": [
+      "Wingdramon",
+      "Aero V-Dramon",
+      "Cyberdramon"
+    ],
+    "Buraimon": [
+      "Butenmon",
+      "Duramon",
+      "Garudamon"
+    ],
+    "Peckmon": [
+      "Tyilinmon",
+      "Vamdemon",
+      "Yatagaramon"
+    ],
+    "Mojyamon": [
+      "Zudomon",
+      "Piccolomon",
+      "Mistymon",
+      "Mammon"
+    ],
+    "Yukidarumon": [
+      "Crescemon",
+      "Angewomon",
+      "Panjyamon",
+      "Insekimon",
+      "Mammon"
+    ],
+    "Unimon": [
+      "Hippogriffomon",
+      "Holy Angemon",
+      "Tyilinmon"
+    ],
+    "Raptordramon": [
+      "Grademon",
+      "Gigadramon",
+      "Tankdramon"
+    ],
+    "Revolmon": [
+      "Pandamon",
+      "Super Starmon",
+      "Wisemon"
+    ],
+    "Leomon": [
+      "Flaremon",
+      "Grappu Leomon",
+      "Panjyamon",
+      "Loader Leomon"
+    ],
+    "Reppamon": [
+      "Tyilinmon",
+      "Mega Seadramon",
+      "Angewomon",
+      "Doruguremon"
+    ],
+    "Icemon": [
+      "Crescemon",
+      "Insekimon",
+      "Panjyamon"
+    ],
+    "Wizarmon": [
+      "Nanomon",
+      "Mistymon",
+      "Wisemon"
+    ],
+    "Witchmon": [
+      "Lady Devimon",
+      "Angewomon",
+      "Lilimon"
+    ],
+    "Gaogamon": [
+      "Mach Gaogamon",
+      "Savior Hackmon",
+      "Dark Super Starmon"
+    ],
+    "Gawappamon": [
+      "Shawujinmon",
+      "Hangyomon",
+      "Tonosama Gekomon"
+    ],
+    "Kiwimon": [
+      "Lilamon",
+      "Sirenmon",
+      "Delumon",
+      "Jyureimon"
+    ],
+    "Kyubimon": [
+      "Blue Meramon",
+      "Cerberumon",
+      "Taomon",
+      "Enbarrmon"
+    ],
+    "Clockmon": [
+      "Ex-Tyranomon",
+      "Andromon",
+      "Zudomon",
+      "Knightmon"
+    ],
+    "Centalmon": [
+      "Andromon",
+      "Nanomon",
+      "Rapidmon Perfect"
+    ],
+    "Sunflowmon": [
+      "Lilamon",
+      "Lilimon",
+      "Delumon",
+      "Pumpmon"
+    ],
+    "Seadramon": [
+      "Whamon",
+      "Mega Seadramon",
+      "Waru Seadramon",
+      "Hisyaryumon",
+      "Sharkmon",
+      "Skullseadramon"
+    ],
+    "Coelamon": [
+      "Waru Seadramon",
+      "Metal Tyranomon",
+      "Anomalocarimon",
+      "Hangyomon",
+      "Skullseadramon"
+    ],
+    "Shellmon": [
+      "Whamon",
+      "Piccolomon",
+      "Anomalocarimon"
+    ],
+    "Starmon": [
+      "Volcamon",
+      "Super Starmon",
+      "Dark Super Starmon",
+      "Mamemon"
+    ],
+    "Tankmon": [
+      "Big Mamemon",
+      "Locomon",
+      "Tankdramon"
+    ],
+    "Tuchidarumon": [
+      "Delumon",
+      "Gerbemon",
+      "Andiramon"
+    ],
+    "Dinohumon": [
+      "Shawujinmon",
+      "Grademon",
+      "Knightmon"
+    ],
+    "Tyranomon": [
+      "Ex-Tyranomon",
+      "Groundramon",
+      "Metal Greymon",
+      "Metal Tyranomon"
+    ],
+    "Turuiemon": [
+      "Matadrmon",
+      "Mach Gaogamon",
+      "Andiramon"
+    ],
+    "Togemon": [
+      "Lilimon",
+      "Jyureimon",
+      "Pumpmon"
+    ],
+    "Drimogemon": [
+      "Triceramon",
+      "Loader Leomon",
+      "Brachiomon"
+    ],
+    "Dorugamon": [
+      "Rize Greymon",
+      "Doruguremon",
+      "Great Gryzmon"
+    ],
+    "Bao Hackmon": [
+      "Rize Greymon",
+      "Savior Hackmon",
+      "Loader Leomon"
+    ],
+    "Blimpmon": [
+      "Locomon",
+      "Metal Mamemon",
+      "Master Blimpmon"
+    ],
+    "Meramon": [
+      "Big Mamemon",
+      "Blue Meramon",
+      "Death Meramon"
+    ],
+    "Monochromon": [
+      "Triceramon",
+      "Cerberumon",
+      "Mammon"
+    ],
+    "Lekismon": [
+      "Crescemon",
+      "Were Garurumon",
+      "Grappu Leomon"
+    ],
+    "Ice Devimon": [
+      "Crescemon",
+      "Lady Devimon",
+      "Panjyamon",
+      "Enbarrmon"
+    ],
+    "Wendimon": [
+      "Archnemon",
+      "Death Meramon",
+      "Andiramon"
+    ],
+    "Woodmon": [
+      "Jyureimon",
+      "Taomon",
+      "Pumpmon"
+    ],
+    "Orgemon": [
+      "Skull Satamon",
+      "Mummymon",
+      "Digitamamon"
+    ],
+    "Octmon": [
+      "Dagomon",
+      "Digitamamon",
+      "Hangyomon"
+    ],
+    "Guardromon": [
+      "Catch Mamemon",
+      "Locomon",
+      "Andromon"
+    ],
+    "Karatuki Numemon": [
+      "Orochimon",
+      "Waru Seadramon",
+      "Black King Numemon",
+      "Pandamon"
+    ],
+    "Growmon": [
+      "Megalo Growmon",
+      "Groundramon",
+      "Doruguremon"
+    ],
+    "Kuwagamon": [
+      "Jyureimon",
+      "Okuwamon",
+      "Anomalocarimon",
+      "Chimairamon"
+    ],
+    "Gekomon": [
+      "Sirenmon",
+      "Tonosama Gekomon",
+      "Hangyomon"
+    ],
+    "Geremon": [
+      "Catch Mamemon",
+      "Super Starmon",
+      "Monzaemon"
+    ],
+    "Coredramon (Green)": [
+      "Megalo Growmon",
+      "Groundramon",
+      "Skull Greymon"
+    ],
+    "Gold Numemon": [
+      "Waru Seadramon",
+      "Vademon",
+      "Black King Numemon"
+    ],
+    "Golemon": [
+      "Volcamon",
+      "Mammon",
+      "Insekimon"
+    ],
+    "Cyclomon": [
+      "Grademon",
+      "Cyberdramon",
+      "Brachiomon"
+    ],
+    "Sangloupmon": [
+      "Matadrmon",
+      "Vamdemon",
+      "Astamon"
+    ],
+    "Scumon": [
+      "Monzaemon",
+      "Etemon",
+      "Gerbemon",
+      "Mamemon"
+    ],
+    "Tuskmon": [
+      "Triceramon",
+      "Groundramon",
+      "Digitamamon"
+    ],
+    "Devimon": [
+      "Vamdemon",
+      "Lady Devimon",
+      "Infermon",
+      "Skull Satamon",
+      "Astamon"
+    ],
+    "Deltamon": [
+      "Orochimon",
+      "Chimairamon",
+      "Skull Baluchimon",
+      "Metal Greymon",
+      "Sharkmon"
+    ],
+    "Dokugumon": [
+      "Archnemon",
+      "Mummymon",
+      "Atlur Kabuterimon",
+      "Infermon"
+    ],
+    "Nanimon": [
+      "Volcamon",
+      "Super Starmon",
+      "Etemon",
+      "Mamemon"
+    ],
+    "Numemon": [
+      "Monzaemon",
+      "Dark Super Starmon",
+      "Etemon"
+    ],
+    "Bakemon": [
+      "Vamdemon",
+      "Blue Meramon",
+      "Fantomon",
+      "Enbarrmon"
+    ],
+    "Hyougamon": [
+      "Zudomon",
+      "Fantomon",
+      "Panjyamon"
+    ],
+    "Fugamon": [
+      "Volcamon",
+      "Skull Satamon",
+      "Garudamon"
+    ],
+    "Flymon": [
+      "Megadramon",
+      "Atlur Kabuterimon",
+      "Okuwamon",
+      "Jewelbeemon"
+    ],
+    "Platinum Scumon": [
+      "Vademon",
+      "Mamemon",
+      "Metal Mamemon"
+    ],
+    "Black Tailmon": [
+      "Pandamon",
+      "Lady Devimon",
+      "Skull Baluchimon"
+    ],
+    "Vegimon": [
+      "Tonosama Gekomon",
+      "Gerbemon",
+      "Vademon"
+    ],
+    "Minotaurmon": [
+      "Triceramon",
+      "Etemon",
+      "Grappu Leomon"
+    ],
+    "Musyamon": [
+      "Grademon",
+      "Butenmon",
+      "Hisyaryumon"
+    ],
+    "Mechanorimon": [
+      "Big Mamemon",
+      "Megadramon",
+      "Nanomon"
+    ],
+    "Raremon": [
+      "Dagomon",
+      "Black King Numemon",
+      "Tonosama Gekomon",
+      "Ex-Tyranomon",
+      "Skull Baluchimon"
+    ],
+    "Waspmon": [
+      "Rapidmon Perfect",
+      "Cannonbeemon",
+      "Tankdramon"
+    ],
+    "Aquilamon": [
+      "Garudamon",
+      "Parrotmon",
+      "Silphymon",
+      "Yatagaramon"
+    ],
+    "Ankylomon": [
+      "Shakkoumon",
+      "Insekimon",
+      "Brachiomon"
+    ],
+    "Xv-Mon": [
+      "Dinobeemon",
+      "Rize Greymon",
+      "Paildramon"
+    ],
+    "Guardromon (Gold)": [
+      "Duramon",
+      "Cannonbeemon",
+      "Master Blimpmon"
+    ],
+    "Stingmon": [
+      "Okuwamon",
+      "Jewelbeemon",
+      "Dinobeemon",
+      "Paildramon"
+    ],
+    "Chrysalimon": [
+      "Dagomon",
+      "Orochimon",
+      "Archnemon",
+      "Infermon"
+    ],
+    "Agnimon": [
+      "Aldamon",
+      "Vritramon"
+    ],
+    "Wolfmon": [
+      "Beowolfmon",
+      "Garummon"
+    ],
+    "Ranamon": [
+      "Calamaramon"
+    ],
+    "Vritramon": [
+      "Aldamon",
+      "Agnimon"
+    ],
+    "Calamaramon": [
+      "Ranamon"
+    ],
+    "Garummon": [
+      "Beowolfmon",
+      "Wolfmon"
+    ],
+    "Aegiochusmon": [
+      "Jupitermon"
+    ],
+    "Aegiochusmon: Green": [
+      "Jupitermon"
+    ],
+    "Aegiochusmon: Dark": [
+      "Chronomon Destroy"
+    ],
+    "Aegiochusmon: Blue": [
+      "Jupitermon"
+    ],
+    "Aegiochusmon: Holy": [
+      "Jupitermon"
+    ],
+    "Atlur Kabuterimon": [
+      "Tyrant Kabuterimon",
+      "Herakle Kabuterimon"
+    ],
+    "Andromon": [
+      "Hi Andromon",
+      "Boltmon",
+      "Craniummon"
+    ],
+    "Wingdramon": [
+      "Shine Greymon",
+      "Valdurmon",
+      "Slayerdramon"
+    ],
+    "Aero V-Dramon": [
+      "Goddramon",
+      "Slayerdramon",
+      "Ulforce V-Dramon"
+    ],
+    "Ex-Tyranomon": [
+      "Rust Tyranomon",
+      "Belphemon: Sleep Mode",
+      "Cherubimon (Virtue)"
+    ],
+    "Angewomon": [
+      "Junomon",
+      "Ofanimon",
+      "Holydramon",
+      "Mastemon"
+    ],
+    "Garudamon": [
+      "Griffomon",
+      "Hououmon",
+      "Jesmon"
+    ],
+    "Grappu Leomon": [
+      "Bancho Leomon",
+      "Marsmon",
+      "Saber Leomon",
+      "Duftmon"
+    ],
+    "Grademon": [
+      "Alphamon",
+      "Durandamon",
+      "Dynasmon"
+    ],
+    "Great Gryzmon": [
+      "Callismon",
+      "Cherubimon (Vice)"
+    ],
+    "Cerberumon": [
+      "Plutomon",
+      "Cerberumon: Werewolf Mode",
+      "Saber Leomon"
+    ],
+    "Cerberumon: Werewolf Mode": [
+      "Plutomon",
+      "Cerberumon",
+      "Saber Leomon"
+    ],
+    "Cyberdramon": [
+      "Ulforce V-Dramon",
+      "Justimon"
+    ],
+    "Jewelbeemon": [
+      "Herakle Kabuterimon",
+      "Tiger Vespamon"
+    ],
+    "Zudomon": [
+      "Vikemon",
+      "Plesiomon"
+    ],
+    "Tyilinmon": [
+      "Sleipmon",
+      "Crossmon",
+      "Valkyrimon"
+    ],
+    "Duramon": [
+      "War Greymon",
+      "Dukemon",
+      "Durandamon"
+    ],
+    "Parrotmon": [
+      "Crossmon",
+      "Hououmon"
+    ],
+    "Panjyamon": [
+      "Mirage Gaogamon",
+      "Saber Leomon"
+    ],
+    "Hisyaryumon": [
+      "Ouryumon",
+      "Gaioumon"
+    ],
+    "Butenmon": [
+      "Chronomon",
+      "Chronomon Destroy",
+      "Griffomon",
+      "Gaioumon"
+    ],
+    "Flaremon": [
+      "Apollomon",
+      "Seraphimon"
+    ],
+    "Whamon": [
+      "Leviamon",
+      "Neptunemon",
+      "Plesiomon",
+      "Marin Angemon"
+    ],
+    "Holy Angemon": [
+      "Goddramon",
+      "Seraphimon",
+      "Clavis Angemon",
+      "Slash Angemon"
+    ],
+    "Mammon": [
+      "Vikemon",
+      "Skull Mammon"
+    ],
+    "Metal Greymon": [
+      "War Greymon",
+      "Gaioumon"
+    ],
+    "Monzaemon": [
+      "King Etemon",
+      "Callismon"
+    ],
+    "Yatagaramon": [
+      "Valdurmon",
+      "Ravmon",
+      "Kuzuhamon"
+    ],
+    "Rize Greymon": [
+      "Sleipmon",
+      "Shine Greymon",
+      "Magna Kidmon"
+    ],
+    "Rapidmon Perfect": [
+      "Saint Galgomon",
+      "Hi Andromon"
+    ],
+    "Loader Leomon": [
+      "Bancho Leomon",
+      "Metal Garurumon",
+      "Chaosdramon"
+    ],
+    "Were Garurumon": [
+      "Mercurymon",
+      "Metal Garurumon"
+    ],
+    "Anomalocarimon": [
+      "Vulcanusmon",
+      "Pukumon"
+    ],
+    "Enbarrmon": [
+      "Sleipmon",
+      "Skull Mammon",
+      "Enbarrmon Craniummon"
+    ],
+    "Andiramon": [
+      "Dianamon",
+      "Cherubimon (Virtue)",
+      "Cherubimon (Vice)"
+    ],
+    "Insekimon": [
+      "Metal Etemon",
+      "Boltmon"
+    ],
+    "Omega Shoutmon": [
+      "Pile Volcamon",
+      "Magna Kidmon",
+      "Durandamon"
+    ],
+    "Chimairamon": [
+      "Grand Dracumon",
+      "Millenniumon",
+      "Mugendramon"
+    ],
+    "Catch Mamemon": [
+      "Platinum Numemon",
+      "Prince Mamemon"
+    ],
+    "Crescemon": [
+      "Dianamon",
+      "Cherubimon (Virtue)",
+      "Lord Knightmon"
+    ],
+    "Super Starmon": [
+      "Goddramon",
+      "Prince Mamemon",
+      "Justimon"
+    ],
+    "Skull Baluchimon": [
+      "Skull Mammon",
+      "Skull Baluchimon Titamon"
+    ],
+    "Savior Hackmon": [
+      "Gankoomon",
+      "Tiger Vespamon",
+      "Jesmon"
+    ],
+    "Sirenmon": [
+      "Marin Angemon",
+      "Ceresmon"
+    ],
+    "Taomon": [
+      "Venusmon",
+      "Sakuyamon",
+      "Kuzuhamon"
+    ],
+    "Digitamamon": [
+      "Bacchusmon",
+      "Titamon"
+    ],
+    "Death Meramon": [
+      "Beelzebumon",
+      "Boltmon",
+      "Avenge Kidmon"
+    ],
+    "Delumon": [
+      "Valdurmon",
+      "Ceresmon",
+      "Platinum Numemon"
+    ],
+    "Triceramon": [
+      "Breakdramon",
+      "Ultimate Brachiomon"
+    ],
+    "Doruguremon": [
+      "Dorugoramon",
+      "Alphamon"
+    ],
+    "Knightmon": [
+      "Zanbamon",
+      "Slash Angemon",
+      "Lord Knightmon",
+      "Duftmon"
+    ],
+    "Hangyomon": [
+      "Neptunemon",
+      "Plesiomon"
+    ],
+    "Pandamon": [
+      "Mercurymon",
+      "Mirage Gaogamon",
+      "Justimon"
+    ],
+    "Pumpmon": [
+      "Rosemon",
+      "Lotusmon"
+    ],
+    "Big Mamemon": [
+      "Platinum Numemon",
+      "Prince Mamemon",
+      "Grand Locomon"
+    ],
+    "Piccolomon": [
+      "Venusmon",
+      "Ofanimon",
+      "Clavis Angemon"
+    ],
+    "Hippogriffomon": [
+      "Griffomon",
+      "Crossmon",
+      "Dynasmon"
+    ],
+    "Brachiomon": [
+      "Ouryumon",
+      "Rust Tyranomon",
+      "Ultimate Brachiomon"
+    ],
+    "Volcamon": [
+      "Bancho Leomon",
+      "Pile Volcamon",
+      "Gankoomon",
+      "Apollomon"
+    ],
+    "Master Blimpmon": [
+      "Grand Locomon",
+      "Gundramon"
+    ],
+    "Mach Gaogamon": [
+      "Mirage Gaogamon",
+      "Saint Galgomon"
+    ],
+    "Mamemon": [
+      "Pukumon",
+      "Prince Mamemon"
+    ],
+    "Mega Seadramon": [
+      "Jumbo Gamemon",
+      "Ouryumon",
+      "Metal Seadramon"
+    ],
+    "Metal Mamemon": [
+      "Metal Garurumon",
+      "Magna Kidmon"
+    ],
+    "Lilamon": [
+      "Lilithmon",
+      "Rosemon",
+      "Pinochimon"
+    ],
+    "Lilimon": [
+      "Rosemon",
+      "Ceresmon"
+    ],
+    "Locomon": [
+      "Grand Locomon",
+      "Hi Andromon"
+    ],
+    "Astamon": [
+      "Beelzebumon",
+      "Plutomon",
+      "Belphemon: Sleep Mode",
+      "Venom Vamdemon"
+    ],
+    "Archnemon": [
+      "Lilithmon",
+      "Tyrant Kabuterimon",
+      "Lotusmon"
+    ],
+    "Vamdemon": [
+      "Demon",
+      "Belial Vamdemon",
+      "Venom Vamdemon"
+    ],
+    "Etemon": [
+      "Pile Volcamon",
+      "King Etemon",
+      "Metal Etemon"
+    ],
+    "Okuwamon": [
+      "Tyrant Kabuterimon",
+      "Herakle Kabuterimon",
+      "Gran Kuwagamon"
+    ],
+    "Orochimon": [
+      "Bacchusmon",
+      "Gundramon",
+      "Minervamon"
+    ],
+    "Gerbemon": [
+      "Jumbo Gamemon",
+      "Metal Etemon"
+    ],
+    "Gigadramon": [
+      "Gundramon",
+      "Chaosdramon"
+    ],
+    "Cannonbeemon": [
+      "Saint Galgomon",
+      "Tiger Vespamon"
+    ],
+    "Groundramon": [
+      "Megidramon",
+      "Breakdramon"
+    ],
+    "Sharkmon": [
+      "Neptunemon",
+      "Metal Seadramon"
+    ],
+    "Shawujinmon": [
+      "Barbamon",
+      "Jumbo Gamemon",
+      "Pinochimon"
+    ],
+    "Jyureimon": [
+      "Pinochimon",
+      "Rosemon",
+      "Gran Kuwagamon"
+    ],
+    "Skull Greymon": [
+      "Titamon",
+      "Skull Mammon"
+    ],
+    "Skull Satamon": [
+      "Barbamon",
+      "Piemon",
+      "Ebemon"
+    ],
+    "Skullseadramon": [
+      "Leviamon",
+      "Metal Seadramon"
+    ],
+    "Dark Super Starmon": [
+      "Beel Starmon",
+      "Titamon",
+      "Ravmon"
+    ],
+    "Dagomon": [
+      "Vulcanusmon",
+      "Ebemon"
+    ],
+    "Tankdramon": [
+      "Gundramon",
+      "Darkdramon"
+    ],
+    "Tonosama Gekomon": [
+      "King Etemon",
+      "Bacchusmon",
+      "Pukumon"
+    ],
+    "Nanomon": [
+      "Pharaohmon",
+      "Diablomon"
+    ],
+    "Fantomon": [
+      "Sakuyamon",
+      "Piemon",
+      "Belphemon: Sleep Mode",
+      "Ravmon"
+    ],
+    "Black King Numemon": [
+      "Platinum Numemon",
+      "Metal Etemon"
+    ],
+    "Blue Meramon": [
+      "Marsmon",
+      "Pharaohmon"
+    ],
+    "Vademon": [
+      "Ebemon",
+      "Avenge Kidmon"
+    ],
+    "Matadrmon": [
+      "Grand Dracumon",
+      "Slash Angemon",
+      "Kuzuhamon"
+    ],
+    "Mummymon": [
+      "Pharaohmon",
+      "Hi Andromon",
+      "Avenge Kidmon"
+    ],
+    "Mistymon": [
+      "Chaos Dukemon",
+      "Zanbamon",
+      "Medieval Dukemon",
+      "Dynasmon"
+    ],
+    "Megadramon": [
+      "Megidramon",
+      "Mugendramon"
+    ],
+    "Megalo Growmon": [
+      "Megidramon",
+      "Dukemon",
+      "Chaos Dukemon",
+      "Chaosdramon"
+    ],
+    "Metal Tyranomon": [
+      "Rust Tyranomon",
+      "Mugendramon",
+      "Ultimate Brachiomon"
+    ],
+    "Lucemon: Falldown Mode": [
+      "Lucemon: Satan Mode"
+    ],
+    "Lady Devimon": [
+      "Lilithmon",
+      "Beel Starmon",
+      "Mastemon"
+    ],
+    "Wisemon": [
+      "Demon",
+      "Chaos Dukemon",
+      "Ancient Wisemon"
+    ],
+    "Waru Seadramon": [
+      "Leviamon",
+      "Megidramon",
+      "Metal Seadramon"
+    ],
+    "Shakkoumon": [
+      "Goddramon",
+      "Junomon",
+      "Vikemon",
+      "Holydramon"
+    ],
+    "Silphymon": [
+      "Beel Starmon",
+      "Minervamon",
+      "Valkyrimon"
+    ],
+    "Dinobeemon": [
+      "Gran Kuwagamon",
+      "Tiger Vespamon"
+    ],
+    "Paildramon": [
+      "Dorugoramon",
+      "Imperialdramon: Dragon Mode",
+      "Darkdramon"
+    ],
+    "Infermon": [
+      "Belial Vamdemon",
+      "Diablomon",
+      "Cherubimon (Vice)"
+    ],
+    "Aldamon": [
+      "Kaiser Greymon"
+    ],
+    "Beowolfmon": [
+      "Magna Garurumon"
+    ],
+    "Apollomon": [
+      "Grace Novamon"
+    ],
+    "Alphamon": [
+      "Alphamon: Ouryuken"
+    ],
+    "Valdurmon": [
+      "Chaosmon: Valdur Arm"
+    ],
+    "War Greymon": [
+      "Omegamon"
+    ],
+    "Ouryumon": [
+      "Alphamon: Ouryuken"
+    ],
+    "Craniummon": [
+      "Enbarrmon Craniummon"
+    ],
+    "Shine Greymon": [
+      "Shine Greymon: Burst Mode"
+    ],
+    "Slayerdramon": [
+      "Examon"
+    ],
+    "Bancho Leomon": [
+      "Chaosmon: Valdur Arm",
+      "Chaosmon"
+    ],
+    "Jupitermon": [
+      "Jupitermon: Wrath Mode"
+    ],
+    "Ravmon": [
+      "Ravmon: Burst Mode"
+    ],
+    "Ceresmon": [
+      "Ceresmon Medium"
+    ],
+    "Ceresmon Medium": [
+      "Ceresmon"
+    ],
+    "Dianamon": [
+      "Grace Novamon"
+    ],
+    "Duftmon": [
+      "Duftmon: Leopard Mode"
+    ],
+    "Duftmon: Leopard Mode": [
+      "Duftmon"
+    ],
+    "Mirage Gaogamon": [
+      "Mirage Gaogamon: Burst Mode"
+    ],
+    "Metal Garurumon": [
+      "Omegamon"
+    ],
+    "Rosemon": [
+      "Rosemon: Burst Mode"
+    ],
+    "Darkdramon": [
+      "Chaosmon"
+    ],
+    "Titamon": [
+      "Skull Baluchimon Titamon"
+    ],
+    "Dukemon": [
+      "Dukemon: Crimson Mode"
+    ],
+    "Bacchusmon": [
+      "Bacchusmon Drunk"
+    ],
+    "Bacchusmon Drunk": [
+      "Bacchusmon"
+    ],
+    "Piemon": [
+      "Apocalymon"
+    ],
+    "Plutomon": [
+      "Undead Plutomon"
+    ],
+    "Breakdramon": [
+      "Examon"
+    ],
+    "Beelzebumon": [
+      "Beelzebumon: Blast Mode"
+    ],
+    "Belphemon: Sleep Mode": [
+      "Belphemon: Rage Mode"
+    ],
+    "Minervamon": [
+      "Mervamon"
+    ],
+    "Mugendramon": [
+      "Millenniumon"
+    ],
+    "Junomon": [
+      "Junomon: Hysteric Mode"
+    ],
+    "Junomon: Hysteric Mode": [
+      "Junomon"
+    ],
+    "Imperialdramon: Dragon Mode": [
+      "Imperialdramon: Fighter Mode",
+      "Imperialdramon: Paladin Mode"
+    ],
+    "Imperialdramon: Fighter Mode": [
+      "Imperialdramon: Paladin Mode",
+      "Imperialdramon: Dragon Mode"
+    ],
+    "Diablomon": [
+      "Armagemon"
+    ],
+    "Kaiser Greymon": [
+      "Susanoomon"
+    ],
+    "Magna Garurumon": [
+      "Susanoomon",
+      "Magna Garurumon: Separation"
+    ],
+    "Magna Garurumon: Separation": [
+      "Magna Garurumon"
+    ],
+    "Omegamon": [
+      "Omegamon Zwart"
+    ],
+    "Omegamon Zwart": [
+      "Omegamon"
+    ]
+  },
+  "pre_evolutions": {
+    "Pagumon": [
+      "Kuramon"
+    ],
+    "Tsumemon": [
+      "Kuramon"
+    ],
+    "Caprimon": [
+      "Choromon"
+    ],
+    "Wanyamon": [
+      "Dodomon"
+    ],
+    "Dorimon": [
+      "Dodomon"
+    ],
+    "Mochimon": [
+      "Bubbmon"
+    ],
+    "Pyocomon": [
+      "Bubbmon"
+    ],
+    "Tanemon": [
+      "Bubbmon"
+    ],
+    "Tunomon": [
+      "Punimon"
+    ],
+    "Nyaromon": [
+      "Punimon"
+    ],
+    "Koromon": [
+      "Botamon"
+    ],
+    "Pukamon": [
+      "Poyomon"
+    ],
+    "Tokomon": [
+      "Poyomon"
+    ],
+    "Hagurumon": [
+      "Caprimon"
+    ],
+    "Kokuwamon": [
+      "Caprimon"
+    ],
+    "Toy Agumon": [
+      "Caprimon"
+    ],
+    "Solarmon": [
+      "Caprimon"
+    ],
+    "Agumon": [
+      "Koromon"
+    ],
+    "Guilmon": [
+      "Koromon"
+    ],
+    "Dracomon": [
+      "Koromon"
+    ],
+    "Kotemon": [
+      "Koromon"
+    ],
+    "Betamon": [
+      "Koromon"
+    ],
+    "Shoutmon": [
+      "Koromon"
+    ],
+    "Funbeemon": [
+      "Tanemon"
+    ],
+    "Lalamon": [
+      "Tanemon"
+    ],
+    "Palmon": [
+      "Tanemon"
+    ],
+    "Mushmon": [
+      "Tanemon"
+    ],
+    "Floramon": [
+      "Tanemon"
+    ],
+    "Goburimon": [
+      "Tunomon"
+    ],
+    "V-Mon": [
+      "Tunomon"
+    ],
+    "Gabumon": [
+      "Tunomon"
+    ],
+    "Ryudamon": [
+      "Tunomon"
+    ],
+    "Elecmon": [
+      "Tunomon"
+    ],
+    "Zubamon": [
+      "Tunomon"
+    ],
+    "Dracumon": [
+      "Tsumemon"
+    ],
+    "Shamamon": [
+      "Tsumemon"
+    ],
+    "Keramon": [
+      "Tsumemon"
+    ],
+    "Patamon": [
+      "Tokomon"
+    ],
+    "Coronamon": [
+      "Tokomon"
+    ],
+    "Terriermon": [
+      "Tokomon"
+    ],
+    "Armadimon": [
+      "Tokomon"
+    ],
+    "Lucemon": [
+      "Tokomon"
+    ],
+    "Dorumon": [
+      "Dorimon"
+    ],
+    "Monodramon": [
+      "Dorimon"
+    ],
+    "Snow Goburimon": [
+      "Dorimon"
+    ],
+    "Lopmon": [
+      "Dorimon"
+    ],
+    "Lunamon": [
+      "Nyaromon"
+    ],
+    "Kudamon": [
+      "Nyaromon"
+    ],
+    "Plotmon": [
+      "Nyaromon"
+    ],
+    "Hackmon": [
+      "Nyaromon"
+    ],
+    "Impmon": [
+      "Pagumon"
+    ],
+    "Pico Devimon": [
+      "Pagumon"
+    ],
+    "Gazimon": [
+      "Pagumon"
+    ],
+    "Otamamon": [
+      "Pagumon"
+    ],
+    "Piyomon": [
+      "Pyocomon"
+    ],
+    "Penmon": [
+      "Pyocomon"
+    ],
+    "Falcomon": [
+      "Pyocomon"
+    ],
+    "Hawkmon": [
+      "Pyocomon"
+    ],
+    "Hyokomon": [
+      "Pyocomon"
+    ],
+    "Muchomon": [
+      "Pyocomon"
+    ],
+    "Kamemon": [
+      "Pukamon"
+    ],
+    "Ganimon": [
+      "Pukamon"
+    ],
+    "Gomamon": [
+      "Pukamon"
+    ],
+    "Gizamon": [
+      "Pukamon"
+    ],
+    "Shakomon": [
+      "Pukamon"
+    ],
+    "Tyumon": [
+      "Mochimon"
+    ],
+    "Tentomon": [
+      "Mochimon"
+    ],
+    "Wormmon": [
+      "Mochimon"
+    ],
+    "Gottsumon": [
+      "Mochimon"
+    ],
+    "Gaomon": [
+      "Wanyamon"
+    ],
+    "Bakumon": [
+      "Wanyamon"
+    ],
+    "Bearmon": [
+      "Wanyamon"
+    ],
+    "Renamon": [
+      "Wanyamon"
+    ],
+    "Raptordramon": [
+      "Agumon",
+      "Monodramon",
+      "Dorumon"
+    ],
+    "Geo Greymon": [
+      "Agumon",
+      "Hackmon",
+      "Guilmon"
+    ],
+    "Numemon": [
+      "Agumon",
+      "Otamamon",
+      "Betamon"
+    ],
+    "Greymon": [
+      "Agumon",
+      "Ryudamon",
+      "Hackmon"
+    ],
+    "Coredramon (Green)": [
+      "Agumon",
+      "Dracomon"
+    ],
+    "Agumon -Yuki No Kizuna-": [
+      "Agumon"
+    ],
+    "Airdramon": [
+      "Kudamon",
+      "Dorumon",
+      "Muchomon"
+    ],
+    "Reppamon": [
+      "Kudamon",
+      "Ryudamon",
+      "Renamon"
+    ],
+    "Angemon": [
+      "Kudamon",
+      "Patamon"
+    ],
+    "Ginryumon": [
+      "Kudamon",
+      "Falcomon",
+      "Ryudamon"
+    ],
+    "Wolfmon": [
+      "Kudamon",
+      "Garummon"
+    ],
+    "Sorcerimon": [
+      "Kudamon",
+      "Kamemon",
+      "Lunamon"
+    ],
+    "Mojyamon": [
+      "Gomamon",
+      "Terriermon",
+      "Bearmon",
+      "Palmon"
+    ],
+    "Ikkakumon": [
+      "Gomamon",
+      "Plotmon",
+      "Gabumon"
+    ],
+    "Yukidarumon": [
+      "Gomamon",
+      "Lunamon",
+      "Snow Goburimon"
+    ],
+    "Hyougamon": [
+      "Gomamon",
+      "Lunamon",
+      "Snow Goburimon"
+    ],
+    "Ice Devimon": [
+      "Gomamon",
+      "Snow Goburimon",
+      "Pico Devimon"
+    ],
+    "Firamon": [
+      "Coronamon",
+      "Hawkmon"
+    ],
+    "Meramon": [
+      "Coronamon",
+      "Solarmon",
+      "Bakumon"
+    ],
+    "Growmon": [
+      "Coronamon",
+      "Hackmon",
+      "Guilmon"
+    ],
+    "Bao Hackmon": [
+      "Coronamon",
+      "Hackmon",
+      "Gazimon"
+    ],
+    "Birdramon": [
+      "Coronamon",
+      "Hyokomon",
+      "Piyomon",
+      "Muchomon"
+    ],
+    "Agnimon": [
+      "Coronamon",
+      "Vritramon"
+    ],
+    "Musyamon": [
+      "Zubamon",
+      "Kotemon",
+      "Shamamon"
+    ],
+    "Buraimon": [
+      "Zubamon",
+      "Hyokomon",
+      "Penmon"
+    ],
+    "Tankmon": [
+      "Zubamon",
+      "Toy Agumon",
+      "Hagurumon"
+    ],
+    "Zubaeagermon": [
+      "Zubamon",
+      "Shoutmon",
+      "Gizamon"
+    ],
+    "Ankylomon": [
+      "Zubamon",
+      "Gizamon",
+      "Armadimon"
+    ],
+    "Guardromon (Gold)": [
+      "Zubamon",
+      "Solarmon",
+      "Shoutmon"
+    ],
+    "Starmon": [
+      "Solarmon",
+      "Gottsumon",
+      "Dracumon"
+    ],
+    "Gold Numemon": [
+      "Solarmon",
+      "Funbeemon"
+    ],
+    "Lekismon": [
+      "Terriermon",
+      "Lunamon",
+      "Renamon"
+    ],
+    "Gawappamon": [
+      "Terriermon",
+      "Ganimon",
+      "Kamemon"
+    ],
+    "Gargomon": [
+      "Terriermon",
+      "Toy Agumon",
+      "Shoutmon"
+    ],
+    "Rapidmon Armor": [
+      "Terriermon"
+    ],
+    "Kabuterimon": [
+      "Tentomon",
+      "Funbeemon"
+    ],
+    "Sunflowmon": [
+      "Tentomon",
+      "Floramon",
+      "Lalamon",
+      "Renamon"
+    ],
+    "Kuwagamon": [
+      "Tentomon",
+      "Elecmon",
+      "Kokuwamon"
+    ],
+    "Waspmon": [
+      "Tentomon",
+      "Kokuwamon",
+      "Funbeemon"
+    ],
+    "Snimon": [
+      "Tentomon",
+      "Ganimon",
+      "Wormmon"
+    ],
+    "Blimpmon": [
+      "Toy Agumon",
+      "Hagurumon"
+    ],
+    "Revolmon": [
+      "Toy Agumon",
+      "Kotemon",
+      "Lalamon"
+    ],
+    "Raremon": [
+      "Toy Agumon",
+      "Ganimon",
+      "Shakomon"
+    ],
+    "Garurumon": [
+      "Bakumon",
+      "Gabumon",
+      "Lunamon"
+    ],
+    "Bakemon": [
+      "Bakumon",
+      "Impmon",
+      "Pico Devimon"
+    ],
+    "Unimon": [
+      "Bakumon",
+      "Piyomon",
+      "Elecmon",
+      "Patamon"
+    ],
+    "Kyubimon": [
+      "Bakumon",
+      "Gabumon",
+      "Renamon"
+    ],
+    "Peckmon": [
+      "Hyokomon",
+      "Falcomon",
+      "Penmon",
+      "Muchomon"
+    ],
+    "Dinohumon": [
+      "Hyokomon",
+      "Kamemon",
+      "Kotemon"
+    ],
+    "Aquilamon": [
+      "Piyomon",
+      "Penmon",
+      "Hawkmon"
+    ],
+    "Wizarmon": [
+      "Piyomon",
+      "Impmon",
+      "Dracumon"
+    ],
+    "Kiwimon": [
+      "Falcomon",
+      "Penmon",
+      "Floramon"
+    ],
+    "Tailmon": [
+      "Plotmon",
+      "Hackmon",
+      "Snow Goburimon",
+      "Tyumon"
+    ],
+    "Sangloupmon": [
+      "Plotmon",
+      "Dorumon",
+      "Impmon",
+      "Gazimon",
+      "Dracumon"
+    ],
+    "Dobermon": [
+      "Plotmon",
+      "Gazimon"
+    ],
+    "V-Dramon": [
+      "Plotmon",
+      "Dracomon",
+      "V-Mon"
+    ],
+    "Drimogemon": [
+      "Plotmon",
+      "Gabumon",
+      "Dorumon"
+    ],
+    "Gryzmon": [
+      "Bearmon",
+      "Lopmon"
+    ],
+    "Gaogamon": [
+      "Bearmon",
+      "Gaomon",
+      "Gazimon"
+    ],
+    "Leomon": [
+      "Bearmon",
+      "Gaomon",
+      "Lopmon"
+    ],
+    "Strikedramon": [
+      "Monodramon",
+      "Gaomon"
+    ],
+    "Deltamon": [
+      "Monodramon",
+      "Dracomon",
+      "Goburimon"
+    ],
+    "Chrysalimon": [
+      "Monodramon",
+      "Palmon",
+      "Keramon"
+    ],
+    "Cyclomon": [
+      "Monodramon",
+      "Gizamon"
+    ],
+    "Coelamon": [
+      "Ryudamon",
+      "Ganimon",
+      "Shakomon",
+      "Betamon"
+    ],
+    "Monochromon": [
+      "Ryudamon",
+      "Gottsumon",
+      "Snow Goburimon"
+    ],
+    "Lucemon: Falldown Mode": [
+      "Lucemon"
+    ],
+    "Aegiomon": [
+      "Elecmon"
+    ],
+    "Seadramon": [
+      "Elecmon",
+      "Dracomon",
+      "Otamamon",
+      "Betamon"
+    ],
+    "Gekomon": [
+      "Elecmon",
+      "Otamamon",
+      "Tyumon"
+    ],
+    "Nanimon": [
+      "Gaomon",
+      "Mushmon"
+    ],
+    "Turuiemon": [
+      "Gaomon",
+      "Kotemon",
+      "Lalamon",
+      "Lopmon"
+    ],
+    "Octmon": [
+      "Ganimon",
+      "Kamemon",
+      "Shakomon",
+      "Keramon"
+    ],
+    "Shellmon": [
+      "Ganimon",
+      "Kamemon",
+      "Shakomon"
+    ],
+    "Geremon": [
+      "Gabumon",
+      "Gizamon",
+      "Tyumon"
+    ],
+    "Gabumon -Yujo No Kizuna-": [
+      "Gabumon"
+    ],
+    "Karatuki Numemon": [
+      "Kamemon",
+      "Otamamon",
+      "Shakomon"
+    ],
+    "Centalmon": [
+      "Kokuwamon",
+      "Patamon"
+    ],
+    "Clockmon": [
+      "Kokuwamon",
+      "Impmon",
+      "Hagurumon"
+    ],
+    "Mechanorimon": [
+      "Kokuwamon",
+      "Hagurumon",
+      "Keramon"
+    ],
+    "Guardromon": [
+      "Gottsumon",
+      "Hagurumon"
+    ],
+    "Golemon": [
+      "Gottsumon",
+      "Goburimon",
+      "Armadimon"
+    ],
+    "Icemon": [
+      "Gottsumon",
+      "Lunamon",
+      "Snow Goburimon"
+    ],
+    "Tuchidarumon": [
+      "Gottsumon",
+      "Lalamon",
+      "Lopmon"
+    ],
+    "Coredramon (Blue)": [
+      "Kotemon",
+      "Dracomon"
+    ],
+    "Omega Shoutmon": [
+      "Shoutmon"
+    ],
+    "Tyranomon": [
+      "Dracomon",
+      "Guilmon"
+    ],
+    "Xv-Mon": [
+      "Dorumon",
+      "Guilmon",
+      "V-Mon"
+    ],
+    "Dorugamon": [
+      "Dorumon",
+      "Gazimon"
+    ],
+    "Pegasmon": [
+      "Patamon"
+    ],
+    "Vegimon": [
+      "Palmon",
+      "Floramon",
+      "Betamon"
+    ],
+    "Togemon": [
+      "Palmon",
+      "Floramon",
+      "Lalamon"
+    ],
+    "Woodmon": [
+      "Palmon",
+      "Floramon",
+      "Mushmon"
+    ],
+    "Platinum Scumon": [
+      "Palmon",
+      "Otamamon",
+      "Tyumon"
+    ],
+    "Fugamon": [
+      "Muchomon",
+      "Shamamon"
+    ],
+    "Minotaurmon": [
+      "Lopmon",
+      "Shamamon"
+    ],
+    "Wendimon": [
+      "Lopmon",
+      "Goburimon",
+      "Keramon"
+    ],
+    "Devimon": [
+      "Impmon",
+      "Pico Devimon",
+      "Betamon"
+    ],
+    "Witchmon": [
+      "Impmon",
+      "Shamamon"
+    ],
+    "Black Tailmon": [
+      "Gazimon",
+      "Tyumon"
+    ],
+    "Flymon": [
+      "Gizamon",
+      "Funbeemon",
+      "Mushmon"
+    ],
+    "Ranamon": [
+      "Gizamon",
+      "Calamaramon"
+    ],
+    "Tuskmon": [
+      "Goburimon",
+      "Betamon"
+    ],
+    "Orgemon": [
+      "Goburimon",
+      "Pico Devimon"
+    ],
+    "Scumon": [
+      "Tyumon",
+      "Dracumon",
+      "Mushmon"
+    ],
+    "Dokugumon": [
+      "Funbeemon",
+      "Wormmon",
+      "Keramon"
+    ],
+    "Stingmon": [
+      "Funbeemon",
+      "Wormmon"
+    ],
+    "Digmon": [
+      "Armadimon"
+    ],
+    "Submarimon": [
+      "Armadimon"
+    ],
+    "Lighdramon": [
+      "V-Mon"
+    ],
+    "Magnamon": [
+      "V-Mon"
+    ],
+    "Fladramon": [
+      "V-Mon"
+    ],
+    "Holsmon": [
+      "Hawkmon"
+    ],
+    "Shurimon": [
+      "Hawkmon"
+    ],
+    "Aegiochusmon": [
+      "Aegiomon"
+    ],
+    "Aegiochusmon: Dark": [
+      "Aegiomon"
+    ],
+    "Aegiochusmon: Holy": [
+      "Aegiomon"
+    ],
+    "Aegiochusmon: Blue": [
+      "Aegiomon"
+    ],
+    "Aegiochusmon: Green": [
+      "Aegiomon"
+    ],
+    "Whamon": [
+      "Ikkakumon",
+      "Seadramon",
+      "Shellmon"
+    ],
+    "Mega Seadramon": [
+      "Ikkakumon",
+      "Reppamon",
+      "Seadramon"
+    ],
+    "Zudomon": [
+      "Ikkakumon",
+      "Mojyamon",
+      "Clockmon",
+      "Hyougamon"
+    ],
+    "Skullseadramon": [
+      "Ikkakumon",
+      "Seadramon",
+      "Coelamon"
+    ],
+    "Hisyaryumon": [
+      "Airdramon",
+      "Ginryumon",
+      "Seadramon",
+      "Musyamon"
+    ],
+    "Megadramon": [
+      "Airdramon",
+      "Greymon",
+      "Flymon",
+      "Mechanorimon"
+    ],
+    "Aero V-Dramon": [
+      "Airdramon",
+      "Coredramon (Blue)",
+      "V-Dramon"
+    ],
+    "Gigadramon": [
+      "Airdramon",
+      "Coredramon (Blue)",
+      "Raptordramon"
+    ],
+    "Hippogriffomon": [
+      "Angemon",
+      "Unimon"
+    ],
+    "Holy Angemon": [
+      "Angemon",
+      "Sorcerimon",
+      "Unimon"
+    ],
+    "Sirenmon": [
+      "Angemon",
+      "Kiwimon",
+      "Gekomon"
+    ],
+    "Shakkoumon": [
+      "Angemon",
+      "Ankylomon"
+    ],
+    "Lilamon": [
+      "Kabuterimon",
+      "Kiwimon",
+      "Sunflowmon"
+    ],
+    "Atlur Kabuterimon": [
+      "Kabuterimon",
+      "Dokugumon",
+      "Flymon"
+    ],
+    "Cannonbeemon": [
+      "Kabuterimon",
+      "Waspmon",
+      "Guardromon (Gold)"
+    ],
+    "Chimairamon": [
+      "Kabuterimon",
+      "Garurumon",
+      "Greymon",
+      "Kuwagamon",
+      "Deltamon"
+    ],
+    "Catch Mamemon": [
+      "Gargomon",
+      "Guardromon",
+      "Geremon"
+    ],
+    "Mach Gaogamon": [
+      "Gargomon",
+      "Gaogamon",
+      "Turuiemon"
+    ],
+    "Rapidmon Perfect": [
+      "Gargomon",
+      "Centalmon",
+      "Waspmon"
+    ],
+    "Were Garurumon": [
+      "Garurumon",
+      "Gryzmon",
+      "Lekismon"
+    ],
+    "Blue Meramon": [
+      "Garurumon",
+      "Kyubimon",
+      "Meramon",
+      "Bakemon"
+    ],
+    "Taomon": [
+      "Garurumon",
+      "Kyubimon",
+      "Woodmon"
+    ],
+    "Skull Greymon": [
+      "Ginryumon",
+      "Greymon",
+      "Coredramon (Green)"
+    ],
+    "Butenmon": [
+      "Ginryumon",
+      "Buraimon",
+      "Musyamon"
+    ],
+    "Grappu Leomon": [
+      "Gryzmon",
+      "Leomon",
+      "Lekismon",
+      "Minotaurmon"
+    ],
+    "Great Gryzmon": [
+      "Gryzmon",
+      "Dorugamon"
+    ],
+    "Metal Greymon": [
+      "Greymon",
+      "Tyranomon",
+      "Deltamon"
+    ],
+    "Wingdramon": [
+      "Coredramon (Blue)",
+      "V-Dramon"
+    ],
+    "Rize Greymon": [
+      "Geo Greymon",
+      "Dorugamon",
+      "Bao Hackmon",
+      "Xv-Mon"
+    ],
+    "Metal Tyranomon": [
+      "Geo Greymon",
+      "Coelamon",
+      "Tyranomon"
+    ],
+    "Cyberdramon": [
+      "Geo Greymon",
+      "Strikedramon",
+      "V-Dramon",
+      "Cyclomon"
+    ],
+    "Savior Hackmon": [
+      "Strikedramon",
+      "Firamon",
+      "Gaogamon",
+      "Bao Hackmon"
+    ],
+    "Locomon": [
+      "Strikedramon",
+      "Tankmon",
+      "Blimpmon",
+      "Guardromon"
+    ],
+    "Okuwamon": [
+      "Snimon",
+      "Kuwagamon",
+      "Flymon",
+      "Stingmon"
+    ],
+    "Fantomon": [
+      "Snimon",
+      "Bakemon",
+      "Hyougamon"
+    ],
+    "Archnemon": [
+      "Snimon",
+      "Wendimon",
+      "Dokugumon",
+      "Chrysalimon"
+    ],
+    "Jewelbeemon": [
+      "Snimon",
+      "Flymon",
+      "Stingmon"
+    ],
+    "Grademon": [
+      "Zubaeagermon",
+      "Raptordramon",
+      "Dinohumon",
+      "Cyclomon",
+      "Musyamon"
+    ],
+    "Megalo Growmon": [
+      "Zubaeagermon",
+      "Growmon",
+      "Coredramon (Green)"
+    ],
+    "Duramon": [
+      "Zubaeagermon",
+      "Buraimon",
+      "Guardromon (Gold)"
+    ],
+    "Knightmon": [
+      "Zubaeagermon",
+      "Clockmon",
+      "Dinohumon"
+    ],
+    "Piccolomon": [
+      "Sorcerimon",
+      "Mojyamon",
+      "Shellmon"
+    ],
+    "Wisemon": [
+      "Sorcerimon",
+      "Revolmon",
+      "Wizarmon"
+    ],
+    "Nefertimon": [
+      "Tailmon"
+    ],
+    "Angewomon": [
+      "Tailmon",
+      "Yukidarumon",
+      "Reppamon",
+      "Witchmon"
+    ],
+    "Silphymon": [
+      "Tailmon",
+      "Aquilamon"
+    ],
+    "Matadrmon": [
+      "Dobermon",
+      "Turuiemon",
+      "Sangloupmon"
+    ],
+    "Dark Super Starmon": [
+      "Dobermon",
+      "Gaogamon",
+      "Starmon",
+      "Numemon"
+    ],
+    "Cerberumon": [
+      "Dobermon",
+      "Kyubimon",
+      "Monochromon",
+      "Cerberumon: Werewolf Mode"
+    ],
+    "Mummymon": [
+      "Dobermon",
+      "Orgemon",
+      "Dokugumon"
+    ],
+    "Flaremon": [
+      "Birdramon",
+      "Firamon",
+      "Leomon"
+    ],
+    "Garudamon": [
+      "Birdramon",
+      "Buraimon",
+      "Fugamon",
+      "Aquilamon"
+    ],
+    "Death Meramon": [
+      "Birdramon",
+      "Meramon",
+      "Wendimon"
+    ],
+    "Parrotmon": [
+      "Birdramon",
+      "Aquilamon"
+    ],
+    "Mistymon": [
+      "Firamon",
+      "Mojyamon",
+      "Wizarmon"
+    ],
+    "Tyilinmon": [
+      "Peckmon",
+      "Unimon",
+      "Reppamon"
+    ],
+    "Vamdemon": [
+      "Peckmon",
+      "Sangloupmon",
+      "Devimon",
+      "Bakemon"
+    ],
+    "Yatagaramon": [
+      "Peckmon",
+      "Aquilamon"
+    ],
+    "Mammon": [
+      "Mojyamon",
+      "Yukidarumon",
+      "Monochromon",
+      "Golemon"
+    ],
+    "Crescemon": [
+      "Yukidarumon",
+      "Icemon",
+      "Lekismon",
+      "Ice Devimon"
+    ],
+    "Panjyamon": [
+      "Yukidarumon",
+      "Leomon",
+      "Icemon",
+      "Ice Devimon",
+      "Hyougamon"
+    ],
+    "Insekimon": [
+      "Yukidarumon",
+      "Icemon",
+      "Golemon",
+      "Ankylomon"
+    ],
+    "Tankdramon": [
+      "Raptordramon",
+      "Tankmon",
+      "Waspmon"
+    ],
+    "Pandamon": [
+      "Revolmon",
+      "Karatuki Numemon",
+      "Black Tailmon"
+    ],
+    "Super Starmon": [
+      "Revolmon",
+      "Starmon",
+      "Geremon",
+      "Nanimon"
+    ],
+    "Loader Leomon": [
+      "Leomon",
+      "Drimogemon",
+      "Bao Hackmon"
+    ],
+    "Doruguremon": [
+      "Reppamon",
+      "Dorugamon",
+      "Growmon"
+    ],
+    "Nanomon": [
+      "Wizarmon",
+      "Centalmon",
+      "Mechanorimon"
+    ],
+    "Lady Devimon": [
+      "Witchmon",
+      "Ice Devimon",
+      "Devimon",
+      "Black Tailmon"
+    ],
+    "Lilimon": [
+      "Witchmon",
+      "Sunflowmon",
+      "Togemon"
+    ],
+    "Shawujinmon": [
+      "Gawappamon",
+      "Dinohumon"
+    ],
+    "Hangyomon": [
+      "Gawappamon",
+      "Coelamon",
+      "Octmon",
+      "Gekomon"
+    ],
+    "Tonosama Gekomon": [
+      "Gawappamon",
+      "Gekomon",
+      "Vegimon",
+      "Raremon"
+    ],
+    "Delumon": [
+      "Kiwimon",
+      "Sunflowmon",
+      "Tuchidarumon"
+    ],
+    "Jyureimon": [
+      "Kiwimon",
+      "Togemon",
+      "Woodmon",
+      "Kuwagamon"
+    ],
+    "Enbarrmon": [
+      "Kyubimon",
+      "Ice Devimon",
+      "Bakemon"
+    ],
+    "Ex-Tyranomon": [
+      "Clockmon",
+      "Tyranomon",
+      "Raremon"
+    ],
+    "Andromon": [
+      "Clockmon",
+      "Centalmon",
+      "Guardromon"
+    ],
+    "Pumpmon": [
+      "Sunflowmon",
+      "Togemon",
+      "Woodmon"
+    ],
+    "Waru Seadramon": [
+      "Seadramon",
+      "Coelamon",
+      "Karatuki Numemon",
+      "Gold Numemon"
+    ],
+    "Sharkmon": [
+      "Seadramon",
+      "Deltamon"
+    ],
+    "Anomalocarimon": [
+      "Coelamon",
+      "Shellmon",
+      "Kuwagamon"
+    ],
+    "Volcamon": [
+      "Starmon",
+      "Golemon",
+      "Nanimon",
+      "Fugamon"
+    ],
+    "Mamemon": [
+      "Starmon",
+      "Scumon",
+      "Nanimon",
+      "Platinum Scumon"
+    ],
+    "Big Mamemon": [
+      "Tankmon",
+      "Meramon",
+      "Mechanorimon"
+    ],
+    "Gerbemon": [
+      "Tuchidarumon",
+      "Scumon",
+      "Vegimon"
+    ],
+    "Andiramon": [
+      "Tuchidarumon",
+      "Turuiemon",
+      "Wendimon"
+    ],
+    "Groundramon": [
+      "Tyranomon",
+      "Growmon",
+      "Coredramon (Green)",
+      "Tuskmon"
+    ],
+    "Triceramon": [
+      "Drimogemon",
+      "Monochromon",
+      "Tuskmon",
+      "Minotaurmon"
+    ],
+    "Brachiomon": [
+      "Drimogemon",
+      "Cyclomon",
+      "Ankylomon"
+    ],
+    "Metal Mamemon": [
+      "Blimpmon",
+      "Platinum Scumon"
+    ],
+    "Master Blimpmon": [
+      "Blimpmon",
+      "Guardromon (Gold)"
+    ],
+    "Skull Satamon": [
+      "Orgemon",
+      "Devimon",
+      "Fugamon"
+    ],
+    "Digitamamon": [
+      "Orgemon",
+      "Octmon",
+      "Tuskmon"
+    ],
+    "Dagomon": [
+      "Octmon",
+      "Raremon",
+      "Chrysalimon"
+    ],
+    "Orochimon": [
+      "Karatuki Numemon",
+      "Deltamon",
+      "Chrysalimon"
+    ],
+    "Black King Numemon": [
+      "Karatuki Numemon",
+      "Gold Numemon",
+      "Raremon"
+    ],
+    "Monzaemon": [
+      "Geremon",
+      "Scumon",
+      "Numemon"
+    ],
+    "Vademon": [
+      "Gold Numemon",
+      "Platinum Scumon",
+      "Vegimon"
+    ],
+    "Astamon": [
+      "Sangloupmon",
+      "Devimon"
+    ],
+    "Etemon": [
+      "Scumon",
+      "Nanimon",
+      "Numemon",
+      "Minotaurmon"
+    ],
+    "Infermon": [
+      "Devimon",
+      "Dokugumon",
+      "Chrysalimon"
+    ],
+    "Skull Baluchimon": [
+      "Deltamon",
+      "Black Tailmon",
+      "Raremon"
+    ],
+    "Dinobeemon": [
+      "Xv-Mon",
+      "Stingmon"
+    ],
+    "Paildramon": [
+      "Xv-Mon",
+      "Stingmon"
+    ],
+    "Aldamon": [
+      "Agnimon",
+      "Vritramon"
+    ],
+    "Vritramon": [
+      "Agnimon"
+    ],
+    "Beowolfmon": [
+      "Wolfmon",
+      "Garummon"
+    ],
+    "Garummon": [
+      "Wolfmon"
+    ],
+    "Calamaramon": [
+      "Ranamon"
+    ],
+    "Jupitermon": [
+      "Aegiochusmon",
+      "Aegiochusmon: Green",
+      "Aegiochusmon: Blue",
+      "Aegiochusmon: Holy"
+    ],
+    "Chronomon Destroy": [
+      "Aegiochusmon: Dark",
+      "Butenmon"
+    ],
+    "Tyrant Kabuterimon": [
+      "Atlur Kabuterimon",
+      "Archnemon",
+      "Okuwamon"
+    ],
+    "Herakle Kabuterimon": [
+      "Atlur Kabuterimon",
+      "Jewelbeemon",
+      "Okuwamon"
+    ],
+    "Hi Andromon": [
+      "Andromon",
+      "Rapidmon Perfect",
+      "Locomon",
+      "Mummymon"
+    ],
+    "Boltmon": [
+      "Andromon",
+      "Insekimon",
+      "Death Meramon"
+    ],
+    "Craniummon": [
+      "Andromon"
+    ],
+    "Shine Greymon": [
+      "Wingdramon",
+      "Rize Greymon"
+    ],
+    "Valdurmon": [
+      "Wingdramon",
+      "Yatagaramon",
+      "Delumon"
+    ],
+    "Slayerdramon": [
+      "Wingdramon",
+      "Aero V-Dramon"
+    ],
+    "Goddramon": [
+      "Aero V-Dramon",
+      "Holy Angemon",
+      "Super Starmon",
+      "Shakkoumon"
+    ],
+    "Ulforce V-Dramon": [
+      "Aero V-Dramon",
+      "Cyberdramon"
+    ],
+    "Rust Tyranomon": [
+      "Ex-Tyranomon",
+      "Brachiomon",
+      "Metal Tyranomon"
+    ],
+    "Belphemon: Sleep Mode": [
+      "Ex-Tyranomon",
+      "Astamon",
+      "Fantomon"
+    ],
+    "Cherubimon (Virtue)": [
+      "Ex-Tyranomon",
+      "Andiramon",
+      "Crescemon"
+    ],
+    "Junomon": [
+      "Angewomon",
+      "Shakkoumon",
+      "Junomon: Hysteric Mode"
+    ],
+    "Ofanimon": [
+      "Angewomon",
+      "Piccolomon"
+    ],
+    "Holydramon": [
+      "Angewomon",
+      "Shakkoumon"
+    ],
+    "Mastemon": [
+      "Angewomon",
+      "Lady Devimon"
+    ],
+    "Griffomon": [
+      "Garudamon",
+      "Butenmon",
+      "Hippogriffomon"
+    ],
+    "Hououmon": [
+      "Garudamon",
+      "Parrotmon"
+    ],
+    "Jesmon": [
+      "Garudamon",
+      "Savior Hackmon"
+    ],
+    "Bancho Leomon": [
+      "Grappu Leomon",
+      "Loader Leomon",
+      "Volcamon"
+    ],
+    "Marsmon": [
+      "Grappu Leomon",
+      "Blue Meramon"
+    ],
+    "Saber Leomon": [
+      "Grappu Leomon",
+      "Cerberumon",
+      "Cerberumon: Werewolf Mode",
+      "Panjyamon"
+    ],
+    "Duftmon": [
+      "Grappu Leomon",
+      "Knightmon",
+      "Duftmon: Leopard Mode"
+    ],
+    "Alphamon": [
+      "Grademon",
+      "Doruguremon"
+    ],
+    "Durandamon": [
+      "Grademon",
+      "Duramon",
+      "Omega Shoutmon"
+    ],
+    "Dynasmon": [
+      "Grademon",
+      "Hippogriffomon",
+      "Mistymon"
+    ],
+    "Callismon": [
+      "Great Gryzmon",
+      "Monzaemon"
+    ],
+    "Cherubimon (Vice)": [
+      "Great Gryzmon",
+      "Andiramon",
+      "Infermon"
+    ],
+    "Plutomon": [
+      "Cerberumon",
+      "Cerberumon: Werewolf Mode",
+      "Astamon"
+    ],
+    "Cerberumon: Werewolf Mode": [
+      "Cerberumon"
+    ],
+    "Justimon": [
+      "Cyberdramon",
+      "Super Starmon",
+      "Pandamon"
+    ],
+    "Tiger Vespamon": [
+      "Jewelbeemon",
+      "Savior Hackmon",
+      "Cannonbeemon",
+      "Dinobeemon"
+    ],
+    "Vikemon": [
+      "Zudomon",
+      "Mammon",
+      "Shakkoumon"
+    ],
+    "Plesiomon": [
+      "Zudomon",
+      "Whamon",
+      "Hangyomon"
+    ],
+    "Sleipmon": [
+      "Tyilinmon",
+      "Rize Greymon",
+      "Enbarrmon"
+    ],
+    "Crossmon": [
+      "Tyilinmon",
+      "Parrotmon",
+      "Hippogriffomon"
+    ],
+    "Valkyrimon": [
+      "Tyilinmon",
+      "Silphymon"
+    ],
+    "War Greymon": [
+      "Duramon",
+      "Metal Greymon"
+    ],
+    "Dukemon": [
+      "Duramon",
+      "Megalo Growmon"
+    ],
+    "Mirage Gaogamon": [
+      "Panjyamon",
+      "Pandamon",
+      "Mach Gaogamon"
+    ],
+    "Ouryumon": [
+      "Hisyaryumon",
+      "Brachiomon",
+      "Mega Seadramon"
+    ],
+    "Gaioumon": [
+      "Hisyaryumon",
+      "Butenmon",
+      "Metal Greymon"
+    ],
+    "Chronomon": [
+      "Butenmon"
+    ],
+    "Apollomon": [
+      "Flaremon",
+      "Volcamon"
+    ],
+    "Seraphimon": [
+      "Flaremon",
+      "Holy Angemon"
+    ],
+    "Leviamon": [
+      "Whamon",
+      "Skullseadramon",
+      "Waru Seadramon"
+    ],
+    "Neptunemon": [
+      "Whamon",
+      "Hangyomon",
+      "Sharkmon"
+    ],
+    "Marin Angemon": [
+      "Whamon",
+      "Sirenmon"
+    ],
+    "Clavis Angemon": [
+      "Holy Angemon",
+      "Piccolomon"
+    ],
+    "Slash Angemon": [
+      "Holy Angemon",
+      "Knightmon",
+      "Matadrmon"
+    ],
+    "Skull Mammon": [
+      "Mammon",
+      "Enbarrmon",
+      "Skull Baluchimon",
+      "Skull Greymon"
+    ],
+    "King Etemon": [
+      "Monzaemon",
+      "Etemon",
+      "Tonosama Gekomon"
+    ],
+    "Ravmon": [
+      "Yatagaramon",
+      "Dark Super Starmon",
+      "Fantomon"
+    ],
+    "Kuzuhamon": [
+      "Yatagaramon",
+      "Taomon",
+      "Matadrmon"
+    ],
+    "Magna Kidmon": [
+      "Rize Greymon",
+      "Omega Shoutmon",
+      "Metal Mamemon"
+    ],
+    "Saint Galgomon": [
+      "Rapidmon Perfect",
+      "Mach Gaogamon",
+      "Cannonbeemon"
+    ],
+    "Metal Garurumon": [
+      "Loader Leomon",
+      "Were Garurumon",
+      "Metal Mamemon"
+    ],
+    "Chaosdramon": [
+      "Loader Leomon",
+      "Gigadramon",
+      "Megalo Growmon"
+    ],
+    "Mercurymon": [
+      "Were Garurumon",
+      "Pandamon"
+    ],
+    "Vulcanusmon": [
+      "Anomalocarimon",
+      "Dagomon"
+    ],
+    "Pukumon": [
+      "Anomalocarimon",
+      "Mamemon",
+      "Tonosama Gekomon"
+    ],
+    "Enbarrmon Craniummon": [
+      "Enbarrmon",
+      "Craniummon"
+    ],
+    "Dianamon": [
+      "Andiramon",
+      "Crescemon"
+    ],
+    "Metal Etemon": [
+      "Insekimon",
+      "Etemon",
+      "Gerbemon",
+      "Black King Numemon"
+    ],
+    "Pile Volcamon": [
+      "Omega Shoutmon",
+      "Volcamon",
+      "Etemon"
+    ],
+    "Grand Dracumon": [
+      "Chimairamon",
+      "Matadrmon"
+    ],
+    "Millenniumon": [
+      "Chimairamon",
+      "Mugendramon"
+    ],
+    "Mugendramon": [
+      "Chimairamon",
+      "Megadramon",
+      "Metal Tyranomon"
+    ],
+    "Platinum Numemon": [
+      "Catch Mamemon",
+      "Delumon",
+      "Big Mamemon",
+      "Black King Numemon"
+    ],
+    "Prince Mamemon": [
+      "Catch Mamemon",
+      "Super Starmon",
+      "Big Mamemon",
+      "Mamemon"
+    ],
+    "Lord Knightmon": [
+      "Crescemon",
+      "Knightmon"
+    ],
+    "Skull Baluchimon Titamon": [
+      "Skull Baluchimon",
+      "Titamon"
+    ],
+    "Gankoomon": [
+      "Savior Hackmon",
+      "Volcamon"
+    ],
+    "Ceresmon": [
+      "Sirenmon",
+      "Delumon",
+      "Lilimon",
+      "Ceresmon Medium"
+    ],
+    "Venusmon": [
+      "Taomon",
+      "Piccolomon"
+    ],
+    "Sakuyamon": [
+      "Taomon",
+      "Fantomon"
+    ],
+    "Bacchusmon": [
+      "Digitamamon",
+      "Orochimon",
+      "Tonosama Gekomon",
+      "Bacchusmon Drunk"
+    ],
+    "Titamon": [
+      "Digitamamon",
+      "Skull Greymon",
+      "Dark Super Starmon"
+    ],
+    "Beelzebumon": [
+      "Death Meramon",
+      "Astamon"
+    ],
+    "Avenge Kidmon": [
+      "Death Meramon",
+      "Vademon",
+      "Mummymon"
+    ],
+    "Breakdramon": [
+      "Triceramon",
+      "Groundramon"
+    ],
+    "Ultimate Brachiomon": [
+      "Triceramon",
+      "Brachiomon",
+      "Metal Tyranomon"
+    ],
+    "Dorugoramon": [
+      "Doruguremon",
+      "Paildramon"
+    ],
+    "Zanbamon": [
+      "Knightmon",
+      "Mistymon"
+    ],
+    "Rosemon": [
+      "Pumpmon",
+      "Lilamon",
+      "Lilimon",
+      "Jyureimon"
+    ],
+    "Lotusmon": [
+      "Pumpmon",
+      "Archnemon"
+    ],
+    "Grand Locomon": [
+      "Big Mamemon",
+      "Master Blimpmon",
+      "Locomon"
+    ],
+    "Gundramon": [
+      "Master Blimpmon",
+      "Orochimon",
+      "Gigadramon",
+      "Tankdramon"
+    ],
+    "Jumbo Gamemon": [
+      "Mega Seadramon",
+      "Gerbemon",
+      "Shawujinmon"
+    ],
+    "Metal Seadramon": [
+      "Mega Seadramon",
+      "Sharkmon",
+      "Skullseadramon",
+      "Waru Seadramon"
+    ],
+    "Lilithmon": [
+      "Lilamon",
+      "Archnemon",
+      "Lady Devimon"
+    ],
+    "Pinochimon": [
+      "Lilamon",
+      "Shawujinmon",
+      "Jyureimon"
+    ],
+    "Venom Vamdemon": [
+      "Astamon",
+      "Vamdemon"
+    ],
+    "Demon": [
+      "Vamdemon",
+      "Wisemon"
+    ],
+    "Belial Vamdemon": [
+      "Vamdemon",
+      "Infermon"
+    ],
+    "Gran Kuwagamon": [
+      "Okuwamon",
+      "Jyureimon",
+      "Dinobeemon"
+    ],
+    "Minervamon": [
+      "Orochimon",
+      "Silphymon"
+    ],
+    "Megidramon": [
+      "Groundramon",
+      "Megadramon",
+      "Megalo Growmon",
+      "Waru Seadramon"
+    ],
+    "Barbamon": [
+      "Shawujinmon",
+      "Skull Satamon"
+    ],
+    "Piemon": [
+      "Skull Satamon",
+      "Fantomon"
+    ],
+    "Ebemon": [
+      "Skull Satamon",
+      "Dagomon",
+      "Vademon"
+    ],
+    "Beel Starmon": [
+      "Dark Super Starmon",
+      "Lady Devimon",
+      "Silphymon"
+    ],
+    "Darkdramon": [
+      "Tankdramon",
+      "Paildramon"
+    ],
+    "Pharaohmon": [
+      "Nanomon",
+      "Blue Meramon",
+      "Mummymon"
+    ],
+    "Diablomon": [
+      "Nanomon",
+      "Infermon"
+    ],
+    "Chaos Dukemon": [
+      "Mistymon",
+      "Megalo Growmon",
+      "Wisemon"
+    ],
+    "Medieval Dukemon": [
+      "Mistymon"
+    ],
+    "Lucemon: Satan Mode": [
+      "Lucemon: Falldown Mode"
+    ],
+    "Ancient Wisemon": [
+      "Wisemon"
+    ],
+    "Imperialdramon: Dragon Mode": [
+      "Paildramon",
+      "Imperialdramon: Fighter Mode"
+    ],
+    "Kaiser Greymon": [
+      "Aldamon"
+    ],
+    "Magna Garurumon": [
+      "Beowolfmon",
+      "Magna Garurumon: Separation"
+    ],
+    "Grace Novamon": [
+      "Apollomon",
+      "Dianamon"
+    ],
+    "Alphamon: Ouryuken": [
+      "Alphamon",
+      "Ouryumon"
+    ],
+    "Chaosmon: Valdur Arm": [
+      "Valdurmon",
+      "Bancho Leomon"
+    ],
+    "Omegamon": [
+      "War Greymon",
+      "Metal Garurumon",
+      "Omegamon Zwart"
+    ],
+    "Shine Greymon: Burst Mode": [
+      "Shine Greymon"
+    ],
+    "Examon": [
+      "Slayerdramon",
+      "Breakdramon"
+    ],
+    "Chaosmon": [
+      "Bancho Leomon",
+      "Darkdramon"
+    ],
+    "Jupitermon: Wrath Mode": [
+      "Jupitermon"
+    ],
+    "Ravmon: Burst Mode": [
+      "Ravmon"
+    ],
+    "Ceresmon Medium": [
+      "Ceresmon"
+    ],
+    "Duftmon: Leopard Mode": [
+      "Duftmon"
+    ],
+    "Mirage Gaogamon: Burst Mode": [
+      "Mirage Gaogamon"
+    ],
+    "Rosemon: Burst Mode": [
+      "Rosemon"
+    ],
+    "Dukemon: Crimson Mode": [
+      "Dukemon"
+    ],
+    "Bacchusmon Drunk": [
+      "Bacchusmon"
+    ],
+    "Apocalymon": [
+      "Piemon"
+    ],
+    "Undead Plutomon": [
+      "Plutomon"
+    ],
+    "Beelzebumon: Blast Mode": [
+      "Beelzebumon"
+    ],
+    "Belphemon: Rage Mode": [
+      "Belphemon: Sleep Mode"
+    ],
+    "Mervamon": [
+      "Minervamon"
+    ],
+    "Junomon: Hysteric Mode": [
+      "Junomon"
+    ],
+    "Imperialdramon: Fighter Mode": [
+      "Imperialdramon: Dragon Mode"
+    ],
+    "Imperialdramon: Paladin Mode": [
+      "Imperialdramon: Dragon Mode",
+      "Imperialdramon: Fighter Mode"
+    ],
+    "Armagemon": [
+      "Diablomon"
+    ],
+    "Susanoomon": [
+      "Kaiser Greymon",
+      "Magna Garurumon"
+    ],
+    "Magna Garurumon: Separation": [
+      "Magna Garurumon"
+    ],
+    "Omegamon Zwart": [
+      "Omegamon"
+    ]
+  }
+}
