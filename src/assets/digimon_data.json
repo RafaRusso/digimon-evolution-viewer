@@ -6841,5 +6841,27 @@
     "Omegamon Zwart": [
       "Omegamon"
     ]
+  },
+  "evolution_requirements": {
+  "Guilmon": {
+    "Geo Greymon": {
+      "stats": [
+        {
+          "name": "PV Máx",
+          "value": 1100,
+          "operator": ">=", 
+          "description": "1100 ou mais de PV Máx"
+        }
+      ],
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 3",
+          "description": "Patente de Agente 3 ou superior"
+        }
+      ]
+    }
   }
+}
+
 }

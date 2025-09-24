@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
-import { Search, ArrowRight, ArrowLeft, Info, Zap, ImageIcon } from 'lucide-react'
+import { Search, ArrowRight, ArrowLeft, Info, Zap, ImageIcon, Grid3X3, TreePine, List, ChevronRight, ChevronDown, Star, Zap as Lightning } from 'lucide-react'
 import { Button } from '@/components/ui/button.jsx'
 import { Input } from '@/components/ui/input.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
 import { Separator } from '@/components/ui/separator.jsx'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs.jsx'
 import digimonData from './assets/digimon_data.json'
 import './App.css'
 
@@ -13,9 +14,10 @@ function App() {
   const [selectedDigimon, setSelectedDigimon] = useState(null)
   const [searchResults, setSearchResults] = useState([])
   const [evolutionData, setEvolutionData] = useState(null)
+  const [currentView, setCurrentView] = useState('search') // 'search', 'list', 'evolution'
+  const [expandedNodes, setExpandedNodes] = useState(new Set())
 
   useEffect(() => {
-    // Carregar dados dos Digimons
     setEvolutionData(digimonData)
   }, [])
 
@@ -25,7 +27,7 @@ function App() {
       const results = Object.values(evolutionData.digimons)
         .filter(digimon => digimon.name.toLowerCase().includes(query))
         .sort((a, b) => a.name.localeCompare(b.name))
-        .slice(0, 10) // Limitar a 10 resultados
+        .slice(0, 10)
       setSearchResults(results)
     } else {
       setSearchResults([])
@@ -48,10 +50,20 @@ function App() {
       }
     }
 
-    // Evoluções diretas
+    // Evoluções diretas com requisitos
     if (evolutionData.evolutions[digimonName]) {
       result.evolves_to = evolutionData.evolutions[digimonName]
-        .map(name => evolutionData.digimons[name])
+        .map(name => {
+          const evoDigimon = evolutionData.digimons[name]
+          if (!evoDigimon) return null
+          
+          // Adicionar requisitos se existirem
+          const requirements = evolutionData.evolution_requirements?.[digimonName]?.[name]
+          return {
+            ...evoDigimon,
+            requirements: requirements || null
+          }
+        })
         .filter(Boolean)
     }
 
@@ -62,7 +74,7 @@ function App() {
         .filter(Boolean)
     }
 
-    // Função recursiva para obter todos os predecessores
+    // Linha evolutiva completa (recursiva)
     const getAllPredecessors = (name, visited = new Set()) => {
       if (visited.has(name)) return []
       visited.add(name)
@@ -80,7 +92,6 @@ function App() {
       return predecessors
     }
 
-    // Função recursiva para obter todos os sucessores
     const getAllSuccessors = (name, visited = new Set()) => {
       if (visited.has(name)) return []
       visited.add(name)
@@ -106,6 +117,7 @@ function App() {
 
   const handleDigimonSelect = (digimon) => {
     setSelectedDigimon(getEvolutionLine(digimon.name))
+    setCurrentView('evolution')
     setSearchQuery('')
     setSearchResults([])
   }
@@ -145,7 +157,35 @@ function App() {
     return null
   }
 
-  const DigimonCard = ({ digimon, onClick, showFullInfo = false }) => {
+  // Componente para mostrar requisitos de evolução
+  const EvolutionRequirements = ({ requirements }) => {
+    if (!requirements) return null
+
+    return (
+      <div className="mt-2 p-2 bg-gray-50 dark:bg-gray-800 rounded-md">
+        <div className="text-xs font-medium text-gray-700 dark:text-gray-300 mb-1">
+          Requisitos para Evolução:
+        </div>
+        <div className="space-y-1">
+          {requirements.stats?.map((stat, index) => (
+            <div key={index} className="flex items-center gap-1 text-xs">
+              <Lightning className="w-3 h-3 text-yellow-500" />
+              <span className="text-gray-600 dark:text-gray-400">{stat.description}</span>
+            </div>
+          ))}
+          {requirements.other?.map((req, index) => (
+            <div key={index} className="flex items-center gap-1 text-xs">
+              <Star className="w-3 h-3 text-blue-500" />
+              <span className="text-gray-600 dark:text-gray-400">{req.description}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
+  // Componente para card de Digimon
+  const DigimonCard = ({ digimon, onClick, showFullInfo = false, showRequirements = false }) => {
     const imageUrl = getImageUrl(digimon)
     
     return (
@@ -154,7 +194,6 @@ function App() {
         className="w-full text-left p-3 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
       >
         <div className="flex items-center gap-3">
-          {/* Imagem do Digimon */}
           <div className="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
             {imageUrl ? (
               <img 
@@ -172,7 +211,6 @@ function App() {
             </div>
           </div>
           
-          {/* Informações do Digimon */}
           <div className="flex-1 min-w-0">
             <div className="font-medium text-gray-900 dark:text-white truncate">
               {digimon.name}
@@ -197,21 +235,174 @@ function App() {
           
           <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0" />
         </div>
+        
+        {showRequirements && digimon.requirements && (
+          <EvolutionRequirements requirements={digimon.requirements} />
+        )}
       </button>
     )
   }
 
-  const DigimonGrid = ({ digimons, title, onClick, maxHeight = "max-h-96" }) => (
-    <div className={`grid gap-2 ${maxHeight} overflow-y-auto`}>
-      {digimons.map((digimon, index) => (
-        <DigimonCard
-          key={`${digimon.name}-${index}`}
-          digimon={digimon}
-          onClick={onClick}
-        />
-      ))}
-    </div>
-  )
+  // Componente para listagem de todos os Digimons
+  const DigimonList = () => {
+    if (!evolutionData) return null
+
+    const digimonsByStage = {}
+    Object.values(evolutionData.digimons).forEach(digimon => {
+      if (!digimonsByStage[digimon.stage]) {
+        digimonsByStage[digimon.stage] = []
+      }
+      digimonsByStage[digimon.stage].push(digimon)
+    })
+
+    // Ordenar stages
+    const stageOrder = ['I', 'II', 'III', 'IV', 'V', 'VI', 'Human Hybrid', 'Beast Hybrid']
+    const sortedStages = stageOrder.filter(stage => digimonsByStage[stage])
+
+    return (
+      <div className="space-y-6">
+        {sortedStages.map(stage => (
+          <Card key={stage}>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Badge className={getStageColor(stage)}>
+                  Stage {stage}
+                </Badge>
+                <span className="text-sm text-gray-500">
+                  ({digimonsByStage[stage].length} Digimons)
+                </span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                {digimonsByStage[stage]
+                  .sort((a, b) => a.name.localeCompare(b.name))
+                  .map(digimon => (
+                    <DigimonCard
+                      key={digimon.name}
+                      digimon={digimon}
+                      onClick={handleDigimonSelect}
+                      showFullInfo={true}
+                    />
+                  ))}
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    )
+  }
+
+  // Componente para árvore evolutiva
+  const EvolutionTree = ({ digimonName, direction = 'successors' }) => {
+    if (!evolutionData || !digimonName) return null
+
+    const buildTree = (name, visited = new Set(), depth = 0) => {
+      if (visited.has(name) || depth > 10) return null
+      visited.add(name)
+
+      const digimon = evolutionData.digimons[name]
+      if (!digimon) return null
+
+      const connections = direction === 'successors' 
+        ? evolutionData.evolutions[name] || []
+        : evolutionData.pre_evolutions[name] || []
+
+      const children = connections
+        .map(childName => buildTree(childName, new Set(visited), depth + 1))
+        .filter(Boolean)
+
+      return {
+        digimon,
+        children,
+        depth
+      }
+    }
+
+    const TreeNode = ({ node, isLast = false, prefix = '' }) => {
+      const hasChildren = node.children.length > 0
+      const nodeId = `${node.digimon.name}-${node.depth}`
+      const isExpanded = expandedNodes.has(nodeId)
+
+      const toggleExpanded = (e) => {
+        e.stopPropagation()
+        const newExpanded = new Set(expandedNodes)
+        if (isExpanded) {
+          newExpanded.delete(nodeId)
+        } else {
+          newExpanded.add(nodeId)
+        }
+        setExpandedNodes(newExpanded)
+      }
+
+      return (
+        <div className="select-none">
+          <div className="flex items-center gap-2 py-1">
+            <span className="text-gray-400 font-mono text-sm">
+              {prefix}
+              {isLast ? '└─' : '├─'}
+            </span>
+            
+            {hasChildren && (
+              <button
+                onClick={toggleExpanded}
+                className="w-4 h-4 flex items-center justify-center text-gray-500 hover:text-gray-700"
+              >
+                {isExpanded ? <ChevronDown className="w-3 h-3" /> : <ChevronRight className="w-3 h-3" />}
+              </button>
+            )}
+            
+            <button
+              onClick={() => handleDigimonSelect(node.digimon)}
+              className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded px-2 py-1 transition-colors"
+            >
+              <div className="w-6 h-6 rounded overflow-hidden bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                {getImageUrl(node.digimon) ? (
+                  <img 
+                    src={getImageUrl(node.digimon)} 
+                    alt={node.digimon.name}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <ImageIcon className="w-3 h-3 text-gray-400" />
+                )}
+              </div>
+              
+              <span className="font-medium text-gray-900 dark:text-white">
+                {node.digimon.name}
+              </span>
+              
+              <Badge className={`${getStageColor(node.digimon.stage)} text-xs`}>
+                {node.digimon.stage}
+              </Badge>
+            </button>
+          </div>
+          
+          {hasChildren && isExpanded && (
+            <div className="ml-4">
+              {node.children.map((child, index) => (
+                <TreeNode
+                  key={`${child.digimon.name}-${index}`}
+                  node={child}
+                  isLast={index === node.children.length - 1}
+                  prefix={prefix + (isLast ? '   ' : '│  ')}
+                />
+              ))}
+            </div>
+          )}
+        </div>
+      )
+    }
+
+    const tree = buildTree(digimonName)
+    if (!tree) return null
+
+    return (
+      <div className="font-mono text-sm bg-gray-50 dark:bg-gray-900 p-4 rounded-lg overflow-x-auto">
+        <TreeNode node={tree} isLast={true} />
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 p-4">
@@ -223,72 +414,118 @@ function App() {
             Visualizador de Linhas Evolutivas
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300">
-            Explore as evoluções completas dos Digimons com imagens
+            Explore as evoluções completas dos Digimons com requisitos e árvore visual
           </p>
         </div>
 
-        {/* Search Section */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Search className="w-5 h-5" />
-              Buscar Digimon
-            </CardTitle>
-            <CardDescription>
-              Digite o nome de um Digimon para ver sua linha evolutiva completa
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="relative">
-              <Input
-                type="text"
-                placeholder="Ex: Coronamon, Agumon, Gabumon..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="text-lg"
-              />
-              {searchResults.length > 0 && (
-                <div className="absolute top-full left-0 right-0 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md mt-1 shadow-lg z-10 max-h-60 overflow-y-auto">
-                  {searchResults.map((digimon) => (
-                    <DigimonCard
-                      key={digimon.name}
-                      digimon={digimon}
-                      onClick={handleDigimonSelect}
-                      showFullInfo={true}
-                    />
-                  ))}
-                </div>
-              )}
-            </div>
-          </CardContent>
-        </Card>
+        {/* Navigation */}
+        <div className="flex justify-center mb-8">
+          <div className="flex gap-2 p-1 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
+            <Button
+              variant={currentView === 'search' ? 'default' : 'ghost'}
+              onClick={() => setCurrentView('search')}
+              className="flex items-center gap-2"
+            >
+              <Search className="w-4 h-4" />
+              Buscar
+            </Button>
+            <Button
+              variant={currentView === 'list' ? 'default' : 'ghost'}
+              onClick={() => setCurrentView('list')}
+              className="flex items-center gap-2"
+            >
+              <Grid3X3 className="w-4 h-4" />
+              Listar Todos
+            </Button>
+            {selectedDigimon && (
+              <Button
+                variant={currentView === 'evolution' ? 'default' : 'ghost'}
+                onClick={() => setCurrentView('evolution')}
+                className="flex items-center gap-2"
+              >
+                <TreePine className="w-4 h-4" />
+                {selectedDigimon.digimon.name}
+              </Button>
+            )}
+          </div>
+        </div>
 
-        {/* Evolution Display */}
-        {selectedDigimon && (
+        {/* Content */}
+        {currentView === 'search' && (
+          <div className="space-y-8">
+            {/* Search Section */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Search className="w-5 h-5" />
+                  Buscar Digimon
+                </CardTitle>
+                <CardDescription>
+                  Digite o nome de um Digimon para ver sua linha evolutiva completa
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="relative">
+                  <Input
+                    type="text"
+                    placeholder="Ex: Coronamon, Agumon, Gabumon..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="text-lg"
+                  />
+                  {searchResults.length > 0 && (
+                    <div className="absolute top-full left-0 right-0 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md mt-1 shadow-lg z-10 max-h-60 overflow-y-auto">
+                      {searchResults.map((digimon) => (
+                        <DigimonCard
+                          key={digimon.name}
+                          digimon={digimon}
+                          onClick={handleDigimonSelect}
+                          showFullInfo={true}
+                        />
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Instructions */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Como usar</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-2 text-gray-600 dark:text-gray-300">
+                  <p>1. <strong>Buscar:</strong> Digite o nome de um Digimon na barra de busca</p>
+                  <p>2. <strong>Listar:</strong> Veja todos os Digimons organizados por Stage</p>
+                  <p>3. <strong>Explorar:</strong> Veja evoluções, requisitos e árvore visual</p>
+                  <p>4. <strong>Navegar:</strong> Clique em qualquer Digimon para continuar explorando</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        )}
+
+        {currentView === 'list' && <DigimonList />}
+
+        {currentView === 'evolution' && selectedDigimon && (
           <div className="space-y-6">
             {/* Selected Digimon Info */}
             <Card className="border-2 border-blue-200 dark:border-blue-800">
               <CardHeader>
                 <div className="flex items-start gap-4">
-                  {/* Imagem principal */}
                   <div className="flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
                     {getImageUrl(selectedDigimon.digimon) ? (
                       <img 
                         src={getImageUrl(selectedDigimon.digimon)} 
                         alt={selectedDigimon.digimon.name}
                         className="w-full h-full object-cover"
-                        onError={(e) => {
-                          e.target.style.display = 'none'
-                          e.target.nextSibling.style.display = 'flex'
-                        }}
                       />
-                    ) : null}
-                    <div className={`w-full h-full flex items-center justify-center ${getImageUrl(selectedDigimon.digimon) ? 'hidden' : ''}`}>
+                    ) : (
                       <ImageIcon className="w-8 h-8 text-gray-400" />
-                    </div>
+                    )}
                   </div>
                   
-                  {/* Informações principais */}
                   <div className="flex-1">
                     <CardTitle className="flex items-center gap-2 text-2xl">
                       <Info className="w-6 h-6 text-blue-600" />
@@ -308,124 +545,115 @@ function App() {
               </CardHeader>
             </Card>
 
-            {/* Evolution Lines */}
-            <div className="grid lg:grid-cols-2 gap-6">
-              {/* Evolves From */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-green-600 dark:text-green-400">
-                    <ArrowLeft className="w-5 h-5" />
-                    Evolui De ({selectedDigimon.evolves_from.length})
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  {selectedDigimon.evolves_from.length > 0 ? (
-                    <DigimonGrid 
-                      digimons={selectedDigimon.evolves_from}
-                      onClick={handleDigimonSelect}
-                      maxHeight="max-h-64"
-                    />
-                  ) : (
-                    <p className="text-gray-500 dark:text-gray-400 italic">
-                      Nenhuma pré-evolução direta encontrada
-                    </p>
-                  )}
-                </CardContent>
-              </Card>
+            {/* Tabs for different views */}
+            <Tabs defaultValue="evolutions" className="w-full">
+              <TabsList className="grid w-full grid-cols-3">
+                <TabsTrigger value="evolutions">Evoluções</TabsTrigger>
+                <TabsTrigger value="tree-successors">Árvore Futura</TabsTrigger>
+                <TabsTrigger value="tree-predecessors">Árvore Passada</TabsTrigger>
+              </TabsList>
+              
+              <TabsContent value="evolutions" className="space-y-6">
+                {/* Evolution Lines */}
+                <div className="grid lg:grid-cols-2 gap-6">
+                  {/* Evolves From */}
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2 text-green-600 dark:text-green-400">
+                        <ArrowLeft className="w-5 h-5" />
+                        Evolui De ({selectedDigimon.evolves_from.length})
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      {selectedDigimon.evolves_from.length > 0 ? (
+                        <div className="space-y-2">
+                          {selectedDigimon.evolves_from.map((digimon) => (
+                            <DigimonCard
+                              key={digimon.name}
+                              digimon={digimon}
+                              onClick={handleDigimonSelect}
+                            />
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="text-gray-500 dark:text-gray-400 italic">
+                          Nenhuma pré-evolução direta encontrada
+                        </p>
+                      )}
+                    </CardContent>
+                  </Card>
 
-              {/* Evolves To */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-blue-600 dark:text-blue-400">
-                    <ArrowRight className="w-5 h-5" />
-                    Evolui Para ({selectedDigimon.evolves_to.length})
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  {selectedDigimon.evolves_to.length > 0 ? (
-                    <DigimonGrid 
-                      digimons={selectedDigimon.evolves_to}
-                      onClick={handleDigimonSelect}
-                      maxHeight="max-h-64"
+                  {/* Evolves To */}
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2 text-blue-600 dark:text-blue-400">
+                        <ArrowRight className="w-5 h-5" />
+                        Evolui Para ({selectedDigimon.evolves_to.length})
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      {selectedDigimon.evolves_to.length > 0 ? (
+                        <div className="space-y-2">
+                          {selectedDigimon.evolves_to.map((digimon) => (
+                            <DigimonCard
+                              key={digimon.name}
+                              digimon={digimon}
+                              onClick={handleDigimonSelect}
+                              showRequirements={true}
+                            />
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="text-gray-500 dark:text-gray-400 italic">
+                          Nenhuma evolução direta encontrada
+                        </p>
+                      )}
+                    </CardContent>
+                  </Card>
+                </div>
+              </TabsContent>
+              
+              <TabsContent value="tree-successors">
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-orange-600 dark:text-orange-400">
+                      <TreePine className="w-5 h-5" />
+                      Árvore Evolutiva - Sucessores
+                    </CardTitle>
+                    <CardDescription>
+                      Visualização em árvore de todas as evoluções futuras possíveis
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <EvolutionTree 
+                      digimonName={selectedDigimon.digimon.name} 
+                      direction="successors" 
                     />
-                  ) : (
-                    <p className="text-gray-500 dark:text-gray-400 italic">
-                      Nenhuma evolução direta encontrada
-                    </p>
-                  )}
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Complete Evolution Line */}
-            <div className="grid lg:grid-cols-2 gap-6">
-              {/* All Predecessors */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-purple-600 dark:text-purple-400">
-                    Linha Evolutiva Completa - Predecessores ({selectedDigimon.complete_line.predecessors.length})
-                  </CardTitle>
-                  <CardDescription>
-                    Todos os Digimons que podem evoluir para {selectedDigimon.digimon.name}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  {selectedDigimon.complete_line.predecessors.length > 0 ? (
-                    <DigimonGrid 
-                      digimons={selectedDigimon.complete_line.predecessors}
-                      onClick={handleDigimonSelect}
+                  </CardContent>
+                </Card>
+              </TabsContent>
+              
+              <TabsContent value="tree-predecessors">
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-purple-600 dark:text-purple-400">
+                      <TreePine className="w-5 h-5" />
+                      Árvore Evolutiva - Predecessores
+                    </CardTitle>
+                    <CardDescription>
+                      Visualização em árvore de todas as pré-evoluções possíveis
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <EvolutionTree 
+                      digimonName={selectedDigimon.digimon.name} 
+                      direction="predecessors" 
                     />
-                  ) : (
-                    <p className="text-gray-500 dark:text-gray-400 italic">
-                      Nenhum predecessor encontrado
-                    </p>
-                  )}
-                </CardContent>
-              </Card>
-
-              {/* All Successors */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-orange-600 dark:text-orange-400">
-                    Linha Evolutiva Completa - Sucessores ({selectedDigimon.complete_line.successors.length})
-                  </CardTitle>
-                  <CardDescription>
-                    Todos os Digimons que {selectedDigimon.digimon.name} pode evoluir para
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  {selectedDigimon.complete_line.successors.length > 0 ? (
-                    <DigimonGrid 
-                      digimons={selectedDigimon.complete_line.successors}
-                      onClick={handleDigimonSelect}
-                    />
-                  ) : (
-                    <p className="text-gray-500 dark:text-gray-400 italic">
-                      Nenhum sucessor encontrado
-                    </p>
-                  )}
-                </CardContent>
-              </Card>
-            </div>
+                  </CardContent>
+                </Card>
+              </TabsContent>
+            </Tabs>
           </div>
-        )}
-
-        {/* Instructions */}
-        {!selectedDigimon && (
-          <Card className="mt-8">
-            <CardHeader>
-              <CardTitle>Como usar</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-2 text-gray-600 dark:text-gray-300">
-                <p>1. Digite o nome de um Digimon na barra de busca acima</p>
-                <p>2. Selecione o Digimon desejado da lista de resultados</p>
-                <p>3. Explore as evoluções diretas e a linha evolutiva completa</p>
-                <p>4. Clique em qualquer Digimon para navegar pela árvore evolutiva</p>
-                <p>5. Veja as imagens dos Digimons para uma experiência visual completa</p>
-              </div>
-            </CardContent>
-          </Card>
         )}
       </div>
     </div>
