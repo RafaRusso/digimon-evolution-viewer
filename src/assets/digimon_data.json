@@ -6879,5 +6879,317 @@
         ]
       }
     }
+  },
+  "digimon_requirements": {
+    "Botamon": {
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 1",
+          "description": "Patente de Agente 1 ou superior"
+        }
+      ]
+    },
+    "Bubbmon": {
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 1",
+          "description": "Patente de Agente 1 ou superior"
+        }
+      ]
+    },
+    "Choromon": {
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 1",
+          "description": "Patente de Agente 1 ou superior"
+        }
+      ]
+    },
+    "Koromon": {
+      "stats": [
+        {
+          "name": "PV Máx",
+          "value": 350,
+          "operator": ">=",
+          "description": "350 ou mais de PV Máx"
+        },
+        {
+          "name": "ATK",
+          "value": 150,
+          "operator": ">=",
+          "description": "150 ou mais de ATK"
+        }
+      ],
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 1",
+          "description": "Patente de Agente 1 ou superior"
+        }
+      ]
+    },
+    "Caprimon": {
+      "stats": [
+        {
+          "name": "SPI",
+          "value": 140,
+          "operator": ">=",
+          "description": "140 ou mais de SPI"
+        }
+      ],
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 1",
+          "description": "Patente de Agente 1 ou superior"
+        }
+      ]
+    },
+    "Dorimon": {
+      "stats": [
+        {
+          "name": "PV Máx",
+          "value": 350,
+          "operator": ">=",
+          "description": "350 ou mais de PV Máx"
+        },
+        {
+          "name": "ATK",
+          "value": 180,
+          "operator": ">=",
+          "description": "180 ou mais de ATK"
+        }
+      ],
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 1",
+          "description": "Patente de Agente 1 ou superior"
+        }
+      ]
+    },
+    "Agumon": {
+      "stats": [
+        {
+          "name": "PV Máx",
+          "value": 530,
+          "operator": ">=",
+          "description": "530 ou mais de PV Máx"
+        }
+      ],
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 1",
+          "description": "Patente de Agente 1 ou superior"
+        }
+      ]
+    },
+    "Coronamon": {
+      "stats": [
+        {
+          "name": "ATK",
+          "value": 220,
+          "operator": ">=",
+          "description": "220 ou mais de ATK"
+        },
+        {
+          "name": "DEF",
+          "value": 190,
+          "operator": ">=",
+          "description": "190 ou mais de DEF"
+        }
+      ],
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 1",
+          "description": "Patente de Agente 1 ou superior"
+        }
+      ]
+    },
+    "Guilmon": {
+      "stats": [
+        {
+          "name": "ATK",
+          "value": 280,
+          "operator": ">=",
+          "description": "280 ou mais de ATK"
+        }
+      ],
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 1",
+          "description": "Patente de Agente 1 ou superior"
+        }
+      ]
+    },
+    "Greymon": {
+      "stats": [
+        {
+          "name": "PV Máx",
+          "value": 1120,
+          "operator": ">=",
+          "description": "1120 ou mais de PV Máx"
+        }
+      ],
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 3",
+          "description": "Patente de Agente 3 ou superior"
+        }
+      ]
+    },
+    "Geo Greymon": {
+      "stats": [
+        {
+          "name": "PV Máx",
+          "value": 1100,
+          "operator": ">=",
+          "description": "1100 ou mais de PV Máx"
+        }
+      ],
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 3",
+          "description": "Patente de Agente 3 ou superior"
+        }
+      ]
+    },
+    "Coredramon (Green)": {
+      "stats": [
+        {
+          "name": "ATK",
+          "value": 830,
+          "operator": ">=",
+          "description": "830 ou mais de ATK"
+        }
+      ],
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 3",
+          "description": "Patente de Agente 3 ou superior"
+        }
+      ]
+    },
+    "Numemon": {
+      "stats": [
+        {
+          "name": "PM Máx",
+          "value": 330,
+          "operator": ">=",
+          "description": "330 ou mais de PM Máx"
+        }
+      ],
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 3",
+          "description": "Patente de Agente 3 ou superior"
+        }
+      ]
+    },
+    "Raptordramon": {
+      "stats": [
+        {
+          "name": "PV Máx",
+          "value": 1090,
+          "operator": ">=",
+          "description": "1090 ou mais de PV Máx"
+        }
+      ],
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 3",
+          "description": "Patente de Agente 3 ou superior"
+        }
+      ]
+    },
+    "Firamon": {
+      "stats": [
+        {
+          "name": "ATK",
+          "value": 750,
+          "operator": ">=",
+          "description": "750 ou mais de ATK"
+        }
+      ],
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 3",
+          "description": "Patente de Agente 3 ou superior"
+        }
+      ]
+    },
+    "Growmon": {
+      "stats": [
+        {
+          "name": "ATK",
+          "value": 820,
+          "operator": ">=",
+          "description": "820 ou mais de ATK"
+        }
+      ],
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 3",
+          "description": "Patente de Agente 3 ou superior"
+        }
+      ]
+    },
+    "Lucemon": {
+      "stats": [
+        {
+          "name": "INT",
+          "value": 430,
+          "operator": ">=",
+          "description": "430 ou mais de INT"
+        }
+      ],
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 5",
+          "description": "Patente de Agente 5 ou superior"
+        },
+        {
+          "name": "Talento",
+          "value": "30",
+          "description": "Talento 30 ou superior"
+        }
+      ]
+    },
+    "Agumon -Yuki No Kizuna-": {
+      "stats": [
+        {
+          "name": "ATK",
+          "value": 3630,
+          "operator": ">=",
+          "description": "3630 ou mais de ATK"
+        }
+      ],
+      "other": [
+        {
+          "name": "Patente",
+          "value": "Agente 8",
+          "description": "Patente de Agente 8 ou superior"
+        },
+        {
+          "name": "Habilidades",
+          "value": "Valor 46",
+          "description": "46 habilidades Valor aprendidas"
+        }
+      ]
+    }
   }
 }
