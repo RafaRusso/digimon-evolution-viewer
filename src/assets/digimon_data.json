@@ -1349,35 +1349,35 @@
       "name": "Aegiochusmon",
       "stage": "V",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Aegiochusmon.jpg"
     },
     "Aegiochusmon: Green": {
       "number": 194,
       "name": "Aegiochusmon: Green",
       "stage": "V",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Aegiochusmon__Green.jpg"
     },
     "Aegiochusmon: Dark": {
       "number": 195,
       "name": "Aegiochusmon: Dark",
       "stage": "V",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Aegiochusmon__Dark.jpg"
     },
     "Aegiochusmon: Blue": {
       "number": 196,
       "name": "Aegiochusmon: Blue",
       "stage": "V",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Aegiochusmon__Blue.jpg"
     },
     "Aegiochusmon: Holy": {
       "number": 197,
       "name": "Aegiochusmon: Holy",
       "stage": "V",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Aegiochusmon__Holy.jpg"
     },
     "Atlur Kabuterimon": {
       "number": 198,
@@ -2161,7 +2161,7 @@
       "name": "Ulforce V-Dramon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": "Ulforce V-Dramon.jpg"
+      "image": "Ulforce_V-Dramon.jpg"
     },
     "Valdurmon": {
       "number": 310,
@@ -2182,7 +2182,7 @@
       "name": "War Greymon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": "War Greymon.jpg"
+      "image": "War_Greymon.jpg"
     },
     "Ouryumon": {
       "number": 313,
@@ -2203,7 +2203,7 @@
       "name": "Clavis Angemon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": "Clavis Angemon.jpg"
+      "image": "Clavis_Angemon.jpg"
     },
     "Craniummon": {
       "number": 316,
@@ -2231,14 +2231,14 @@
       "name": "Cherubimon (Vice)",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": "Cherubimon (Vice).jpg"
+      "image": "Cherubimon__Vice_.jpg"
     },
     "Cherubimon (Virtue)": {
       "number": 320,
       "name": "Cherubimon (Virtue)",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": "Cherubimon (Virtue).jpg"
+      "image": "Cherubimon__Virtue_.jpg"
     },
     "Goddramon": {
       "number": 321,
@@ -2252,266 +2252,266 @@
       "name": "Shine Greymon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Shine_Greymon.jpg"
     },
     "Justimon": {
       "number": 323,
       "name": "Justimon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Justimon.jpg"
     },
     "Skull Mammon": {
       "number": 324,
       "name": "Skull Mammon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Skull_Mammon.jpg"
     },
     "Slash Angemon": {
       "number": 325,
       "name": "Slash Angemon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Slash_Angemon.jpg"
     },
     "Sleipmon": {
       "number": 326,
       "name": "Sleipmon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Sleipmon.jpg"
     },
     "Slayerdramon": {
       "number": 327,
       "name": "Slayerdramon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Slayerdramon.jpg"
     },
     "Seraphimon": {
       "number": 328,
       "name": "Seraphimon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Seraphimon.jpg"
     },
     "Saint Galgomon": {
       "number": 329,
       "name": "Saint Galgomon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Saint_Galgomon.jpg"
     },
     "Durandamon": {
       "number": 330,
       "name": "Durandamon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Durandamon.jpg"
     },
     "Neptunemon": {
       "number": 331,
       "name": "Neptunemon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Neptunemon.jpg"
     },
     "Hi Andromon": {
       "number": 332,
       "name": "Hi Andromon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Hi_Andromon.jpg"
     },
     "Bancho Leomon": {
       "number": 333,
       "name": "Bancho Leomon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Bancho_Leomon.jpg"
     },
     "Herakle Kabuterimon": {
       "number": 334,
       "name": "Herakle Kabuterimon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Herakle_Kabuterimon.jpg"
     },
     "Hououmon": {
       "number": 335,
       "name": "Hououmon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Hououmon.jpg"
     },
     "Holydramon": {
       "number": 336,
       "name": "Holydramon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Holydramon.jpg"
     },
     "Mastemon": {
       "number": 337,
       "name": "Mastemon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Mastemon.jpg"
     },
     "Marin Angemon": {
       "number": 338,
       "name": "Marin Angemon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Marin_Angemon.jpg"
     },
     "Marsmon": {
       "number": 339,
       "name": "Marsmon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Marsmon.jpg"
     },
     "Jupitermon": {
       "number": 340,
       "name": "Jupitermon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Jupitermon.jpg"
     },
     "Ravmon": {
       "number": 341,
       "name": "Ravmon",
       "stage": "VI",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Ravmon.jpg"
     },
     "Ultimate Brachiomon": {
       "number": 342,
       "name": "Ultimate Brachiomon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Ultimate_Brachiomon.jpg"
     },
     "Vulcanusmon": {
       "number": 343,
       "name": "Vulcanusmon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Vulcanusmon.jpg"
     },
     "Gankoomon": {
       "number": 344,
       "name": "Gankoomon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Gankoomon.jpg"
     },
     "Kuzuhamon": {
       "number": 345,
       "name": "Kuzuhamon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Kuzuhamon.jpg"
     },
     "Grand Locomon": {
       "number": 346,
       "name": "Grand Locomon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Grand_Locomon.jpg"
     },
     "Griffomon": {
       "number": 347,
       "name": "Griffomon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Griffomon.jpg"
     },
     "Ceresmon": {
       "number": 348,
       "name": "Ceresmon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Ceresmon.jpg"
     },
     "Ceresmon Medium": {
       "number": 349,
       "name": "Ceresmon Medium",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Ceresmon_Medium.jpg"
     },
     "Saber Leomon": {
       "number": 350,
       "name": "Saber Leomon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Saber_Leomon.jpg"
     },
     "Sakuyamon": {
       "number": 351,
       "name": "Sakuyamon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Sakuyamon.jpg"
     },
     "Jesmon": {
       "number": 352,
       "name": "Jesmon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Jesmon.jpg"
     },
     "Jumbo Gamemon": {
       "number": 353,
       "name": "Jumbo Gamemon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Jumbo_Gamemon.jpg"
     },
     "Dianamon": {
       "number": 354,
       "name": "Dianamon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Dianamon.jpg"
     },
     "Dynasmon": {
       "number": 355,
       "name": "Dynasmon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Dynasmon.jpg"
     },
     "Duftmon": {
       "number": 356,
       "name": "Duftmon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Duftmon.jpg"
     },
     "Duftmon: Leopard Mode": {
       "number": 357,
       "name": "Duftmon: Leopard Mode",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Duftmon__Leopard_Mode.jpg"
     },
     "Dorugoramon": {
       "number": 358,
       "name": "Dorugoramon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Dorugoramon.jpg"
     },
     "Pile Volcamon": {
       "number": 359,
       "name": "Pile Volcamon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Pile_Volcamon.jpg"
     },
     "Prince Mamemon": {
       "number": 360,
@@ -2525,98 +2525,98 @@
       "name": "Plesiomon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Plesiomon.jpg"
     },
     "Boltmon": {
       "number": 362,
       "name": "Boltmon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Boltmon.jpg"
     },
     "Mirage Gaogamon": {
       "number": 363,
       "name": "Mirage Gaogamon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Mirage_Gaogamon.jpg"
     },
     "Metal Garurumon": {
       "number": 364,
       "name": "Metal Garurumon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Metal_Garurumon.jpg"
     },
     "Metal Seadramon": {
       "number": 365,
       "name": "Metal Seadramon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Metal_Seadramon.jpg"
     },
     "Medieval Dukemon": {
       "number": 366,
       "name": "Medieval Dukemon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Medieval_Dukemon.jpg"
     },
     "Rosemon": {
       "number": 367,
       "name": "Rosemon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Rosemon.jpg"
     },
     "Lotusmon": {
       "number": 368,
       "name": "Lotusmon",
       "stage": "VI",
       "attribute": "Data",
-      "image": null
+      "image": "Lotusmon.jpg"
     },
     "Avenge Kidmon": {
       "number": 369,
       "name": "Avenge Kidmon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Avenge_Kidmon.jpg"
     },
     "Ebemon": {
       "number": 370,
       "name": "Ebemon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Ebemon.jpg"
     },
     "Venom Vamdemon": {
       "number": 371,
       "name": "Venom Vamdemon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Venom_Vamdemon.jpg"
     },
     "Ancient Wisemon": {
       "number": 372,
       "name": "Ancient Wisemon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Ancient_Wisemon.jpg"
     },
     "Gaioumon": {
       "number": 373,
       "name": "Gaioumon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Gaioumon.jpg"
     },
     "Chaos Dukemon": {
       "number": 374,
       "name": "Chaos Dukemon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Chaos_Dukemon.jpg"
     },
     "Chaosdramon": {
       "number": 375,
@@ -2630,196 +2630,196 @@
       "name": "Callismon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Callismon.jpg"
     },
     "Gundramon": {
       "number": 377,
       "name": "Gundramon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Gundramon.jpg"
     },
     "King Etemon": {
       "number": 378,
       "name": "King Etemon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "King_Etemon.jpg"
     },
     "Grand Dracumon": {
       "number": 379,
       "name": "Grand Dracumon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Grand_Dracumon.jpg"
     },
     "Chronomon Destroy": {
       "number": 380,
       "name": "Chronomon Destroy",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Chronomon_Destroy.jpg"
     },
     "Zanbamon": {
       "number": 381,
       "name": "Zanbamon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Zanbamon.jpg"
     },
     "Undead Plutomon": {
       "number": 382,
       "name": "Undead Plutomon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Undead_Plutomon.jpg"
     },
     "Darkdramon": {
       "number": 383,
       "name": "Darkdramon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Darkdramon.jpg"
     },
     "Tiger Vespamon": {
       "number": 384,
       "name": "Tiger Vespamon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Tiger_Vespamon.jpg"
     },
     "Titamon": {
       "number": 385,
       "name": "Titamon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Titamon.jpg"
     },
     "Tyrant Kabuterimon": {
       "number": 386,
       "name": "Tyrant Kabuterimon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Tyrant_Kabuterimon.jpg"
     },
     "Demon": {
       "number": 387,
       "name": "Demon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Demon.jpg"
     },
     "Dukemon": {
       "number": 388,
       "name": "Dukemon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Dukemon.jpg"
     },
     "Bacchusmon": {
       "number": 389,
       "name": "Bacchusmon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Bacchusmon.jpg"
     },
     "Bacchusmon Drunk": {
       "number": 390,
       "name": "Bacchusmon Drunk",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Bacchusmon_Drunk.jpg"
     },
     "Barbamon": {
       "number": 391,
       "name": "Barbamon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Barbamon.jpg"
     },
     "Piemon": {
       "number": 392,
       "name": "Piemon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Piemon.jpg"
     },
     "Pinochimon": {
       "number": 393,
       "name": "Pinochimon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Pinochimon.jpg"
     },
     "Pharaohmon": {
       "number": 394,
       "name": "Pharaohmon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Pharaohmon.jpg"
     },
     "Pukumon": {
       "number": 395,
       "name": "Pukumon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Pukumon.jpg"
     },
     "Platinum Numemon": {
       "number": 396,
       "name": "Platinum Numemon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Platinum_Numemon.jpg"
     },
     "Plutomon": {
       "number": 397,
       "name": "Plutomon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Plutomon.jpg"
     },
     "Breakdramon": {
       "number": 398,
       "name": "Breakdramon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Breakdramon.jpg"
     },
     "Belial Vamdemon": {
       "number": 399,
       "name": "Belial Vamdemon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Belial_Vamdemon.jpg"
     },
     "Beel Starmon": {
       "number": 400,
       "name": "Beel Starmon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Beel_Starmon.jpg"
     },
     "Beelzebumon": {
       "number": 401,
       "name": "Beelzebumon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Beelzebumon.jpg"
     },
     "Belphemon: Sleep Mode": {
       "number": 402,
       "name": "Belphemon: Sleep Mode",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Belphemon__Sleep_Mode.jpg"
     },
     "Magna Kidmon": {
       "number": 403,
       "name": "Magna Kidmon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Magna_Kidmon.jpg"
     },
     "Minervamon": {
       "number": 404,
@@ -2833,77 +2833,77 @@
       "name": "Millenniumon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Millenniumon.jpg"
     },
     "Mugendramon": {
       "number": 406,
       "name": "Mugendramon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Mugendramon.jpg"
     },
     "Megidramon": {
       "number": 407,
       "name": "Megidramon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Megidramon.jpg"
     },
     "Metal Etemon": {
       "number": 408,
       "name": "Metal Etemon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Metal_Etemon.jpg"
     },
     "Mercurymon": {
       "number": 409,
       "name": "Mercurymon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Mercurymon.jpg"
     },
     "Junomon": {
       "number": 410,
       "name": "Junomon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Junomon.jpg"
     },
     "Junomon: Hysteric Mode": {
       "number": 411,
       "name": "Junomon: Hysteric Mode",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Junomon__Hysteric_Mode.jpg"
     },
     "Rust Tyranomon": {
       "number": 412,
       "name": "Rust Tyranomon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Rust_Tyranomon.jpg"
     },
     "Leviamon": {
       "number": 413,
       "name": "Leviamon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Leviamon.jpg"
     },
     "Lilithmon": {
       "number": 414,
       "name": "Lilithmon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Lilithmon.jpg"
     },
     "Lord Knightmon": {
       "number": 415,
       "name": "Lord Knightmon",
       "stage": "VI",
       "attribute": "Virus",
-      "image": null
+      "image": "Lord_Knightmon.jpg"
     },
     "Imperialdramon: Dragon Mode": {
       "number": 416,
@@ -2931,7 +2931,7 @@
       "name": "Valkyrimon",
       "stage": "VI",
       "attribute": "Free",
-      "image": null
+      "image": "Valkyrimon.jpg"
     },
     "Gran Kuwagamon": {
       "number": 420,
@@ -2973,7 +2973,7 @@
       "name": "Magna Garurumon",
       "stage": "Transcendent Hybrid",
       "attribute": "Variable",
-      "image": null
+      "image": "Magna_Garurumon.jpg"
     },
     "Magna Garurumon: Separation": {
       "number": 426,
@@ -3022,7 +3022,7 @@
       "name": "Chaosmon",
       "stage": "VI+",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Chaosmon.jpg"
     },
     "Chaosmon: Valdur Arm": {
       "number": 433,
@@ -3057,7 +3057,7 @@
       "name": "Jupitermon: Wrath Mode",
       "stage": "VI+",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Jupitermon__Wrath_Mode.jpg"
     },
     "Ravmon: Burst Mode": {
       "number": 438,
@@ -3071,7 +3071,7 @@
       "name": "Examon",
       "stage": "VI+",
       "attribute": "Data",
-      "image": null
+      "image": "Examon.jpg"
     },
     "Mirage Gaogamon: Burst Mode": {
       "number": 440,
@@ -3127,7 +3127,7 @@
       "name": "Lucemon: Satan Mode",
       "stage": "VI+",
       "attribute": "Virus",
-      "image": null
+      "image": "Lucemon__Satan_Mode.jpg"
     },
     "Armagemon": {
       "number": 448,
@@ -6843,25 +6843,24 @@
     ]
   },
   "evolution_requirements": {
-  "Guilmon": {
-    "Geo Greymon": {
-      "stats": [
-        {
-          "name": "PV Máx",
-          "value": 1100,
-          "operator": ">=", 
-          "description": "1100 ou mais de PV Máx"
-        }
-      ],
-      "other": [
-        {
-          "name": "Patente",
-          "value": "Agente 3",
-          "description": "Patente de Agente 3 ou superior"
-        }
-      ]
+    "Guilmon": {
+      "Geo Greymon": {
+        "stats": [
+          {
+            "name": "PV Máx",
+            "value": 1100,
+            "operator": ">=",
+            "description": "1100 ou mais de PV Máx"
+          }
+        ],
+        "other": [
+          {
+            "name": "Patente",
+            "value": "Agente 3",
+            "description": "Patente de Agente 3 ou superior"
+          }
+        ]
+      }
     }
   }
-}
-
 }
