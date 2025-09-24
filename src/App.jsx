@@ -135,6 +135,7 @@ function App() {
       'IV': 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300',
       'V': 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300',
       'VI': 'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-300',
+      'VI+': 'bg-violet-100 text-violet-800 dark:bg-violet-900 dark:text-violet-300',
       'Human Hybrid': 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300',
       'Beast Hybrid': 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-300'
     }
@@ -261,7 +262,7 @@ function App() {
     })
 
     // Ordenar stages
-    const stageOrder = ['I', 'II', 'III', 'IV', 'V', 'VI', 'Human Hybrid', 'Beast Hybrid']
+    const stageOrder = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VI+', 'Human Hybrid', 'Beast Hybrid']
     const sortedStages = stageOrder.filter(stage => digimonsByStage[stage])
 
     return (
@@ -281,7 +282,18 @@ function App() {
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {digimonsByStage[stage]
-                  .sort((a, b) => a.name.localeCompare(b.name))
+                  .sort((a, b) => {
+                    const an = Number(a?.number)
+                    const bn = Number(b?.number)
+                    const aIsNum = Number.isFinite(an)
+                    const bIsNum = Number.isFinite(bn)
+                    if (aIsNum && bIsNum) return an - bn
+                    if (aIsNum) return -1
+                    if (bIsNum) return 1
+                    const as = String(a?.number ?? '').localeCompare(String(b?.number ?? ''))
+                    if (as !== 0) return as
+                    return a.name.localeCompare(b.name)
+                  })
                   .map(digimon => (
                     <DigimonCard
                       key={digimon.name}
