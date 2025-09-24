@@ -34,6 +34,11 @@ function App() {
     }
   }, [searchQuery, evolutionData])
 
+  // Função para obter requisitos de um Digimon específico
+  const getDigimonRequirements = (digimonName) => {
+    return evolutionData?.digimon_requirements?.[digimonName] || null
+  }
+
   const getEvolutionLine = (digimonName) => {
     if (!evolutionData) return null
 
@@ -50,18 +55,18 @@ function App() {
       }
     }
 
-    // Evoluções diretas com requisitos
+    // Evoluções diretas com requisitos do Digimon de destino
     if (evolutionData.evolutions[digimonName]) {
       result.evolves_to = evolutionData.evolutions[digimonName]
         .map(name => {
           const evoDigimon = evolutionData.digimons[name]
           if (!evoDigimon) return null
           
-          // Adicionar requisitos se existirem
-          const requirements = evolutionData.evolution_requirements?.[digimonName]?.[name]
+          // Buscar requisitos do Digimon de destino
+          const requirements = getDigimonRequirements(name)
           return {
             ...evoDigimon,
-            requirements: requirements || null
+            requirements: requirements
           }
         })
         .filter(Boolean)
@@ -164,16 +169,16 @@ function App() {
     return (
       <div className="mt-2 p-2 bg-gray-50 dark:bg-gray-800 rounded-md">
         <div className="text-xs font-medium text-gray-700 dark:text-gray-300 mb-1">
-          Requisitos para Evolução:
+          📋 Requisitos para Evolução:
         </div>
         <div className="space-y-1">
-          {requirements.stats?.map((stat, index) => (
+          {requirements.stats && requirements.stats.map((stat, index) => (
             <div key={index} className="flex items-center gap-1 text-xs">
               <Lightning className="w-3 h-3 text-yellow-500" />
               <span className="text-gray-600 dark:text-gray-400">{stat.description}</span>
             </div>
           ))}
-          {requirements.other?.map((req, index) => (
+          {requirements.other && requirements.other.map((req, index) => (
             <div key={index} className="flex items-center gap-1 text-xs">
               <Star className="w-3 h-3 text-blue-500" />
               <span className="text-gray-600 dark:text-gray-400">{req.description}</span>
@@ -450,10 +455,9 @@ function App() {
           </div>
         </div>
 
-        {/* Content */}
+        {/* Search View */}
         {currentView === 'search' && (
-          <div className="space-y-8">
-            {/* Search Section */}
+          <div className="max-w-2xl mx-auto space-y-6">
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -465,44 +469,53 @@ function App() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="relative">
-                  <Input
-                    type="text"
-                    placeholder="Ex: Coronamon, Agumon, Gabumon..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    className="text-lg"
-                  />
-                  {searchResults.length > 0 && (
-                    <div className="absolute top-full left-0 right-0 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md mt-1 shadow-lg z-10 max-h-60 overflow-y-auto">
-                      {searchResults.map((digimon) => (
-                        <DigimonCard
-                          key={digimon.name}
-                          digimon={digimon}
-                          onClick={handleDigimonSelect}
-                          showFullInfo={true}
-                        />
-                      ))}
-                    </div>
-                  )}
-                </div>
+                <Input
+                  type="text"
+                  placeholder="Ex: Agumon, Coronamon, Guilmon..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="text-lg"
+                />
               </CardContent>
             </Card>
 
-            {/* Instructions */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Como usar</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-2 text-gray-600 dark:text-gray-300">
-                  <p>1. <strong>Buscar:</strong> Digite o nome de um Digimon na barra de busca</p>
-                  <p>2. <strong>Listar:</strong> Veja todos os Digimons organizados por Stage</p>
-                  <p>3. <strong>Explorar:</strong> Veja evoluções, requisitos e árvore visual</p>
-                  <p>4. <strong>Navegar:</strong> Clique em qualquer Digimon para continuar explorando</p>
-                </div>
-              </CardContent>
-            </Card>
+            {searchResults.length > 0 && (
+              <Card>
+                <CardHeader>
+                  <CardTitle>Resultados da Busca ({searchResults.length})</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2">
+                    {searchResults.map((digimon) => (
+                      <DigimonCard
+                        key={digimon.name}
+                        digimon={digimon}
+                        onClick={handleDigimonSelect}
+                      />
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            {searchQuery.trim() === '' && (
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Info className="w-5 h-5" />
+                    Como usar
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2 text-gray-600 dark:text-gray-300">
+                    <p>1. <strong>Buscar:</strong> Digite o nome de qualquer Digimon</p>
+                    <p>2. <strong>Selecionar:</strong> Clique no resultado desejado</p>
+                    <p>3. <strong>Explorar:</strong> Veja evoluções, requisitos e árvore visual</p>
+                    <p>4. <strong>Navegar:</strong> Clique em qualquer Digimon para continuar explorando</p>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
           </div>
         )}
 
