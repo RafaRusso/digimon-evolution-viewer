@@ -453,7 +453,7 @@ function App() {
       }}
     >
       {/* Header Melhorado */}
-      <div className="relative overflow-hidden h-56 md:h-80">
+      <div className="relative overflow-hidden h-56 md:h-100">
         {/* Hero image background */}
         <div
           className="absolute inset-0 bg-no-repeat bg-cover"
@@ -471,7 +471,7 @@ function App() {
           <div className="max-w-7xl mx-auto text-center">
             <div className="flex items-center justify-center gap-4 mb-6">
               <div className="p-3 bg-black/30 rounded-2xl backdrop-blur-sm border border-white/20 shadow-lg">
-                <Zap className="w-8 h-8 md:w-10 md:h-10 text-white" />
+                <Zap className="w-8 h-8 md:w-10 md:h-15 text-white" />
               </div>
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg">
                 Visualizador de Linhas Evolutivas
@@ -577,7 +577,7 @@ function App() {
               </Card>
             )}
 
-            {searchQuery.trim() === '' && (
+{searchQuery.trim() === '' && (
               <Card className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50 shadow-xl">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3 text-xl">
@@ -587,26 +587,38 @@ function App() {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4 text-gray-700 dark:text-gray-300">
-                    {[
-                      { n: 1, color: 'blue', text: 'Buscar: Digite o nome de qualquer Digimon no campo acima' },
-                      { n: 2, color: 'purple', text: 'Selecionar: Clique no resultado desejado para ver detalhes' },
-                      { n: 3, color: 'green', text: 'Explorar: Veja evoluções, requisitos e árvore visual completa' },
-                      { n: 4, color: 'orange', text: 'Navegar: Clique em qualquer Digimon para continuar explorando' },
-                    ].map((item) => (
-                      <div key={item.n} className="flex items-start gap-4">
-                        <div className={`w-8 h-8 bg-${item.color}-100 dark:bg-${item.color}-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5`}>
-                          <span className={`text-${item.color}-600 dark:text-${item.color}-400 font-bold text-sm`}>{item.n}</span>
-                        </div>
-                        <div className="leading-relaxed">
-                          {item.text.split(':')[0] && (
-                            <>
-                              <strong className="text-gray-900 dark:text-white">{item.text.split(':')[0]}:</strong>
-                              <span> {item.text.split(':').slice(1).join(':').trim()}</span>
-                            </>
-                          )}
-                        </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-8 h-8 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-0">
+                        <span className="text-blue-600 dark:text-blue-400 font-bold text-sm">1</span>
                       </div>
-                    ))}
+                      <div>
+                        <strong className="text-gray-900 dark:text-white">Buscar:</strong> Digite o nome de qualquer Digimon no campo acima
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-8 h-8 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-0">
+                        <span className="text-purple-600 dark:text-purple-400 font-bold text-sm">2</span>
+                      </div>
+                      <div>
+                        <strong className="text-gray-900 dark:text-white">Selecionar:</strong> Clique no resultado desejado para ver detalhes
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-8 h-8 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-0">
+                        <span className="text-green-600 dark:text-green-400 font-bold text-sm">3</span>
+                      </div>
+                      <div>
+                        <strong className="text-gray-900 dark:text-white">Explorar:</strong> Veja evoluções, requisitos e árvore visual completa
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-8 h-8 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-0">
+                        <span className="text-orange-600 dark:text-orange-400 font-bold text-sm">4</span>
+                      </div>
+                      <div>
+                        <strong className="text-gray-900 dark:text-white">Navegar:</strong> Clique em qualquer Digimon para continuar explorando
+                      </div>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
