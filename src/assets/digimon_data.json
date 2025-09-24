@@ -2910,21 +2910,21 @@
       "name": "Imperialdramon: Dragon Mode",
       "stage": "VI",
       "attribute": "Free",
-      "image": null
+      "image": "Imperialdramon__Dragon_Mode.jpg"
     },
     "Imperialdramon: Fighter Mode": {
       "number": 417,
       "name": "Imperialdramon: Fighter Mode",
       "stage": "VI",
       "attribute": "Free",
-      "image": null
+      "image": "Imperialdramon__Fighter_Mode.jpg"
     },
     "Vikemon": {
       "number": 418,
       "name": "Vikemon",
       "stage": "VI",
       "attribute": "Free",
-      "image": null
+      "image": "Vikemon.jpg"
     },
     "Valkyrimon": {
       "number": 419,
@@ -2938,14 +2938,14 @@
       "name": "Gran Kuwagamon",
       "stage": "VI",
       "attribute": "Free",
-      "image": null
+      "image": "Gran_Kuwagamon.jpg"
     },
     "Diablomon": {
       "number": 421,
       "name": "Diablomon",
       "stage": "VI",
       "attribute": "Unknown",
-      "image": null
+      "image": "Diablomon.jpg"
     },
     "Rapidmon Armor": {
       "number": 422,
@@ -2966,7 +2966,7 @@
       "name": "Kaiser Greymon",
       "stage": "Transcendent Hybrid",
       "attribute": "Variable",
-      "image": null
+      "image": "Kaiser_Greymon.jpg"
     },
     "Magna Garurumon": {
       "number": 425,
@@ -2980,28 +2980,28 @@
       "name": "Magna Garurumon: Separation",
       "stage": "Transcendent Hybrid",
       "attribute": "Variable",
-      "image": null
+      "image": "Magna_Garurumon__Separation.jpg"
     },
     "Alphamon: Ouryuken": {
       "number": 427,
       "name": "Alphamon: Ouryuken",
       "stage": "VI+",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Alphamon__Ouryuken.jpg"
     },
     "Enbarrmon Craniummon": {
       "number": 428,
       "name": "Enbarrmon Craniummon",
       "stage": "VI+",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Enbarrmon_Craniummon.jpg"
     },
     "Imperialdramon: Paladin Mode": {
       "number": 429,
       "name": "Imperialdramon: Paladin Mode",
       "stage": "VI+",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Imperialdramon__Paladin_Mode.jpg"
     },
     "Omegamon": {
       "number": 430,
@@ -3015,7 +3015,7 @@
       "name": "Omegamon Zwart",
       "stage": "VI+",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Omegamon_Zwart.jpg"
     },
     "Chaosmon": {
       "number": 432,
@@ -3029,28 +3029,28 @@
       "name": "Chaosmon: Valdur Arm",
       "stage": "VI+",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Chaosmon__Valdur_Arm.jpg"
     },
     "Grace Novamon": {
       "number": 434,
       "name": "Grace Novamon",
       "stage": "VI+",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Grace_Novamon.jpg"
     },
     "Shine Greymon: Burst Mode": {
       "number": 435,
       "name": "Shine Greymon: Burst Mode",
       "stage": "VI+",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Shine_Greymon__Burst_Mode.jpg"
     },
     "Susanoomon": {
       "number": 436,
       "name": "Susanoomon",
       "stage": "VI+",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Susanoomon.jpg"
     },
     "Jupitermon: Wrath Mode": {
       "number": 437,
@@ -3064,7 +3064,7 @@
       "name": "Ravmon: Burst Mode",
       "stage": "VI+",
       "attribute": "Vaccine",
-      "image": null
+      "image": "Ravmon__Burst_Mode.jpg"
     },
     "Examon": {
       "number": 439,
@@ -3078,49 +3078,49 @@
       "name": "Mirage Gaogamon: Burst Mode",
       "stage": "VI+",
       "attribute": "Data",
-      "image": null
+      "image": "Mirage_Gaogamon__Burst_Mode.jpg"
     },
     "Rosemon: Burst Mode": {
       "number": 441,
       "name": "Rosemon: Burst Mode",
       "stage": "VI+",
       "attribute": "Data",
-      "image": null
+      "image": "Rosemon__Burst_Mode.jpg"
     },
     "Skull Baluchimon Titamon": {
       "number": 442,
       "name": "Skull Baluchimon Titamon",
       "stage": "VI+",
       "attribute": "Virus",
-      "image": null
+      "image": "Skull_Baluchimon_Titamon.jpg"
     },
     "Dukemon: Crimson Mode": {
       "number": 443,
       "name": "Dukemon: Crimson Mode",
       "stage": "VI+",
       "attribute": "Virus",
-      "image": null
+      "image": "Dukemon__Crimson_Mode.jpg"
     },
     "Beelzebumon: Blast Mode": {
       "number": 444,
       "name": "Beelzebumon: Blast Mode",
       "stage": "VI+",
       "attribute": "Virus",
-      "image": null
+      "image": "Beelzebumon__Blast_Mode.jpg"
     },
     "Belphemon: Rage Mode": {
       "number": 445,
       "name": "Belphemon: Rage Mode",
       "stage": "VI+",
       "attribute": "Virus",
-      "image": null
+      "image": "Belphemon__Rage_Mode.jpg"
     },
     "Mervamon": {
       "number": 446,
       "name": "Mervamon",
       "stage": "VI+",
       "attribute": "Virus",
-      "image": null
+      "image": "Mervamon.jpg"
     },
     "Lucemon: Satan Mode": {
       "number": 447,
@@ -3134,7 +3134,7 @@
       "name": "Armagemon",
       "stage": "VI+",
       "attribute": "Unknown",
-      "image": null
+      "image": "Armagemon.jpg"
     },
     "Agumon -Yuki No Kizuna-": {
       "number": 449,
@@ -3148,14 +3148,14 @@
       "name": "Apocalymon",
       "stage": "VI+",
       "attribute": "Unknown",
-      "image": null
+      "image": "Apocalymon.jpg"
     },
     "Gabumon -Yujo No Kizuna-": {
       "number": 451,
       "name": "Gabumon -Yujo No Kizuna-",
       "stage": "VI+",
       "attribute": "Unknown",
-      "image": null
+      "image": "Gabumon_-Yujo_No_Kizuna-.jpg"
     }
   },
   "evolutions": {
