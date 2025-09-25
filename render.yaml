@@ -1,0 +1,69 @@
+# Configuração do Render para Digimon Evolution
+# Este arquivo permite deploy automático via Blueprint
+
+services:
+  # API Backend
+  - type: web
+    name: digimon-evolution-api
+    env: docker
+    dockerfilePath: ./digimon-api/Dockerfile
+    dockerContext: ./digimon-api
+    plan: starter
+    region: oregon
+    branch: main
+    healthCheckPath: /health
+    buildCommand: |
+      echo "Building Digimon Evolution API..."
+      docker build -t digimon-api .
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: HOST
+        value: 0.0.0.0
+      - key: SUPABASE_URL
+        sync: false  # Configure manualmente no dashboard
+      - key: SUPABASE_ANON_KEY
+        sync: false  # Configure manualmente no dashboard
+      - key: CORS_ORIGIN
+        value: https://digimon-evolution-frontend.onrender.com
+      - key: RATE_LIMIT_MAX
+        value: 100
+      - key: RATE_LIMIT_WINDOW
+        value: 60000
+      - key: LOG_LEVEL
+        value: info
+    scaling:
+      minInstances: 1
+      maxInstances: 3
+    autoDeploy: true
+
+  # Frontend React
+  - type: web
+    name: digimon-evolution-frontend
+    env: docker
+    dockerfilePath: ./digimon-frontend/Dockerfile
+    dockerContext: ./digimon-frontend
+    plan: starter
+    region: oregon
+    branch: main
+    buildCommand: |
+      echo "Building Digimon Evolution Frontend..."
+      docker build --build-arg VITE_API_URL=https://digimon-evolution-api.onrender.com -t digimon-frontend .
+    envVars:
+      - key: VITE_API_URL
+        value: https://digimon-evolution-api.onrender.com
+    scaling:
+      minInstances: 1
+      maxInstances: 2
+    autoDeploy: true
+
+# Configurações opcionais para banco de dados gerenciado
+# Descomente se quiser usar PostgreSQL do Render ao invés do Supabase
+# databases:
+#   - name: digimon-postgres
+#     databaseName: digimon_evolution
+#     user: digimon_user
+#     plan: starter
+#     region: oregon

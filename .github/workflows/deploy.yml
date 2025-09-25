@@ -1,0 +1,97 @@
+# GitHub Actions para Deploy Automático no Render
+name: Deploy to Render
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  NODE_VERSION: '18'
+
+jobs:
+  # Job para testes e validação
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+
+    - name: Install API dependencies
+      working-directory: ./digimon-api
+      run: npm ci
+
+    - name: Install Frontend dependencies
+      working-directory: ./digimon-frontend
+      run: npm ci
+
+    - name: Lint API
+      working-directory: ./digimon-api
+      run: npm run lint || true
+
+    - name: Lint Frontend
+      working-directory: ./digimon-frontend
+      run: npm run lint || true
+
+    - name: Test Docker builds
+      run: |
+        docker build -t digimon-api-test ./digimon-api
+        docker build -t digimon-frontend-test ./digimon-frontend
+
+  # Job para deploy (apenas em push para main)
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Deploy to Render
+      uses: johnbeynon/render-deploy-action@v0.0.8
+      with:
+        service-id: ${{ secrets.RENDER_API_SERVICE_ID }}
+        api-key: ${{ secrets.RENDER_API_KEY }}
+
+    - name: Deploy Frontend to Render
+      uses: johnbeynon/render-deploy-action@v0.0.8
+      with:
+        service-id: ${{ secrets.RENDER_FRONTEND_SERVICE_ID }}
+        api-key: ${{ secrets.RENDER_API_KEY }}
+
+    - name: Wait for deployment
+      run: sleep 60
+
+    - name: Verify deployment
+      run: |
+        chmod +x ./scripts/verify-deploy.sh
+        ./scripts/verify-deploy.sh ${{ secrets.API_URL }} ${{ secrets.FRONTEND_URL }}
+
+  # Job para notificação
+  notify:
+    needs: [test, deploy]
+    runs-on: ubuntu-latest
+    if: always()
+    
+    steps:
+    - name: Notify success
+      if: needs.deploy.result == 'success'
+      run: |
+        echo "✅ Deploy realizado com sucesso!"
+        echo "🔗 Frontend: ${{ secrets.FRONTEND_URL }}"
+        echo "🔗 API: ${{ secrets.API_URL }}"
+
+    - name: Notify failure
+      if: needs.deploy.result == 'failure'
+      run: |
+        echo "❌ Deploy falhou!"
+        echo "Verifique os logs para mais detalhes."

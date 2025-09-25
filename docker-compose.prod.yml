@@ -1,0 +1,80 @@
+# Docker Compose para Produção - Digimon Evolution
+version: '3.8'
+
+services:
+  # API Backend
+  api:
+    build:
+      context: ./digimon-api
+      target: production
+    container_name: digimon-api-prod
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - HOST=0.0.0.0
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY}
+      - CORS_ORIGIN=${FRONTEND_URL:-http://localhost}
+      - RATE_LIMIT_MAX=${RATE_LIMIT_MAX:-100}
+      - RATE_LIMIT_WINDOW=${RATE_LIMIT_WINDOW:-60000}
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3001/health', (res) => { process.exit(res.statusCode === 200 ? 0 : 1) })"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - digimon-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # Frontend React
+  frontend:
+    build:
+      context: ./digimon-frontend
+      target: production
+      args:
+        - VITE_API_URL=${API_URL:-http://localhost:3001}
+    container_name: digimon-frontend-prod
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    depends_on:
+      api:
+        condition: service_healthy
+    networks:
+      - digimon-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # Nginx Reverse Proxy (opcional)
+  nginx:
+    image: nginx:alpine
+    container_name: digimon-nginx
+    ports:
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    restart: unless-stopped
+    depends_on:
+      - api
+      - frontend
+    networks:
+      - digimon-network
+    profiles:
+      - with-ssl
+
+networks:
+  digimon-network:
+    driver: bridge
