@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // Configuração base da API
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'
 
 // Criar instância do axios
 export const api = axios.create({
@@ -16,7 +16,7 @@ export const api = axios.create({
 api.interceptors.request.use(
   (config) => {
     // Log da requisição em desenvolvimento
-    if (import.meta.env.DEV) {
+    if (process.env.NODE_ENV === 'development') {
       console.log(`🚀 ${config.method?.toUpperCase()} ${config.url}`, config.params)
     }
     return config
@@ -31,7 +31,7 @@ api.interceptors.request.use(
 api.interceptors.response.use(
   (response) => {
     // Log da resposta em desenvolvimento
-    if (import.meta.env.DEV) {
+    if (process.env.NODE_ENV === 'development') {
       console.log(`✅ ${response.config.method?.toUpperCase()} ${response.config.url}`, response.data)
     }
     return response
