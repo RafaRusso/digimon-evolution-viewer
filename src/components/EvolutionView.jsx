@@ -1,4 +1,4 @@
-import { Info, ArrowLeft, ArrowRight, TreePine, ImageIcon } from 'lucide-react'
+import { Info, ArrowLeft, ArrowRight, TreePine, ImageIcon, ChevronDown } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card'
 import { Badge } from './ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs'
@@ -6,7 +6,10 @@ import { useEvolutionLineByName } from '../hooks/useDigimons'
 import DigimonCard from './DigimonCard'
 import LoadingSpinner from './LoadingSpinner'
 import ErrorMessage from './ErrorMessage'
-import { apiUtils } from '../lib/api'
+import { getAssetImageUrl } from '../lib/utils'
+import EvolutionTree from './EvolutionTree';
+import { useState } from 'react';
+import EvolutionRequirements from './EvolutionRequirements'; 
 
 // Função para obter classe CSS do stage
 function getStageClass(stage) {
@@ -37,6 +40,14 @@ function getAttributeClass(attribute) {
 }
 
 export function EvolutionView({ digimon, onDigimonSelect, onImagePreview }) {
+  const handleTreeSelect = (selectedDigimonFromTree) => {
+    if (onDigimonSelect) {
+      onDigimonSelect(selectedDigimonFromTree, 'evolution');
+    }
+  };
+  const [isPredecessorsOpen, setIsPredecessorsOpen] = useState(true);
+  const [isSuccessorsOpen, setIsSuccessorsOpen] = useState(true);
+  const [activeTab, setActiveTab] = useState('evolutions'); // Padrão é 'evolutions'
   // Buscar linha evolutiva completa
   const { 
     data: evolutionData, 
@@ -79,10 +90,9 @@ export function EvolutionView({ digimon, onDigimonSelect, onImagePreview }) {
       </div>
     )
   }
-
   const { current, predecessors, successors } = evolutionData.data
-  const imageUrl = current?.imageUrl ? apiUtils.getImageUrl(current.imageUrl.replace('/images/', '')) : null
-
+  const imageUrl = getAssetImageUrl(current.image_url);
+  
   return (
     <div className="space-y-8">
       {/* Informações do Digimon selecionado */}
@@ -125,7 +135,9 @@ export function EvolutionView({ digimon, onDigimonSelect, onImagePreview }) {
       </Card>
 
       {/* Tabs para diferentes visualizações */}
-      <Tabs defaultValue="evolutions" className="w-full">
+      <Tabs  value={activeTab}
+        onValueChange={setActiveTab}
+        className="w-full">
         <TabsList className="grid w-full grid-cols-2 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50 rounded-2xl p-0">
           <TabsTrigger value="evolutions" className="rounded-xl font-semibold data-[state=active]:bg-blue-500 data-[state=active]:text-white py-0">
             Evoluções
@@ -178,103 +190,111 @@ export function EvolutionView({ digimon, onDigimonSelect, onImagePreview }) {
                 {successors.length > 0 ? (
                   <div className="space-y-4">
                     {successors.map((digimon) => (
-                      <DigimonCard
-                        key={digimon.id}
-                        digimon={digimon}
-                        onClick={onDigimonSelect}
-                        onImageClick={onImagePreview}
-                        showRequirements={true}
-                      />
-                    ))}
+                  // --- MUDANÇA AQUI ---
+                  // Envolve o card e os requisitos em um div
+                  <div key={digimon.id} className="space-y-3">
+                    <DigimonCard
+                      digimon={digimon}
+                      onClick={onDigimonSelect}
+                      onImageClick={onImagePreview}
+                    />
+                    <div className="pl-4 border-l-2 border-gray-200 dark:border-gray-700">
+                      <EvolutionRequirements requirements={digimon.requirements} />
+                    </div>
                   </div>
-                ) : (
-                  <p className="text-gray-500 dark:text-gray-400 italic text-center py-8">
-                    Nenhuma evolução encontrada
-                  </p>
-                )}
-              </CardContent>
-            </Card>
-          </div>
-        </TabsContent>
+                ))}
+              </div>
+            ) : (
+              <p>...</p>
+            )}
+          </CardContent>
+        </Card>
+      </div>
+    </TabsContent>
         
+        {/* Aba "Árvore Completa" */}
         <TabsContent value="tree" className="mt-8">
           <Card className="digimon-card">
             <CardHeader>
-              <CardTitle className="flex items-center gap-3 text-orange-600 dark:text-orange-400 text-xl">
-                <TreePine className="w-6 h-6" />
-                Árvore Evolutiva Completa
-              </CardTitle>
-              <CardDescription className="text-base">
-                Visualização completa da linha evolutiva de {current.name}
-              </CardDescription>
+              {/* ... (Título do Card) ... */}
             </CardHeader>
-            <CardContent>
-              <div className="space-y-8">
-                {/* Predecessores */}
-                {predecessors.length > 0 && (
-                  <div>
-                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-4 flex items-center gap-2">
-                      <ArrowLeft className="w-5 h-5" />
-                      Predecessores ({predecessors.length})
-                    </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                      {predecessors.map((digimon) => (
-                        <DigimonCard
-                          key={digimon.id}
-                          digimon={digimon}
-                          onClick={onDigimonSelect}
-                          onImageClick={onImagePreview}
-                          showFullInfo={true}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Digimon atual */}
+            <CardContent className="space-y-6">
+              {/* Seção de Predecessores Recolhível */}
+              {predecessors.length > 0 && (
                 <div>
-                  <h3 className="text-lg font-semibold text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-2">
-                    <Info className="w-5 h-5" />
-                    Atual
-                  </h3>
-                  <div className="max-w-md">
-                    <DigimonCard
-                      digimon={current}
-                      onClick={onDigimonSelect}
-                      onImageClick={onImagePreview}
-                      showFullInfo={true}
-                    />
-                  </div>
-                </div>
-
-                {/* Sucessores */}
-                {successors.length > 0 && (
-                  <div>
-                    <h3 className="text-lg font-semibold text-purple-600 dark:text-purple-400 mb-4 flex items-center gap-2">
-                      <ArrowRight className="w-5 h-5" />
-                      Sucessores ({successors.length})
+                  <button 
+                    className="w-full text-left"
+                    onClick={() => setIsPredecessorsOpen(!isPredecessorsOpen)}
+                  >
+                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2 flex items-center gap-2">
+                      <ArrowLeft className="w-5 h-5" />
+                      Árvore Passada (Predecessors)
+                      <ChevronDown className={`ml-auto w-5 h-5 transition-transform ${isPredecessorsOpen ? 'rotate-0' : '-rotate-90'}`} />
                     </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                      {successors.map((digimon) => (
-                        <DigimonCard
-                          key={digimon.id}
-                          digimon={digimon}
-                          onClick={onDigimonSelect}
-                          onImageClick={onImagePreview}
-                          showFullInfo={true}
-                          showRequirements={true}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                )}
+                  </button>
+                  {isPredecessorsOpen && (
+                    <EvolutionTree
+                      treeData={predecessors}
+                      onDigimonSelect={(selected) => {
+                        setActiveTab('tree');
+                        handleTreeSelect(selected);
+                      }}
+                      onImageClick={onImagePreview}
+                    />
+                  )}
+                </div>
+              )}
+
+              {/* Digimon Atual */}
+              <div>
+                <h3 className="text-lg font-semibold text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-2">
+                  <Info className="w-5 h-5" />
+                  Atual
+                </h3>
+                <div className="max-w-md">
+                  <DigimonCard
+                    digimon={current}
+                    onDigimonSelect={(selected) => {
+                      setActiveTab('tree');
+                      handleTreeSelect(selected);
+                    }}
+                    onImageClick={onImagePreview}
+                    showFullInfo={true}
+                  />
+                </div>
               </div>
+
+              {/* Seção de Sucessores Recolhível */}
+              {successors.length > 0 && (
+                <div>
+                  <button 
+                    className="w-full text-left"
+                    onClick={() => setIsSuccessorsOpen(!isSuccessorsOpen)}
+                  >
+                    <h3 className="text-lg font-semibold text-purple-600 dark:text-purple-400 mb-2 flex items-center gap-2">
+                      <ArrowRight className="w-5 h-5" />
+                      Árvore Futura (Sucessores)
+                      <ChevronDown className={`ml-auto w-5 h-5 transition-transform ${isSuccessorsOpen ? 'rotate-0' : '-rotate-90'}`} />
+                    </h3>
+                  </button>
+                  {isSuccessorsOpen && (
+                    <EvolutionTree
+                      treeData={successors}
+                      onDigimonSelect={(selected) => {
+                        setActiveTab('tree');
+                        handleTreeSelect(selected);
+                      }}
+                      onImageClick={onImagePreview}
+                    />
+                  )}
+                </div>
+              )}
             </CardContent>
           </Card>
         </TabsContent>
       </Tabs>
     </div>
-  )
+  );
 }
 
 export default EvolutionView

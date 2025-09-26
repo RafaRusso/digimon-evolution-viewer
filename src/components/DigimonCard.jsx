@@ -1,7 +1,7 @@
 import { ArrowRight, ImageIcon, Zap, Star } from 'lucide-react'
 import { Card, CardContent } from './ui/card'
 import { Badge } from './ui/badge'
-import { apiUtils } from '../lib/api'
+import { getAssetImageUrl } from '../lib/utils'
 
 // Função para obter classe CSS do stage
 function getStageClass(stage) {
@@ -71,9 +71,12 @@ export function DigimonCard({
   onClick, 
   showFullInfo = false, 
   showRequirements = false,
-  onImageClick = null 
-}) {
-  const imageUrl = digimon.imageUrl ? apiUtils.getImageUrl(digimon.imageUrl.replace('/images/', '')) : null
+  onImageClick = null,
+  variant = 'default' 
+}) { 
+  const isCompact = variant === 'compact';
+  const imageUrlString = digimon.image_url || digimon.imageUrl;
+  const imageUrl = getAssetImageUrl(imageUrlString);
 
   const handleCardClick = () => {
     if (onClick) {
@@ -84,6 +87,7 @@ export function DigimonCard({
   const handleImageClick = (e) => {
     e.stopPropagation()
     if (onImageClick) {
+
       onImageClick(digimon)
     }
   }
@@ -91,14 +95,14 @@ export function DigimonCard({
   return (
     <div className="group relative">
       <Card 
-        className="digimon-card cursor-pointer"
+        className={`digimon-card cursor-pointer transition-all duration-200 ${isCompact ? 'shadow-none hover:shadow-md' : ''}`}
         onClick={handleCardClick}
       >
-        <CardContent className="p-4">
-          <div className="flex items-center gap-4">
+        <CardContent className={isCompact ? 'p-2' : 'p-4'}>
+          <div className="flex items-center gap-3">
             {/* Imagem do Digimon */}
             <div
-              className="flex-shrink-0 w-16 h-16 rounded-xl overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700 flex items-center justify-center group-hover:shadow-md transition-all duration-300 cursor-zoom-in border-2 border-gray-200/50 dark:border-gray-600/50"
+              className={`flex-shrink-0 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 flex items-center justify-center cursor-zoom-in border border-gray-200/50 dark:border-gray-600/50 ${isCompact ? 'w-10 h-10' : 'w-16 h-16'}`}
               onClick={handleImageClick}
               title="Clique para ampliar"
             >
@@ -120,11 +124,12 @@ export function DigimonCard({
             
             {/* Informações do Digimon */}
             <div className="flex-1 min-w-0">
-              <div className="font-bold text-lg text-gray-900 dark:text-white truncate mb-1">
+            <div className={`font-bold text-gray-900 dark:text-white truncate ${isCompact ? 'text-base' : 'text-lg'}`}>
                 {digimon.name}
               </div>
-              <div className="text-sm text-gray-600 dark:text-gray-400 flex items-center gap-2 mb-2">
+              <div className={`text-sm text-gray-500 dark:text-gray-400 flex items-center gap-2 ${isCompact ? 'text-xs' : 'text-sm'}`}>
                 <span className="font-semibold">#{digimon.number}</span>
+                <span>•</span>
                 {showFullInfo ? (
                   <>
                     <Badge className={`stage-badge ${getStageClass(digimon.stage)}`}>
@@ -141,7 +146,7 @@ export function DigimonCard({
             </div>
             
             {/* Seta de navegação */}
-            <ArrowRight className="w-5 h-5 text-gray-400 flex-shrink-0 group-hover:text-blue-500 transition-colors duration-300" />
+            <ArrowRight className={`w-5 h-5 text-gray-400 flex-shrink-0 group-hover:text-blue-500 transition-colors duration-300 ${isCompact ? 'hidden' : 'block'}`} />
           </div>
           
           {/* Requisitos de evolução */}

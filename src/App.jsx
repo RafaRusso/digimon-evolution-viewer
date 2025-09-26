@@ -7,6 +7,7 @@ import DigimonList from './components/DigimonList'
 import EvolutionView from './components/EvolutionView'
 import ApiStatus from './components/ApiStatus'
 import './App.css'
+import { getAssetImageUrl } from './lib/utils';
 
 // Configurar React Query
 const queryClient = new QueryClient({
@@ -25,15 +26,16 @@ function AppContent() {
   const [selectedDigimon, setSelectedDigimon] = useState(null)
   const [imagePreview, setImagePreview] = useState(null)
 
-  const handleDigimonSelect = (digimon) => {
-    setSelectedDigimon(digimon)
-    setCurrentView('evolution')
-  }
+  const handleDigimonSelect = (digimon, targetView = 'evolution') => {
+    setSelectedDigimon(digimon);
+    setCurrentView(targetView); 
+  };
 
   const openImagePreview = (digimon) => {
-    if (digimon.imageUrl) {
+    if (digimon.image_url) {
+      const processedUrl = getAssetImageUrl(digimon.image_url);
       setImagePreview({
-        url: digimon.imageUrl,
+        url: processedUrl,
         alt: digimon.name
       })
     }
