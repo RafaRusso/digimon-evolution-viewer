@@ -3,6 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* --- VARIÁVEIS DE TEMA --- */
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -26,21 +27,7 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
 }
-
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -61,21 +48,7 @@
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
 }
-
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -95,89 +68,124 @@
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+  * { @apply border-border outline-ring/50; }
+  body { @apply bg-background text-foreground; }
 }
 
-/* Estilos customizados para Digimon Evolution */
 @layer components {
   .digimon-bg {
-    background: linear-gradient(135deg, 
-      oklch(0.95 0.02 240) 0%, 
-      oklch(0.98 0.01 280) 50%, 
-      oklch(0.96 0.02 320) 100%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/design/page_bg_raw.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  .header-container {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.8)), url('./assets/design/library_hero.jpg');
+    background-size: cover;
+    background-position: center 50%;
+    min-height: 400px;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 0px solid rgb(10, 10, 10);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+  }
+
+  .header-title {
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.8);
+  }
+
+  .navigation-container {
+    @apply fixed top-0 left-1/2 -translate-x-1/2 z-30 transition-all duration-500 ease-in-out;
+    margin-top: 420px;
+  }
+  .navigation-content {
+    @apply flex items-center justify-center gap-2 p-2 rounded-2xl border border-white/10 bg-gray-900/50 backdrop-blur-lg shadow-2xl;
+  }
+
+  .navigation-container.scrolled {
+    @apply top-1/2 -translate-y-1/2 left-5 -translate-x-0;
+    margin-top: 0;
+  }
+  .navigation-container.scrolled .navigation-content {
+    @apply flex-col gap-3;
+  }
+  .navigation-container.scrolled .nav-text {
+    @apply hidden;
+  }
+  .navigation-container.scrolled .nav-button {
+    @apply w-16 h-16 justify-center;
+  }
+  .navigation-container.scrolled .nav-icon {
+    @apply w-7 h-7;
+  }
+
+  .nav-button {
+    @apply flex items-center gap-2.5 px-6 py-3 rounded-xl font-semibold text-white/80 transition-all duration-300;
+    text-decoration: none;
+  }
+  .nav-button:hover {
+    @apply text-white bg-white/10;
+  }
+  .nav-button.active {
+    @apply text-white bg-blue-600 shadow-lg;
+  }
+  .nav-icon {
+    @apply w-5 h-5 transition-all duration-300;
+  }
+
+  .main-layout {
+    @apply max-w-7xl mx-auto px-2 pb-4 relative z-10; /* Reduzir px-4 para px-2 e pb-8 para pb-4 */
+    margin-top: 7rem;
   }
   
-  .dark .digimon-bg {
-    background: linear-gradient(135deg, 
-      oklch(0.15 0.02 240) 0%, 
-      oklch(0.12 0.01 280) 50%, 
-      oklch(0.14 0.02 320) 100%);
+  .page-content {
+    @apply p-2 sm:p-3 md:p-4 bg-transparent; /* Reduzir padding de p-4 sm:p-6 md:p-8 para p-2 sm:p-3 md:p-4 */
+  }
+
+  .content-island {
+    @apply bg-gray-800/70 dark:bg-gray-900/80 backdrop-blur-xl border border-gray-600/20 shadow-2xl rounded-2xl overflow-hidden;
   }
   
   .digimon-card {
-    @apply bg-card/80 backdrop-blur-md border border-border/50 shadow-xl;
+    @apply bg-gray-900/95 dark:bg-black/80 backdrop-blur-md border border-gray-700/40 shadow-lg;
     transition: all 0.3s ease;
+  }
+  .digimon-grid-container {
+    @apply bg-gray-800/60 dark:bg-gray-900/70 p-4 rounded-lg;
   }
   
   .digimon-card:hover {
-    @apply shadow-2xl border-primary/30 bg-card/95;
+    @apply shadow-xl border-gray-600/60 bg-gray-800/98 dark:bg-gray-900/90;
     transform: translateY(-2px);
   }
   
-  .stage-badge {
-    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border;
+  .stage-badge, .attribute-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
   }
-  
-  .stage-i { @apply bg-emerald-100 text-emerald-800 border-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-300 dark:border-emerald-700; }
-  .stage-ii { @apply bg-sky-100 text-sky-800 border-sky-200 dark:bg-sky-900/30 dark:text-sky-300 dark:border-sky-700; }
-  .stage-iii { @apply bg-violet-100 text-violet-800 border-violet-200 dark:bg-violet-900/30 dark:text-violet-300 dark:border-violet-700; }
-  .stage-iv { @apply bg-amber-100 text-amber-800 border-amber-200 dark:bg-amber-900/30 dark:text-amber-300 dark:border-amber-700; }
-  .stage-v { @apply bg-rose-100 text-rose-800 border-rose-200 dark:bg-rose-900/30 dark:text-rose-300 dark:border-rose-700; }
-  .stage-vi { @apply bg-fuchsia-100 text-fuchsia-800 border-fuchsia-200 dark:bg-fuchsia-900/30 dark:text-fuchsia-300 dark:border-fuchsia-700; }
-  .stage-vi-plus { @apply bg-purple-100 text-purple-800 border-purple-200 dark:bg-purple-900/30 dark:text-purple-300 dark:border-purple-700; }
-  .stage-human-hybrid { @apply bg-yellow-100 text-yellow-800 border-yellow-200 dark:bg-yellow-900/30 dark:text-yellow-300 dark:border-yellow-700; }
-  .stage-beast-hybrid { @apply bg-indigo-100 text-indigo-800 border-indigo-200 dark:bg-indigo-900/30 dark:text-indigo-300 dark:border-indigo-700; }
-  
-  .attribute-vaccine { @apply bg-green-100 text-green-800 border-green-200 dark:bg-green-900/30 dark:text-green-300 dark:border-green-700; }
-  .attribute-data { @apply bg-cyan-100 text-cyan-800 border-cyan-200 dark:bg-cyan-900/30 dark:text-cyan-300 dark:border-cyan-700; }
-  .attribute-virus { @apply bg-red-100 text-red-800 border-red-200 dark:bg-red-900/30 dark:text-red-300 dark:border-red-700; }
-  .attribute-variable { @apply bg-purple-100 text-purple-800 border-purple-200 dark:bg-purple-900/30 dark:text-purple-300 dark:border-purple-700; }
-  .attribute-na { @apply bg-gray-100 text-gray-800 border-gray-200 dark:bg-gray-900/30 dark:text-gray-300 dark:border-gray-700; }
-  
-  .evolution-requirements {
-    @apply mt-3 p-3 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg border border-blue-200 dark:border-blue-700/50;
-  }
-  
-  .loading-spinner {
-    @apply animate-spin rounded-full h-8 w-8 border-b-2 border-primary;
-  }
-  
-  .error-message {
-    @apply bg-destructive/10 border border-destructive/20 text-destructive rounded-lg p-4;
-  }
-  
-  .success-message {
-    @apply bg-green-50 border border-green-200 text-green-800 dark:bg-green-900/20 dark:border-green-700 dark:text-green-300 rounded-lg p-4;
-  }
+
+  .stage-badge.stage-i { background-color: #a7f3d0 !important; color: #047857 !important; border: 1px solid #6ee7b7 !important; }
+  .stage-badge.stage-ii { background-color: #bae6fd !important; color: #0369a1 !important; border: 1px solid #7dd3fc !important; }
+  .stage-badge.stage-iii { background-color: #ddd6fe !important; color: #6d28d9 !important; border: 1px solid #c4b5fd !important; }
+  .stage-badge.stage-iv { background-color: #fde68a !important; color: #b45309 !important; border: 1px solid #fcd34d !important; }
+  .stage-badge.stage-v { background-color: #fecdd3 !important; color: #be123c !important; border: 1px solid #fda4af !important; }
+  .stage-badge.stage-vi { background-color: #f5d0fe !important; color: #a21caf !important; border: 1px solid #f0abfc !important; }
+  .stage-badge.stage-vi-plus { background-color: #e9d5ff !important; color: #7e22ce !important; border: 1px solid #d8b4fe !important; }
+  .stage-badge.stage-human-hybrid { background-color: #fef08a !important; color: #a16207 !important; border: 1px solid #fde047 !important; }
+  .stage-badge.stage-beast-hybrid { background-color: #c7d2fe !important; color: #4338ca !important; border: 1px solid #a5b4fc !important; }
+
+  .attribute-badge.attribute-vaccine { background-color: #d1fae5 !important; color: #065f46 !important; border: 1px solid #a7f3d0 !important; }
+  .attribute-badge.attribute-data { background-color: #cffafe !important; color: #155e75 !important; border: 1px solid #a5f3fc !important; }
+  .attribute-badge.attribute-virus { background-color: #fee2e2 !important; color: #991b1b !important; border: 1px solid #fca5a5 !important; }
+  .attribute-badge.attribute-variable { background-color: #e9d5ff !important; color: #7e22ce !important; border: 1px solid #d8b4fe !important; }
+  .attribute-badge.attribute-na { background-color: #e5e7eb !important; color: #374151 !important; border: 1px solid #d1d5db !important; }
 }

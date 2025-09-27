@@ -1,154 +1,142 @@
-import { useState } from 'react'
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { Search, Grid3X3, TreePine, X } from 'lucide-react'
-import { Button } from './components/ui/button'
-import DigimonSearch from './components/DigimonSearch'
-import DigimonList from './components/DigimonList'
-import EvolutionView from './components/EvolutionView'
-import ApiStatus from './components/ApiStatus'
-import './App.css'
-import { getAssetImageUrl } from './lib/utils';
+import React, { useState, useEffect } from 'react';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+  useNavigate,
+  useParams,
+  NavLink,
+  useOutletContext,
+} from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { Search, Grid3X3, TreePine, X } from 'lucide-react';
 
-// Configurar React Query
+import DigimonSearch from './components/DigimonSearch';
+import DigimonList from './components/DigimonList';
+import EvolutionView from './components/EvolutionView';
+import ApiStatus from './components/ApiStatus';
+import { getAssetImageUrl } from './lib/utils';
+import './App.css';
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       retry: 3,
       retryDelay: (attemptIndex) => Math.min(1000 * 2 ** attemptIndex, 30000),
-      staleTime: 5 * 60 * 1000, // 5 minutos
-      cacheTime: 10 * 60 * 1000, // 10 minutos
+      staleTime: 5 * 60 * 1000,
+      cacheTime: 10 * 60 * 1000,
     },
   },
-})
+});
 
-function AppContent() {
-  const [currentView, setCurrentView] = useState('search') // 'search', 'list', 'evolution'
-  const [selectedDigimon, setSelectedDigimon] = useState(null)
-  const [imagePreview, setImagePreview] = useState(null)
+// --- PÁGINAS DO ROTEADOR ---
+function SearchPage() {
+  const { handleSelect, openImagePreview } = useOutletContext();
+  return <DigimonSearch onDigimonSelect={handleSelect} onImagePreview={openImagePreview} />;
+}
 
-  const handleDigimonSelect = (digimon, targetView = 'evolution') => {
-    setSelectedDigimon(digimon);
-    setCurrentView(targetView); 
+function ListPage() {
+  const { handleSelect, openImagePreview } = useOutletContext();
+  return <DigimonList onDigimonSelect={handleSelect} onImagePreview={openImagePreview} />;
+}
+
+function EvolutionPage() {
+  const { digimonName } = useParams();
+  const { handleSelect, openImagePreview } = useOutletContext();
+  return <EvolutionView key={digimonName} digimon={{ name: digimonName }} onDigimonSelect={handleSelect} onImagePreview={openImagePreview} />;
+}
+
+// --- COMPONENTE DE LAYOUT PRINCIPAL ---
+function MainLayout() {
+  const [imagePreview, setImagePreview] = useState(null);
+  const [selectedDigimonName, setSelectedDigimonName] = useState(null);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const navigate = useNavigate();
+  const { digimonName: paramDigimonName } = useParams();
+
+  useEffect(() => {
+    if (paramDigimonName) {
+      setSelectedDigimonName(paramDigimonName);
+    }
+  }, [paramDigimonName]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100); // Aumentei um pouco o gatilho do scroll
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleSelect = (digimon) => {
+    setSelectedDigimonName(digimon.name);
+    navigate(`/evolution/${digimon.name}`);
   };
 
   const openImagePreview = (digimon) => {
     if (digimon.image_url) {
       const processedUrl = getAssetImageUrl(digimon.image_url);
-      setImagePreview({
-        url: processedUrl,
-        alt: digimon.name
-      })
+      setImagePreview({ url: processedUrl, alt: digimon.name });
     }
-  }
+  };
 
-  const closeImagePreview = () => setImagePreview(null)
+  const closeImagePreview = () => setImagePreview(null);
 
   return (
-    <div className="min-h-screen digimon-bg">
-      {/* Header */}
-      <header className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200/50 dark:border-gray-700/50 sticky top-0 z-40">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Digimon Evolution
-              </h1>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                Enciclopédia completa de evoluções
-              </p>
-            </div>
-            
-            {/* Status da API */}
-            <ApiStatus />
-          </div>
-          
-          {/* Navegação */}
-          <div className="flex items-center gap-4 mt-4">
-            <Button
-              variant={currentView === 'search' ? 'default' : 'ghost'}
-              onClick={() => setCurrentView('search')}
-              className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
-                currentView === 'search' 
-                  ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg' 
-                  : 'hover:bg-gray-100 dark:hover:bg-gray-800'
-              }`}
-            >
-              <Search className="w-5 h-5" />
-              Buscar
-            </Button>
-            
-            <Button
-              variant={currentView === 'list' ? 'default' : 'ghost'}
-              onClick={() => setCurrentView('list')}
-              className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
-                currentView === 'list' 
-                  ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg' 
-                  : 'hover:bg-gray-100 dark:hover:bg-gray-800'
-              }`}
-            >
-              <Grid3X3 className="w-5 h-5" />
-              Listar Todos
-            </Button>
-            
-            {selectedDigimon && (
-              <Button
-                variant={currentView === 'evolution' ? 'default' : 'ghost'}
-                onClick={() => setCurrentView('evolution')}
-                className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
-                  currentView === 'evolution' 
-                    ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg' 
-                    : 'hover:bg-gray-100 dark:hover:bg-gray-800'
-                }`}
-              >
-                <TreePine className="w-5 h-5" />
-                {selectedDigimon.name}
-              </Button>
-            )}
-          </div>
+    <div className="digimon-bg">
+      <nav className={`navigation-container ${isScrolled ? 'scrolled' : ''}`}>
+        <div className="navigation-content">
+          <NavLink to="/" className={({ isActive }) => `nav-button ${isActive ? 'active' : ''}`}>
+            <Search className="nav-icon" />
+            <span className="nav-text">Buscar</span>
+          </NavLink>
+          <NavLink to="/list" className={({ isActive }) => `nav-button ${isActive ? 'active' : ''}`}>
+            <Grid3X3 className="nav-icon" />
+            <span className="nav-text">Listar Todos</span>
+          </NavLink>
+          {selectedDigimonName && (
+            <NavLink to={`/evolution/${selectedDigimonName}`} className={({ isActive }) => `nav-button ${isActive ? 'active' : ''}`}>
+              <TreePine className="nav-icon" />
+              <span className="nav-text">{selectedDigimonName}</span>
+            </NavLink>
+          )}
+        </div>
+      </nav>
+      
+      <header className="header-container">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="header-title text-5xl font-bold text-white">
+            Digimon Evolution Lines
+          </h1>
+          <p className="mt-2 text-lg text-gray-200 header-title">
+            Explore evoluções, requisitos e árvores visuais.
+          </p>
         </div>
       </header>
 
-      {/* Conteúdo principal */}
-      <main className="container mx-auto px-4 py-8">
-        {currentView === 'search' && (
-          <DigimonSearch 
-            onDigimonSelect={handleDigimonSelect}
-            onImagePreview={openImagePreview}
-          />
-        )}
+      <div className="main-layout">
+        <div className="content-island">
+          <main className="page-content">
+            <Outlet context={{ openImagePreview, handleSelect }} />
+          </main>
+        </div>
+        
+        <div className="pt-8 pb-4 text-center">
+          <ApiStatus />
+        </div>
+      </div>
 
-        {currentView === 'list' && (
-          <DigimonList 
-            onDigimonSelect={handleDigimonSelect}
-            onImagePreview={openImagePreview}
-          />
-        )}
-
-        {currentView === 'evolution' && selectedDigimon && (
-          <EvolutionView 
-            digimon={selectedDigimon}
-            onDigimonSelect={handleDigimonSelect}
-            onImagePreview={openImagePreview}
-          />
-        )}
-      </main>
-
-      {/* Modal de preview de imagem */}
       {imagePreview && (
         <div 
           className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4"
           onClick={closeImagePreview}
         >
           <div className="relative max-w-4xl max-h-full bg-gray-900/70 rounded-xl border border-white/10 p-4">
-            <button
-              onClick={closeImagePreview}
-              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
-            >
+            <button onClick={closeImagePreview} className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors">
               <X className="w-8 h-8" />
             </button>
-            <div className="text-center text-white font-semibold mb-3">
-              {imagePreview.alt}
-            </div>
+            <div className="text-center text-white font-semibold mb-3">{imagePreview.alt}</div>
             <img
               src={imagePreview.url}
               alt={imagePreview.alt}
@@ -159,15 +147,29 @@ function AppContent() {
         </div>
       )}
     </div>
-  )
+  );
 }
 
+// --- CONFIGURAÇÃO DO ROTEADOR ---
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <MainLayout />,
+    children: [
+      { index: true, element: <SearchPage /> },
+      { path: 'list', element: <ListPage /> },
+      { path: 'evolution/:digimonName', element: <EvolutionPage /> },
+    ],
+  },
+]);
+
+// --- COMPONENTE APP PRINCIPAL ---
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <AppContent />
+      <RouterProvider router={router} />
     </QueryClientProvider>
-  )
+  );
 }
 
-export default App
+export default App;
