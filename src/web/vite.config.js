@@ -1,24 +1,24 @@
-// vite.config.js
+import { defineConfig } from 'vite';
+import path from "path";
+import react from '@vitejs/plugin-react';
+import packageJson from './package.json';
 
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
-
-// Importe os módulos 'path' e 'url' do Node.js
-import path from 'path'
-import { fileURLToPath } from 'url'
-
-// Calcule o __dirname manualmente a partir do import.meta.url
+// --- Início da Correção para __dirname ---
+import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+// --- Fim da Correção ---
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react( ), tailwindcss()],
+  plugins: [react( )],
+  define: {
+    'import.meta.env.PACKAGE_VERSION': JSON.stringify(packageJson.version)
+  },
   resolve: {
     alias: {
-      // Agora o __dirname existe e pode ser usado aqui
+      // Agora o __dirname existe e o alias funcionará corretamente
       "@": path.resolve(__dirname, "./src"),
     },
   },
-})
+});
