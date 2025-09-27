@@ -12,32 +12,30 @@ export function useDigimons(page = 1, limit = 50, stage = null) {
 }
 
 // Hook para busca infinita de Digimons (CORRIGIDO)
-export function useInfiniteDigimons(limit = 50, stage = null) {
+export function useInfiniteDigimons(limit = 20, stage = null) {
   return useInfiniteQuery({
-    queryKey: ['digimons-infinite', limit, stage],
+    queryKey: ['digimons-infinite', stage],
     queryFn: ({ pageParam = 1 }) => digimonApi.getDigimons(pageParam, limit, stage),
     
-    // --- LÓGICA CORRIGIDA AQUI ---
+    // --- CORREÇÃO FINAL AQUI ---
     getNextPageParam: (lastPage) => {
-      // 1. Acessa a paginação diretamente da resposta da API
-      const pagination = lastPage.pagination;
+      // 1. Acessa o objeto de paginação DENTRO de 'meta'
+      const pagination = lastPage.meta?.pagination;
 
-      // 2. Se não houver dados de paginação, não há próxima página
+      // 2. Se não houver dados de paginação, para.
       if (!pagination) {
         return undefined;
       }
 
-      // 3. Calcula se há uma próxima página
-      const hasNextPage = pagination.page < pagination.totalPages;
-
-      // 4. Se houver, retorna o número da próxima página. Senão, undefined.
-      return hasNextPage ? pagination.page + 1 : undefined;
+      // 3. Usa a propriedade 'hasNextPage' que a API já calcula!
+      // Se 'hasNextPage' for true, retorna o número da próxima página.
+      return pagination.hasNextPage ? pagination.currentPage + 1 : undefined;
     },
     // --- FIM DA CORREÇÃO ---
 
     staleTime: 5 * 60 * 1000,
     cacheTime: 10 * 60 * 1000,
-  })
+  });
 }
 
 // --- NENHUMA MUDANÇA NECESSÁRIA NOS HOOKS ABAIXO ---

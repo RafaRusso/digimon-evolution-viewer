@@ -1,38 +1,56 @@
-import { useState } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card'
-import { Badge } from './ui/badge'
-import { useDigimons } from '../hooks/useDigimons'
-import DigimonCard from './DigimonCard'
-import LoadingSpinner from './LoadingSpinner'
-import ErrorMessage from './ErrorMessage'
+import { useState, useEffect, useCallback } from 'react';
+import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import { Badge } from './ui/badge';
+import { useInfiniteDigimons } from '../hooks/useDigimons';
+import DigimonCard from './DigimonCard';
+import LoadingSpinner from './LoadingSpinner';
+import ErrorMessage from './ErrorMessage';
 
-// Função para obter classe CSS do stage
 function getStageClass(stage) {
   const stageMap = {
-    'I': 'stage-i',
-    'II': 'stage-ii',
-    'III': 'stage-iii',
-    'IV': 'stage-iv',
-    'V': 'stage-v',
-    'VI': 'stage-vi',
-    'VI+': 'stage-vi-plus',
-    'Human Hybrid': 'stage-human-hybrid',
-    'Beast Hybrid': 'stage-beast-hybrid'
-  }
-  return stageMap[stage] || 'stage-i'
+    'I': 'stage-i', 'II': 'stage-ii', 'III': 'stage-iii', 'IV': 'stage-iv',
+    'V': 'stage-v', 'VI': 'stage-vi', 'VI+': 'stage-vi-plus',
+    'Human Hybrid': 'stage-human-hybrid', 'Beast Hybrid': 'stage-beast-hybrid'
+  };
+  return stageMap[stage] || 'stage-i';
 }
 
 export function DigimonList({ onDigimonSelect, onImagePreview }) {
-  const [selectedStage, setSelectedStage] = useState(null)
-  
-  // Buscar todos os Digimons
-  const { 
-    data: digimonData, 
-    isLoading, 
-    error, 
+  const [selectedStage, setSelectedStage] = useState(null);
+
+  const {
+    data,
+    error,
     isError,
-    refetch 
-  } = useDigimons(1, 1000, selectedStage) // Buscar muitos para ter todos
+    fetchNextPage,
+    hasNextPage,
+    isFetchingNextPage,
+    isLoading,
+    refetch
+  } = useInfiniteDigimons(20, selectedStage);
+
+  // Intersection Observer nativo (sem biblioteca externa)
+  const [loadMoreRef, setLoadMoreRef] = useState(null);
+
+  const loadMoreCallback = useCallback((node) => {
+    if (isFetchingNextPage) return;
+    if (loadMoreRef) loadMoreRef.disconnect();
+    
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting && hasNextPage) {
+        fetchNextPage();
+      }
+    }, { threshold: 0.1 });
+    
+    if (node) observer.observe(node);
+    setLoadMoreRef(observer);
+  }, [isFetchingNextPage, hasNextPage, fetchNextPage]);
+
+  useEffect(() => {
+    return () => {
+      if (loadMoreRef) loadMoreRef.disconnect();
+    };
+  }, [loadMoreRef]);
 
   if (isLoading) {
     return (
@@ -44,7 +62,7 @@ export function DigimonList({ onDigimonSelect, onImagePreview }) {
           </p>
         </div>
       </div>
-    )
+    );
   }
 
   if (isError) {
@@ -55,31 +73,32 @@ export function DigimonList({ onDigimonSelect, onImagePreview }) {
           onRetry={refetch}
         />
       </div>
-    )
+    );
   }
 
-  if (!digimonData?.data || digimonData.data.length === 0) {
+  const allDigimons = data?.pages.flatMap(page => page.data) || [];
+  
+  if (allDigimons.length === 0) {
     return (
       <div className="text-center py-16">
         <p className="text-gray-600 dark:text-gray-400 text-lg">
           Nenhum Digimon encontrado
         </p>
       </div>
-    )
+    );
   }
 
-  // Agrupar Digimons por stage
-  const digimonsByStage = {}
-  digimonData.data.forEach(digimon => {
+  // Agrupar por stage
+  const digimonsByStage = {};
+  allDigimons.forEach(digimon => {
     if (!digimonsByStage[digimon.stage]) {
-      digimonsByStage[digimon.stage] = []
+      digimonsByStage[digimon.stage] = [];
     }
-    digimonsByStage[digimon.stage].push(digimon)
-  })
+    digimonsByStage[digimon.stage].push(digimon);
+  });
 
-  // Ordenar stages
-  const stageOrder = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VI+', 'Human Hybrid', 'Beast Hybrid']
-  const sortedStages = stageOrder.filter(stage => digimonsByStage[stage])
+  const stageOrder = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VI+', 'Human Hybrid', 'Beast Hybrid'];
+  const sortedStages = stageOrder.filter(stage => digimonsByStage[stage]);
 
   return (
     <div className="space-y-8">
@@ -136,17 +155,14 @@ export function DigimonList({ onDigimonSelect, onImagePreview }) {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {digimonsByStage[stage]
                 .sort((a, b) => {
-                  // Ordenar por número
-                  const an = Number(a?.number)
-                  const bn = Number(b?.number)
-                  const aIsNum = Number.isFinite(an)
-                  const bIsNum = Number.isFinite(bn)
-                  if (aIsNum && bIsNum) return an - bn
-                  if (aIsNum) return -1
-                  if (bIsNum) return 1
-                  const as = String(a?.number ?? '').localeCompare(String(b?.number ?? ''))
-                  if (as !== 0) return as
-                  return a.name.localeCompare(b.name)
+                  const an = Number(a?.number);
+                  const bn = Number(b?.number);
+                  const aIsNum = Number.isFinite(an);
+                  const bIsNum = Number.isFinite(bn);
+                  if (aIsNum && bIsNum) return an - bn;
+                  if (aIsNum) return -1;
+                  if (bIsNum) return 1;
+                  return a.name.localeCompare(b.name);
                 })
                 .map(digimon => (
                   <DigimonCard
@@ -161,8 +177,23 @@ export function DigimonList({ onDigimonSelect, onImagePreview }) {
           </CardContent>
         </Card>
       ))}
+
+      {/* Trigger para infinite scroll */}
+      <div ref={loadMoreCallback} className="flex justify-center py-8">
+        {isFetchingNextPage && (
+          <div className="text-center">
+            <LoadingSpinner />
+            <p className="mt-2 text-gray-600 dark:text-gray-400">
+              Carregando mais Digimons...
+            </p>
+          </div>
+        )}
+        {!hasNextPage && allDigimons.length > 0 && (
+          <p className="text-gray-500 italic">Todos os Digimons foram carregados!</p>
+        )}
+      </div>
     </div>
-  )
+  );
 }
 
-export default DigimonList
+export default DigimonList;
