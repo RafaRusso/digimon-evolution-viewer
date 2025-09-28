@@ -182,6 +182,11 @@
   .stage-badge.stage-vi-plus { background-color: #e9d5ff !important; color: #7e22ce !important; border: 1px solid #d8b4fe !important; }
   .stage-badge.stage-human-hybrid { background-color: #fef08a !important; color: #a16207 !important; border: 1px solid #fde047 !important; }
   .stage-badge.stage-beast-hybrid { background-color: #c7d2fe !important; color: #4338ca !important; border: 1px solid #a5b4fc !important; }
+  .stage-badge.stage-armor { background-color: #e5e7eb !important; color: #374151 !important; border: 1px solid #d1d5db !important; }
+  .stage-badge.stage-fusion-hybrid { background-color: #d6d3d1 !important; color: #44403c !important; border: 1px solid #a8a29e !important; }
+  .stage-badge.stage-golden-armor { background-color: #fde047 !important; color: #ca8a04 !important; border: 1px solid #facc15 !important; }
+  .stage-badge.stage-transcendent-hybrid { background-color: #17eb88 !important; color: #047857 !important; border: 1px solid #6ee7b7 !important; }
+
 
   .attribute-badge.attribute-vaccine { background-color: #d1fae5 !important; color: #065f46 !important; border: 1px solid #a7f3d0 !important; }
   .attribute-badge.attribute-data { background-color: #cffafe !important; color: #155e75 !important; border: 1px solid #a5f3fc !important; }

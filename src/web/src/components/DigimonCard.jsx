@@ -9,7 +9,11 @@ function getStageClass(stage) {
   const stageMap = {
     'I': 'stage-i', 'II': 'stage-ii', 'III': 'stage-iii', 'IV': 'stage-iv',
     'V': 'stage-v', 'VI': 'stage-vi', 'VI+': 'stage-vi-plus',
-    'Human Hybrid': 'stage-human-hybrid', 'Beast Hybrid': 'stage-beast-hybrid'
+    'Human Hybrid': 'stage-human-hybrid', 'Beast Hybrid': 'stage-beast-hybrid',
+    'Armor': 'stage-armor',
+    'Fusion Hybrid': 'stage-fusion-hybrid',
+    'Golden Armor': 'stage-golden-armor',
+    'Transcendent Hybrid': 'stage-transcendent-hybrid'
   };
   return stageMap[stage] || 'stage-i';
 }
