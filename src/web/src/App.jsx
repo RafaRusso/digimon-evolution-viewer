@@ -16,6 +16,8 @@ import DigimonList from './components/DigimonList';
 import EvolutionView from './components/EvolutionView';
 import ApiStatus from './components/ApiStatus';
 import { getAssetImageUrl } from './lib/utils';
+import { Toaster } from 'sonner';
+
 import './App.css';
 
 const queryClient = new QueryClient({
@@ -167,6 +169,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
+        <Toaster richColors position="bottom-right" /> 
       <RouterProvider router={router} />
     </QueryClientProvider>
   );
