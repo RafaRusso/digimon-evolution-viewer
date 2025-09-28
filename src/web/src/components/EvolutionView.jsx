@@ -10,7 +10,7 @@ import { getAssetImageUrl } from '../lib/utils'
 import EvolutionTree from './EvolutionTree';
 import { useState } from 'react';
 import EvolutionRequirements from './EvolutionRequirements'; 
-
+import { DetailFavoriteButton } from './FavoriteButton';
 // Função para obter classe CSS do stage
 function getStageClass(stage) {
   const stageMap = {
@@ -104,10 +104,13 @@ export function EvolutionView({ digimon, onDigimonSelect, onImagePreview }) {
               {imageUrl ? <img src={imageUrl} alt={current.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" /> : <ImageIcon className="w-12 h-12 text-gray-400" />}
             </div>
             <div className="flex-1">
-              <CardTitle className="flex items-center gap-3 text-3xl mb-3">
-                <Info className="w-8 h-8 text-blue-600" />
-                {current.name}
-              </CardTitle>
+              <div className="flex justify-between items-center mb-3">
+                <CardTitle className="flex items-center gap-3 text-3xl">
+                  <Info className="w-8 h-8 text-blue-600" />
+                  {current.name}
+                </CardTitle>
+                <DetailFavoriteButton digimon={current} />
+              </div>
               <CardDescription className="flex items-center gap-3 text-lg">
                 <span className="font-semibold">#{current.number}</span>
                 <Badge className={`stage-badge ${getStageClass(current.stage)} text-sm font-bold px-3 py-1`}>

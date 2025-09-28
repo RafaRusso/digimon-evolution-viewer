@@ -4,6 +4,7 @@ import { getAssetImageUrl } from '../lib/utils';
 import * as Popover from '@radix-ui/react-popover';
 import { ArrowRightCircle, Info } from 'lucide-react'; 
 import EvolutionRequirements from './EvolutionRequirements';
+import { CompactFavoriteButton } from './FavoriteButton';
 
 function TreeBranch({ digimon, onSelect, onImageClick }) {
   const imageUrl = getAssetImageUrl(digimon.image_url);
@@ -24,10 +25,10 @@ function TreeBranch({ digimon, onSelect, onImageClick }) {
   };
 
   return (
-    <div className="flex items-center gap-4 p-1.5 rounded-lg transition-colors group">
+    <div className="flex items-center gap-4 p-1.5 rounded-lg transition-colors group relative">
       {/* Imagem */}
       <div 
-        className="w-14 h-14 flex-shrink-0 rounded-lg overflow-hidden bg-gray-200 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 cursor-zoom-in"
+        className="w-14 h-14 flex-shrink-0 rounded-lg overflow-hidden bg-gray-200 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 cursor-zoom-in relative"
         onClick={handleImageClick}
         title="Ampliar imagem"
       >
@@ -35,6 +36,11 @@ function TreeBranch({ digimon, onSelect, onImageClick }) {
           src={imageUrl} 
           alt={digimon.name} 
           className="w-full h-full object-cover transition-transform group-hover:scale-105"
+        />
+        {/* Botão de favorito sobre a imagem */}
+        <CompactFavoriteButton 
+          digimon={digimon} 
+          className="absolute -top-1 -right-1 h-6 w-6 bg-white/90 hover:bg-white dark:bg-gray-800/90 dark:hover:bg-gray-800"
         />
       </div>
       

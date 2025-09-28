@@ -3,6 +3,7 @@ import { ArrowRight, ImageIcon } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { getAssetImageUrl } from '../lib/utils';
+import { CompactFavoriteButton } from './FavoriteButton';
 
 // Funções para obter as classes de cor
 function getStageClass(stage) {
@@ -49,6 +50,9 @@ export function DigimonCard({
         className="digimon-card cursor-pointer"
         onClick={handleCardClick}
       >
+        {/* Botão de favorito posicionado absolutamente */}
+        <CompactFavoriteButton digimon={digimon} />
+        
         <CardContent className="p-4">
           <div className="flex items-center gap-4">
             <div

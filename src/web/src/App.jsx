@@ -9,15 +9,16 @@ import {
   useOutletContext,
 } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { Search, Grid3X3, TreePine, X } from 'lucide-react';
+import { Search, Grid3X3, TreePine, Heart, X, Star } from 'lucide-react';
+import { Toaster } from 'sonner';
 
 import DigimonSearch from './components/DigimonSearch';
 import DigimonList from './components/DigimonList';
 import EvolutionView from './components/EvolutionView';
+import FavoritesPage from './components/FavoritesPage';
 import ApiStatus from './components/ApiStatus';
+import { useFavoritesCount } from './hooks/useFavorites';
 import { getAssetImageUrl } from './lib/utils';
-import { Toaster } from 'sonner';
-
 import './App.css';
 
 const queryClient = new QueryClient({
@@ -42,10 +43,32 @@ function ListPage() {
   return <DigimonList onDigimonSelect={handleSelect} onImagePreview={openImagePreview} />;
 }
 
+function FavoritesPageWrapper() {
+  const { handleSelect, openImagePreview } = useOutletContext();
+  return <FavoritesPage onDigimonSelect={handleSelect} onImagePreview={openImagePreview} />;
+}
+
 function EvolutionPage() {
   const { digimonName } = useParams();
   const { handleSelect, openImagePreview } = useOutletContext();
   return <EvolutionView key={digimonName} digimon={{ name: digimonName }} onDigimonSelect={handleSelect} onImagePreview={openImagePreview} />;
+}
+
+// Componente para mostrar contador de favoritos
+function FavoritesNavButton() {
+  const { data: favoritesCount = 0 } = useFavoritesCount();
+  
+  return (
+    <div className="relative">
+      <Heart className="nav-icon" />
+      <span className="nav-text">Favoritos</span>
+      {favoritesCount > 0 && (
+        <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-bold">
+          {favoritesCount > 99 ? '99+' : favoritesCount}
+        </span>
+      )}
+    </div>
+  );
 }
 
 // --- COMPONENTE DE LAYOUT PRINCIPAL ---
@@ -96,6 +119,10 @@ function MainLayout() {
           <NavLink to="/list" className={({ isActive }) => `nav-button ${isActive ? 'active' : ''}`}>
             <Grid3X3 className="nav-icon" />
             <span className="nav-text">Listar Todos</span>
+          </NavLink>
+          <NavLink to="/favorites" className={({ isActive }) => `nav-button ${isActive ? 'active' : ''}`}>
+          <Star className="nav-icon" />
+          <span className="nav-text">Favoritos</span>
           </NavLink>
           {selectedDigimonName && (
             <NavLink to={`/evolution/${selectedDigimonName}`} className={({ isActive }) => `nav-button ${isActive ? 'active' : ''}`}>
@@ -160,6 +187,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <SearchPage /> },
       { path: 'list', element: <ListPage /> },
+      { path: 'favorites', element: <FavoritesPageWrapper /> },
       { path: 'evolution/:digimonName', element: <EvolutionPage /> },
     ],
   },
@@ -169,7 +197,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-        <Toaster richColors position="bottom-right" /> 
+      <Toaster richColors position="bottom-right" />
       <RouterProvider router={router} />
     </QueryClientProvider>
   );
