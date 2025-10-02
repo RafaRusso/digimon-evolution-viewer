@@ -1,15 +1,13 @@
 import { useQuery, useInfiniteQuery } from '@tanstack/react-query'
 import { digimonApi } from '../lib/api' // Verifique se o caminho está correto
 /**
- * Hook customizado para o componente DigimonSelector.
- * Gerencia a busca paginada com filtros de nome, estágio e atributo.
- * 
- * @param {object} filters - Um objeto contendo os filtros e a paginação.
- * @param {number} filters.page - A página atual.
- * @param {number} filters.limit - Quantidade de itens por página.
- * @param {string} [filters.name] - O termo de busca para o nome.
- * @param {string} [filters.stage] - O estágio para filtrar.
- * @param {string} [filters.attribute] - O atributo para filtrar.
+ * Hook para buscar e selecionar Digimons com filtros.
+ * @param {object} params - Os parâmetros para a query.
+ * @param {number} [params.page] - O número da página.
+ * @param {number} [params.limit] - O limite de itens por página.
+ * @param {string} [params.name] - O nome para filtrar.
+ * @param {string} [params.stage] - O estágio para filtrar.
+ * @param {string} [params.attribute] - O atributo para filtrar.
  */
 export function useDigimonSelector({ page, limit, name, stage, attribute }) {
   return useQuery({
