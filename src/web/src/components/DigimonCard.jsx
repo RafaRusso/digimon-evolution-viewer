@@ -1,9 +1,12 @@
+// src/components/DigimonCard.jsx
+
 import React from 'react';
 import { ArrowRight, ImageIcon } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { getAssetImageUrl } from '../lib/utils';
 import { CompactFavoriteButton } from './FavoriteButton';
+import DigimonStats from './DigimonStats'; // 1. Importa o novo componente
 
 // Funções para obter as classes de cor
 function getStageClass(stage) {
@@ -50,7 +53,6 @@ export function DigimonCard({
         className="digimon-card cursor-pointer"
         onClick={handleCardClick}
       >
-        {/* Botão de favorito posicionado absolutamente */}
         <CompactFavoriteButton digimon={digimon} />
         
         <CardContent className="p-4">
@@ -69,7 +71,6 @@ export function DigimonCard({
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400 flex items-center gap-2 mb-2">
                 <span className="font-semibold">#{digimon.number}</span>
-                {/* CORREÇÃO: Adicionando as classes de cor dinamicamente */}
                 <Badge className={`stage-badge ${getStageClass(digimon.stage)}`}>
                   Stage {digimon.stage}
                 </Badge>
@@ -82,6 +83,10 @@ export function DigimonCard({
             <ArrowRight className="w-5 h-5 text-gray-400 flex-shrink-0 group-hover:text-blue-500 transition-colors duration-300" />
           </div>
           
+          {/* 2. Renderiza os stats do Digimon, se existirem */}
+          <DigimonStats stats={digimon.stats} />
+
+          {/* 3. Renderiza os requisitos de evolução (ou outros filhos) */}
           {children}
         </CardContent>
       </Card>

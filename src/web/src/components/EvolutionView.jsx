@@ -1,3 +1,5 @@
+// src/components/EvolutionView.jsx
+
 import { Info, ArrowLeft, ArrowRight, TreePine, ImageIcon, ChevronDown } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card'
 import { Badge } from './ui/badge'
@@ -11,6 +13,8 @@ import EvolutionTree from './EvolutionTree';
 import { useState } from 'react';
 import EvolutionRequirements from './EvolutionRequirements'; 
 import { DetailFavoriteButton } from './FavoriteButton';
+import DigimonStats from './DigimonStats'; // 1. Importe o componente de stats
+
 // Função para obter classe CSS do stage
 function getStageClass(stage) {
   const stageMap = {
@@ -45,8 +49,8 @@ export function EvolutionView({ digimon, onDigimonSelect, onImagePreview }) {
   };
   const [isPredecessorsOpen, setIsPredecessorsOpen] = useState(true);
   const [isSuccessorsOpen, setIsSuccessorsOpen] = useState(true);
-  const [activeTab, setActiveTab] = useState('evolutions'); // Padrão é 'evolutions'
-  // Buscar linha evolutiva completa
+  const [activeTab, setActiveTab] = useState('evolutions');
+  
   const { 
     data: evolutionData, 
     isLoading, 
@@ -93,9 +97,9 @@ export function EvolutionView({ digimon, onDigimonSelect, onImagePreview }) {
 
   return (
     <div className="space-y-8">
-      <Card className="border-2 border-blue-300 dark:border-blue-600 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 backdrop-blur-md shadow-xl">
-        <CardHeader>
-          <div className="flex items-start gap-6">
+      <Card className="border-2 border-blue-300 dark:border-blue-600 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 backdrop-blur-md shadow-xl overflow-hidden">
+        <CardHeader className="p-6">
+          <div className="flex flex-col md:flex-row items-start gap-6">
             <div 
               className="flex-shrink-0 w-24 h-24 rounded-2xl overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700 flex items-center justify-center shadow-lg border-2 border-gray-200 dark:border-gray-600 cursor-zoom-in group"
               onClick={() => onImagePreview(current)}
@@ -103,13 +107,16 @@ export function EvolutionView({ digimon, onDigimonSelect, onImagePreview }) {
             >
               {imageUrl ? <img src={imageUrl} alt={current.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" /> : <ImageIcon className="w-12 h-12 text-gray-400" />}
             </div>
-            <div className="flex-1">
+            <div className="flex-1 w-full">
+              {/* --- INÍCIO DA ALTERAÇÃO DE LAYOUT --- */}
               <div className="flex justify-between items-center mb-3">
-                <CardTitle className="flex items-center gap-3 text-3xl">
-                  <Info className="w-8 h-8 text-blue-600" />
+                <CardTitle className="flex items-center gap-3 text-3xl font-bold text-gray-800 dark:text-gray-100">
+                  <Info className="w-8 h-8 text-blue-500 dark:text-blue-400" />
                   {current.name}
                 </CardTitle>
-                <DetailFavoriteButton digimon={current} />
+                <div className="flex-shrink-0">
+                  <DetailFavoriteButton digimon={current} />
+                </div>
               </div>
               <CardDescription className="flex items-center gap-3 text-lg">
                 <span className="font-semibold">#{current.number}</span>
@@ -119,16 +126,25 @@ export function EvolutionView({ digimon, onDigimonSelect, onImagePreview }) {
                 <Badge className={`attribute-badge ${getAttributeClass(current.attribute)} text-sm font-bold px-3 py-1`}>
                   {current.attribute}
                 </Badge>
-                </CardDescription>
+              </CardDescription>
             </div>
           </div>
         </CardHeader>
+        
+        {/* 2. Adiciona a seção de stats aqui, dentro do Card principal */}
+        {current.stats && (
+          <CardContent className="p-6 pt-0">
+            <div className="border-t border-gray-200 dark:border-gray-700/50 pt-4">
+              <DigimonStats stats={current.stats} />
+            </div>
+          </CardContent>
+        )}
       </Card>
 
       <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-        <TabsList className="grid w-full grid-cols-2 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50 rounded-2xl p-0">
-          <TabsTrigger value="evolutions" className="rounded-xl font-semibold data-[state=active]:bg-blue-500 data-[state=active]:text-white py-0">Evoluções</TabsTrigger>
-          <TabsTrigger value="tree" className="rounded-xl font-semibold data-[state=active]:bg-blue-500 data-[state=active]:text-white py-0">Árvore Completa</TabsTrigger>
+        <TabsList className="grid w-full grid-cols-2 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50 rounded-2xl p-2 h-auto">
+          <TabsTrigger value="evolutions" className="rounded-lg font-semibold data-[state=active]:bg-blue-500 data-[state=active]:text-white py-2">Evoluções</TabsTrigger>
+          <TabsTrigger value="tree" className="rounded-lg font-semibold data-[state=active]:bg-blue-500 data-[state=active]:text-white py-2">Árvore Completa</TabsTrigger>
         </TabsList>
         
         <TabsContent value="evolutions" className="space-y-8 mt-8">
@@ -176,10 +192,12 @@ export function EvolutionView({ digimon, onDigimonSelect, onImagePreview }) {
         <TabsContent value="tree" className="mt-8">
           <Card className="digimon-card">
             <CardHeader>
-              {/* ... (Título do Card) ... */}
+              <CardTitle className="flex items-center gap-3 text-xl">
+                <TreePine className="w-6 h-6 text-blue-500" />
+                Árvore Evolutiva
+              </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
-              {/* Seção de Predecessores Recolhível */}
               {predecessors.length > 0 && (
                 <div>
                   <button 
@@ -205,7 +223,6 @@ export function EvolutionView({ digimon, onDigimonSelect, onImagePreview }) {
                 </div>
               )}
 
-              {/* Digimon Atual */}
               <div>
                 <h3 className="text-lg font-semibold text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-2">
                   <Info className="w-5 h-5" />
@@ -224,7 +241,6 @@ export function EvolutionView({ digimon, onDigimonSelect, onImagePreview }) {
                 </div>
               </div>
 
-              {/* Seção de Sucessores Recolhível */}
               {successors.length > 0 && (
                 <div>
                   <button 

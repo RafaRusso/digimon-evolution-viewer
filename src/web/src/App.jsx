@@ -1,3 +1,5 @@
+// src/App.jsx
+
 import React, { useState, useEffect } from 'react';
 import {
   createBrowserRouter,
@@ -9,13 +11,19 @@ import {
   useOutletContext,
 } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { Search, Grid3X3, TreePine, Heart, X, Star } from 'lucide-react';
+import { Search, Grid3X3, TreePine, Heart, X, Star, Users } from 'lucide-react';
 import { Toaster } from 'sonner';
+
+// --- INÍCIO DA CORREÇÃO ---
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+// --- FIM DA CORREÇÃO ---
 
 import DigimonSearch from './components/DigimonSearch';
 import DigimonList from './components/DigimonList';
 import EvolutionView from './components/EvolutionView';
 import FavoritesPage from './components/FavoritesPage';
+import TeamBuilderPage from './components/TeamBuilderPage';
 import ApiStatus from './components/ApiStatus';
 import { useFavoritesCount } from './hooks/useFavorites';
 import { getAssetImageUrl } from './lib/utils';
@@ -46,6 +54,11 @@ function ListPage() {
 function FavoritesPageWrapper() {
   const { handleSelect, openImagePreview } = useOutletContext();
   return <FavoritesPage onDigimonSelect={handleSelect} onImagePreview={openImagePreview} />;
+}
+
+function TeamBuilderPageWrapper() {
+  const { handleSelect, openImagePreview } = useOutletContext();
+  return <TeamBuilderPage onDigimonSelect={handleSelect} onImagePreview={openImagePreview} />;
 }
 
 function EvolutionPage() {
@@ -124,6 +137,10 @@ function MainLayout() {
           <Star className="nav-icon" />
           <span className="nav-text">Favoritos</span>
           </NavLink>
+          <NavLink to="/team-builder" className={({ isActive }) => `nav-button ${isActive ? 'active' : ''}`}>
+          <Users className="nav-icon" />
+          <span className="nav-text">Team Builder</span>
+          </NavLink>
           {selectedDigimonName && (
             <NavLink to={`/evolution/${selectedDigimonName}`} className={({ isActive }) => `nav-button ${isActive ? 'active' : ''}`}>
               <TreePine className="nav-icon" />
@@ -188,6 +205,7 @@ const router = createBrowserRouter([
       { index: true, element: <SearchPage /> },
       { path: 'list', element: <ListPage /> },
       { path: 'favorites', element: <FavoritesPageWrapper /> },
+      { path: 'team-builder', element: <TeamBuilderPageWrapper /> },
       { path: 'evolution/:digimonName', element: <EvolutionPage /> },
     ],
   },
@@ -197,8 +215,12 @@ const router = createBrowserRouter([
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Toaster richColors position="bottom-right" />
-      <RouterProvider router={router} />
+      {/* --- INÍCIO DA CORREÇÃO --- */}
+      <DndProvider backend={HTML5Backend}>
+        <Toaster richColors position="bottom-right" />
+        <RouterProvider router={router} />
+      </DndProvider>
+      {/* --- FIM DA CORREÇÃO --- */}
     </QueryClientProvider>
   );
 }

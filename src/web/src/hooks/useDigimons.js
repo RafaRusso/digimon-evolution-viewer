@@ -1,14 +1,43 @@
 import { useQuery, useInfiniteQuery } from '@tanstack/react-query'
 import { digimonApi } from '../lib/api' // Verifique se o caminho está correto
-
-// Hook para buscar Digimons com paginação (Nenhuma mudança necessária)
-export function useDigimons(page = 1, limit = 50, stage = null) {
+/**
+ * Hook customizado para o componente DigimonSelector.
+ * Gerencia a busca paginada com filtros de nome, estágio e atributo.
+ * 
+ * @param {object} filters - Um objeto contendo os filtros e a paginação.
+ * @param {number} filters.page - A página atual.
+ * @param {number} filters.limit - Quantidade de itens por página.
+ * @param {string} [filters.name] - O termo de busca para o nome.
+ * @param {string} [filters.stage] - O estágio para filtrar.
+ * @param {string} [filters.attribute] - O atributo para filtrar.
+ */
+export function useDigimonSelector({ page, limit, name, stage, attribute }) {
   return useQuery({
-    queryKey: ['digimons', page, limit, stage],
-    queryFn: () => digimonApi.getDigimons(page, limit, stage),
-    staleTime: 5 * 60 * 1000,
-    cacheTime: 10 * 60 * 1000,
-  })
+    // A queryKey é um array que inclui o nome do hook e um objeto com todos os filtros.
+    // Isso garante que o React Query refaça a busca sempre que qualquer um desses valores mudar.
+    queryKey: ['digimonSelector', { page, limit, name, stage, attribute }],
+
+    // A queryFn chama a função da API, passando os parâmetros.
+    // O backend espera o filtro de nome no parâmetro 'q'.
+    queryFn: () => digimonApi.getDigimons(page, limit, stage, attribute, name),
+
+    // keepPreviousData é a chave para uma boa UX na paginação.
+    // Ele mantém os dados da página anterior visíveis enquanto os novos dados carregam,
+    // evitando que a tela pisque ou que os cards desapareçam.
+    keepPreviousData: true,
+
+    // Define um tempo em que os dados são considerados "frescos", evitando buscas desnecessárias.
+    staleTime: 5 * 60 * 1000, // 5 minutos
+  });
+}
+export function useDigimons(page = 1, limit = 12, stage, attribute, name) {
+  return useQuery({
+    // A queryKey deve incluir TODOS os parâmetros que afetam a busca
+    queryKey: ['digimons', page, limit, stage, attribute, name],
+    queryFn: () => digimonApi.getDigimons(page, limit, stage, attribute, name),
+    staleTime: 5 * 60 * 1000, // 5 minutos
+    cacheTime: 10 * 60 * 1000, // 10 minutos
+  });
 }
 
 // Hook para busca infinita de Digimons (CORRIGIDO)

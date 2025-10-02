@@ -21,20 +21,21 @@ export default async function digimonRoutes(fastify, options) {
     schema: {
       description: 'Lista todos os Digimons com paginação e filtros',
       tags: ['Digimons'],
-      querystring: schemas.listDigimons.querystring,
+      querystring: schemas.listDigimons.querystring, // Seu schema precisa incluir 'attribute' e 'q'
     }
   }, asyncHandler(async (request, reply) => {
-    const { page, limit, stage } = validatePagination(
-      request.query.page, 
-      request.query.limit
-    )
+    const { page, limit } = validatePagination(request.query.page, request.query.limit);
     
-    const result = await digimonService.getAllDigimons(page, limit, request.query.stage)
+    const { stage, attribute, q: name } = request.query; 
     
-    const formattedData = result.data.map(digimon => formatDigimonData(digimon))
+    // Chama o serviço passando todos os filtros
+    const result = await digimonService.getAllDigimons(page, limit, stage, attribute, name);
+    // --- FIM DAS MODIFICAÇÕES ---
     
-    reply.send(paginatedResponse(formattedData, result.pagination))
-  }))
+    // A formatação da resposta continua a mesma
+    const formattedData = result.data.map(digimon => formatDigimonData(digimon));
+    reply.send(paginatedResponse(formattedData, result.pagination));
+  }));
 
   // GET /api/digimons/search - Busca Digimons por nome
   fastify.get('/search', {

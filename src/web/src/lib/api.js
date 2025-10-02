@@ -21,9 +21,11 @@ api.interceptors.response.use(/* ... */);
 // --- FUNÇÕES DA API COMPLETAS ---
 export const digimonApi = {
   // Este já estava correto
-  async getDigimons(page, limit, stage = null) {
+  async getDigimons(page, limit, stage = null, attribute = null, name = null) {
     const params = { page, limit }
     if (stage) params.stage = stage
+    if (attribute) params.attribute = attribute
+    if (name) params.q = name
     const response = await api.get('/api/digimons', { params })
     return response.data
   },
